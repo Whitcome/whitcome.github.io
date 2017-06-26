@@ -5,13 +5,10 @@ body {
 }
 
 .mainWidth{
-    overflow: hidden;
-    position: relative;
     margin: auto;
     padding-left: 16px;
     padding-right: 16px;
-    width: 90%;
-    max-width:1100px;
+    max-width:1000px;
 }
 
 .mainWidth h2{
@@ -37,20 +34,13 @@ body {
 }
 
 .links {
-    width: 600px;
-}
-
-.links img {
-    width:20px;
-
+    width: 500px;
 }
 
 .links ul {
     list-style-type: none;
     margin: 0;
     padding-top: 16px;
-    overflow: hidden;
-
 }
 
 .links li{
@@ -71,29 +61,44 @@ body {
 
 
 .header{
-    overflow: hidden;
-    background-color: #232E33;
+    background-color: rgba(35,46,51,0.95);
     top: 0;
     width: 100%;
+    position: fixed;
     margin: 0;
     min-height: 80px;
-    border-bottom: 1px solid #E0E0E0;
+    border-bottom: 1px solid #000000;
+    z-index: 1;
 }
 
 .panel1{
+    margin-top: 80px;
+    background: rgba(35,46,51,0.95);
+    height: 400px;
     overflow: hidden;
-    background-color: #E0E0E0;
-    width: 100%;
-    height: 700px;
-    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
+    position: relative;
 }
 
-.panel1Image{
-    overflow: hidden;
-    background-image: url("picture.png");
-    background-position: center; 
-    min-width: 100%;
-    min-height: 100%;
+.panel1:before{
+    content: ' ';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: block;
+    opacity: 0.2;
+    background-image: url("panel1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.panel1 h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 24pt;
+    color: #fafafa;
+    text-align: center;
+    position: relative;
+    padding-top: 130px;
 }
 
 .footer{
