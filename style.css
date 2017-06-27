@@ -64,19 +64,18 @@ body {
     background-color: rgba(35,46,51,0.95);
     top: 0;
     width: 100%;
-    position: fixed;
     margin: 0;
     min-height: 80px;
     border-bottom: 1px solid #000000;
-    z-index: 1;
+    
 }
 
 .panel1{
-    margin-top: 80px;
-    background: rgba(35,46,51,0.95);
-    height: 400px;
+    background-color: rgba(35,46,51,0.95);
+    height: 500px;
     overflow: hidden;
     position: relative;
+    top: 0px;
 }
 
 .panel1:before{
@@ -85,20 +84,21 @@ body {
     height: 100%;
     position: absolute;
     display: block;
-    opacity: 0.2;
+    opacity: 0.4;
     background-image: url("panel1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.panel1 h1{
+.panel1 h2{
     font-family: 'Roboto', sans-serif;
     font-size: 24pt;
     color: #fafafa;
     text-align: center;
+    display: block;
     position: relative;
-    padding-top: 130px;
+    line-height: 250px;
 }
 
 .footer{
