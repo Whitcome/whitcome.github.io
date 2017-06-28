@@ -1,0 +1,124 @@
+html,
+body{
+    height:100%;
+}
+
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;    
+    background-color: #eeeeee;
+}
+
+#header {
+    background-color: #b71c1c;
+    height: 100%;
+}
+
+#header:before{
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background: url("photo.jpg");
+    background-position: center; 
+    background-size: cover; 
+    position: absolute;
+    opacity: 0.4;
+    -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 4s; /* Firefox < 16 */
+    -ms-animation: fadein 4s; /* Internet Explorer */
+    -o-animation: fadein 4s; /* Opera < 12.1 */
+    animation: fadein 4s;
+}
+
+#middle__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#middle__content h1{
+    font-size: 44;
+    font-weight: 500;
+    color: #f5f5f5;
+}
+
+#social__content {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+#social__content a{
+    font-size: 32;
+    color: #f5f5f5;
+}
+
+#navbar {
+    position: relative;
+    height: 70px;
+    width: 100%;
+    max-width: 2000px;
+    margin: auto;
+}
+
+#name,
+#links{
+    position: absolute;
+    top: 50%;
+    padding: 20px;
+    transform: translateY(-50%);
+    color: #f5f5f5;
+}
+
+#name {
+    left: 0;
+}
+
+#links {
+    right: 0;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 0.4; }
+}
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 0.4; }
+}
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes 
+fadein {
+    from { opacity: 0; }
+    to   { opacity: 0.4; }
+}
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 0.4; }
+}
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 0.4; }
+}
+
+.panel{
+    width: 100%;
+    height: 200px;
+    background-color: #181818;
+}
+
+.panel__info {
+    background-color: #f5f5f5;
+    padding: 20px;
+    height: 800px;
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
+}
