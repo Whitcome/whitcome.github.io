@@ -11,7 +11,7 @@ body{
 }
 
 #header {
-    background-color: #90CAF9;
+    background-color: #eeeeee;
     height: 100%;
     width: 100%;
 }
@@ -24,7 +24,7 @@ body{
     background-position: center; 
     background-size: cover; 
     position: absolute;
-    opacity: 0.4;
+    opacity: 0.2;
     -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein 4s; /* Firefox < 16 */
     -ms-animation: fadein 4s; /* Internet Explorer */
@@ -32,13 +32,8 @@ body{
     animation: fadein 4s;
 }
 
-#header a {
-    text-decoration: none;
-    color: #1E1E1E;
-}
-
 #header a:hover {
-    opacity: 0.8;
+    opacity: 0.7;
 }
 
 #header a:active {
@@ -51,13 +46,14 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    min-width: 300px;
     max-width: 500px;
 }
 
 #middle__content h1 {
     font-size: 44;
     font-weight: 500;
-    color: #1E1E1E;
+    color: #d32f2f;
     margin: 5px;
 }
 
@@ -65,29 +61,35 @@ body{
     font-size: 24;
     font-weight: 500;
     color: #1E1E1E;
-    margin: 5px;
+    margin: 0px;
 }
 
-#social__content {
-    position: absolute;
-    top: 65%;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-}
-
-#social__content a {
-    font-size: 72;
+#middle__content i {
+    font-size: 48;
     color: #1E1E1E;
+    margin: 0px;
     padding: 20px;
+}
+#middle__content h1 a {
+    text-decoration: none;
+    color: #d32f2f;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: #1E1E1E;
 }
 
 #navbar {
     position: relative;
     height: 70px;
     width: 100%;
-    max-width: 1250px;
+    max-width: 1500px;
     margin: auto;
+}
+
+#navbar .menu {
+    display: none;
 }
 
 #name,
@@ -100,7 +102,7 @@ body{
 
 #name {
     left: 0;
-    font-weight: 100;
+    font-weight: 500;
     font-size: 24px;
 }
 
@@ -108,37 +110,48 @@ body{
     right: 0;
     list-style-type: none;
     text-align: right;
-    font-size: 18;
+    font-size: 24px;
     font-weight: 100;
 }
 
 #links ul li{
     padding-left: 24px;
     display:inline;
+    font-size: 24px;
 }
 
 @keyframes fadein {
     from { opacity: 0; }
-    to   { opacity: 0.4; }
+    to   { opacity: 0.2; }
 }
 /* Firefox < 16 */
 @-moz-keyframes fadein {
     from { opacity: 0; }
-    to   { opacity: 0.4; }
+    to   { opacity: 0.2; }
 }
 /* Safari, Chrome and Opera > 12.1 */
 @-webkit-keyframes 
 fadein {
     from { opacity: 0; }
-    to   { opacity: 0.4; }
+    to   { opacity: 0.2; }
 }
 /* Internet Explorer */
 @-ms-keyframes fadein {
     from { opacity: 0; }
-    to   { opacity: 0.4; }
+    to   { opacity: 0.2; }
 }
 /* Opera < 12.1 */
 @-o-keyframes fadein {
     from { opacity: 0; }
-    to   { opacity: 0.4; }
+    to   { opacity: 0.2; }
+}
+
+@media screen and (max-width: 450px) {
+  #navbar li:not(:first-child) {
+      display: none;
+    }
+  #navbar a.menu {
+    float: right;
+    display: block;
+  }
 }
