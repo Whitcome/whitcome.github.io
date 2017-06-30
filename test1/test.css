@@ -24,7 +24,7 @@ body{
     content: " ";
     width: 100%;
     height: 100%;
-    background: url("photo.jpg");
+    background: url("404.jpg");
     background-position: center; 
     background-size: cover; 
     position: absolute;
@@ -104,6 +104,7 @@ body{
     top: 50%;
     padding: 20px;
     transform: translateY(-50%);
+    font-size: 24px;
 }
 
 #name {
@@ -163,7 +164,7 @@ fadein {
     }
 
     #middle__content {
-        width: 350px;
+        width: 340px;
     }
 
     #middle__content h1 {
@@ -175,3 +176,57 @@ fadein {
     }
 }
 
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    right: 0;
+    background-color: #eeeeee;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.sidenav ul {
+    padding-left: 0px;
+    padding-right: 0px;
+    list-style-type: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 340px;
+}
+
+.sidenav ul li i {
+    padding-right: 20px;
+}
+
+.sidenav ul li {
+    font-weight: 400;
+    text-align: center;
+    padding: 20px;
+    float: left;
+}
+
+.sidenav li a {
+    color: #1E1E1E;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.sidenav .closebtn {
+    color: #1E1E1E;
+    position: absolute;
+    text-decoration: none;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
