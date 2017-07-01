@@ -114,13 +114,14 @@ body{
 }
 
 #links {
+    background-color: orange;
     right: 0;
     list-style-type: none;
     text-align: right;
 }
 
 #links ul {
-    margin:0;
+    margin: 0;
 }
 
 #links ul li{ 
