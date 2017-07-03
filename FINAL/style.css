@@ -83,3 +83,9 @@ body {
     color: #eeeeee;
     margin: 0;
 }
+
+@media screen and (max-height: 400px) {
+    #header .centered__text {
+        margin-top: -6em;
+    }
+}
