@@ -14,7 +14,7 @@ body {
     width: 100%;
     height: 100%;
     background-color: #1e1e1e;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 #header .background {
@@ -25,7 +25,7 @@ body {
     width: 100%;
     height: 100%;
     position: absolute;
-    opacity: 0.06;
+    opacity: 0.1;
     z-index: -1;
 }
 
@@ -40,52 +40,72 @@ body {
 	margin-left: -10.938em;
 }
 
+#header .centered__text a {
+    text-decoration: none;
+    color: #d32f2f;
+}
+
+#header .centered__text a:hover {
+    text-decoration: none;
+    color: #e33f3f;
+}
+
 #header .social__links {
     position: absolute;
     text-align: center;
 	left: 50%;
 	width: 4em;
     top: 70%;
-    height: 1.14em;
-    margin-top: -0.57em;
+    height: 1.2em;
+    margin-top: -0.6em;
 	margin-left: -2em;
-    font-size: 60px;
+    font-size: 3.5em;
 }
 
-#header a{
+#header .social__links a{
     text-decoration: none;
     margin: 0.06em;
-    color: #eeeeee;
-    opacity: 0.6;
+    color: #bbbbbb;
+    opacity: 0.5;
 }
 
-#header a:hover {
-    opacity: 1;
+#header .social__links a:hover {
+    opacity: 0.8;
+}
+
+#header .social__links a:active {
+    color: #bbbbbb;
 }
 
 #header h1 {
     font-size: 1.5em;
-    font-weight: 300;
+    font-weight: 400;
     color: #eeeeee;
     margin: 0;
 }
 
 #header h2 {
     font-size: 2.5em;
-    font-weight: 300;
+    font-weight: 400;
     color: #d32f2f;
     margin: 0.15em;
 }
 
 #header h3 {
-    font-size: 1.25em;
-    font-weight: 300;
+    font-size: 1.3em;
+    font-weight: 400;
     color: #eeeeee;
     margin: 0;
 }
 
-@media screen and (max-height: 400px) {
+@media screen and (max-height: 440px) {
     #header .centered__text {
         margin-top: -6em;
+    }
+}
+
+@media screen and (max-width : 700px) {
+    #header .social__links {
+        top: 85%;
     }
 }
