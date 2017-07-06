@@ -69,6 +69,10 @@ body {
     opacity: 0.5;
 }
 
+#header .centered__text a h3:hover{
+    opacity: 0.8;
+}
+
 #header .social__links a:hover {
     opacity: 0.8;
 }
