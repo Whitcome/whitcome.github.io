@@ -21,7 +21,7 @@ body {
     border-bottom: 1px solid #2F41A5;
     position: fixed;
     z-index: 2;
-    box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.4);
 }
 
 #navbar a {
@@ -49,12 +49,12 @@ body {
 #header__background {
     position: absolute;
     width: 100%;
-    background-image: url("");
+    background-image: url("header.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 500px;
-    opacity: 0;
+    opacity: 0.2;
     z-index: 0;
 }
 
@@ -144,7 +144,7 @@ body {
     float: right;
 }
 
-@media screen and (max-width: 600px), screen and (max-height: 600px) {
+@media screen and (max-width: 700px), screen and (max-height: 600px) {
     #navbar {
         position: absolute;
     }
@@ -174,7 +174,7 @@ body {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     #navbar {
         z-index: 0;
     }
@@ -196,9 +196,10 @@ body {
         display: block;
         padding-left: 20px;
         opacity: 0.8;
+        color: #1e1e1e;
     }
 
-    #navbar ul li:active {
+    #navbar ul li:hover {
         background-color: #eeeeee;
     }
 
@@ -208,5 +209,9 @@ body {
 
     .left__column, .right__column{
         width: 100%;
+    }
+
+    #links {
+        
     }
 }
