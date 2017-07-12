@@ -21,7 +21,7 @@ body {
     border-bottom: 1px solid #2F41A5;
     position: fixed;
     z-index: 2;
-    box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 #navbar a {
@@ -54,7 +54,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     height: 500px;
-    opacity: 0.2;
+    opacity: 0.0;
     z-index: 0;
 }
 
@@ -62,7 +62,7 @@ body {
     position: relative;
     z-index: 1;
     text-align: center;
-    color: #eeeeee;
+    color: #fff;
     margin: 0 auto;
     line-height: 500px;
 }
@@ -78,6 +78,7 @@ body {
     margin: 0 auto;
     padding-left: 20px;
     padding-right: 20px;
+    overflow: auto;
 }
 
 .inner p {
@@ -88,7 +89,7 @@ body {
     margin: 0;
     line-height: 70px;
     float: left;
-    color: #eeeeee;
+    color: #fff;
 }
 
 #name h1 {
@@ -101,14 +102,14 @@ body {
     margin: 0;
     line-height: 70px;
     float: right;
-    color: #eeeeee;
+    color: #fff;
 }
 
 #links ul{
     margin: 0;
     list-style: none;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 600;
     float: right;
 }
 
@@ -121,16 +122,17 @@ body {
 .section {
     padding-top: 20px;
     padding-bottom: 40px;
+    overflow: auto;
 }
 
 .section h3 {
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 400;
     text-align: center;
     color: #1e1e1e;
     /* Margin and padding different for top so links in navbar go slightly above text */
     margin: -90px 0 0 0;
-    padding: 110px 20px 20px 20px;
+    padding: 90px 20px 20px 20px;
 }
 
 #footer {
@@ -142,6 +144,48 @@ body {
     display: none;
     font-size: 20px;
     float: right;
+}
+
+.left__column {
+    float: left;
+    width: 300px;
+    background-color: #eee;
+}
+
+.right__column {
+    background-color: #ddd;
+    overflow: auto;
+}
+
+.left__column, .right__column {
+    padding: 20px;
+}
+
+p {
+    margin: 0;
+}
+
+.social__card {
+    background-color: #eee;
+    width: 300px;
+    min-width: 300px;
+    height: 100px;
+    transition: background-color 0.5s ease;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.github:hover {
+    background-color: #24292e;
+}
+
+.linkedin:hover {
+    background-color: #0077B5;
+}
+
+.email:hover {
+    background-color: #e74c3c;
 }
 
 @media screen and (max-width: 700px), screen and (max-height: 600px) {
@@ -208,7 +252,8 @@ body {
     }
 
     .left__column, .right__column{
-        width: 100%;
+        width: auto;
+        float: none;
     }
 
     #links {
