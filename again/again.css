@@ -8,6 +8,10 @@ html, body {
     margin: 0;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 #navbar {
     top: 0;
     background-color: #ffffff;
@@ -34,21 +38,23 @@ html, body {
 }
 
 #header {
-    padding-top: 71px;
+    margin-top: 71px;
     width: 100%;
     background-color: #eeeeee;
     height: 500px;
+    z-index: 0;
+    position: relative;
 }
 
 #header__background {
     position: absolute;
     width: 100%;
-    background-image: url("header.jpg");
+    background-image: url("");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 500px;
-    opacity: 1.0;
+    opacity: 0;
     z-index: 0;
 }
 
@@ -56,7 +62,7 @@ html, body {
     position: relative;
     z-index: 1;
     text-align: center;
-    color: #ffffff;
+    color: #1e1e1e;
     margin: 0 auto;
     line-height: 500px;
 }
@@ -135,15 +141,17 @@ html, body {
 .menu__button {
     display: none;
     font-size: 20px;
+    float: right;
 }
 
 @media screen and (max-width: 600px), screen and (max-height: 600px) {
     #navbar {
-        position: relative;
+        position: absolute;
     }
 
-    #header {
-        padding-top: 0;
+    .section h3 {
+        margin: 0;
+        padding: 20px;
     }
 }
 
@@ -167,12 +175,35 @@ html, body {
 }
 
 @media screen and (max-width: 600px) {
-    #navbar li:not(:first-child) {
-        display: none;
+    #navbar {
+        z-index: 0;
+    }
+
+    #header {
+        z-index: 1;
+    }
+
+    #navbar ul {
+        position: absolute;
+        left: 0;
+        top: 71px;
+        padding-left: 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #navbar ul li {
+        display: block;
+        padding-left: 20px;
+        opacity: 0.8;
+    }
+
+    #navbar ul li:active {
+        background-color: #eeeeee;
     }
 
     .menu__button {
-        display:inline;
+        display: block;
     }
 
     .left__column, .right__column{

@@ -1,17 +1,36 @@
+<!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
         <title>David Whitcome | Computer Science</title>
         <link rel="stylesheet" type="text/css" href="again.css"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"/> 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
         <script> 
+        var menu__open = 0;
             $(document).ready(function(){
                 $(".menu__button").click(function(){
-                    $("#header").animate({paddingTop: '250px'});
+
+                    if (menu__open == 0) {
+                        $("#header").animate({marginTop: '281px'});
+                        menu__open=1;
+                    }
+                    else {
+                        $("#header").animate({marginTop: '71px'});
+                        menu__open=0;
+                    }
                 });
             });
-        </script> 
+
+            $(document).on('click', 'a', function(event){
+                $('body').animate({
+                    scrollTop: $( $.attr(this, 'href') ).offset().top
+                }, 500);
+                return false;
+            });
+        </script>
+        <meta name="theme-color" content="#fff"/> 
     </head>
     <body>
         <div id="navbar">
@@ -20,11 +39,11 @@
                     <h1>David Whitcome</h1>
                 </div>
                 <div id="links">
+                    <a href="#" class="menu__button">&#9776;</a>
                     <ul>
-                        <li><a href="#" class="menu__button">&#9776;</a></li>
-                        <li><a href="#aboutme">About Me</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#social">Social Media</a></li>
+                        <a href="#aboutme"><li>About Me</li></a>
+                        <a href="#projects"><li>Projects</li></a>
+                        <a href="#social"><li>Social Media</li></a>
                     </ul>
                 </div>
             </div>
