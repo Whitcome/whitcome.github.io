@@ -5,7 +5,8 @@
         <title>David Whitcome | Computer Science</title>
         <link rel="stylesheet" type="text/css" href="again.css"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"/> 
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"/>
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css"/>
         <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
         <script> 
         var menu__open = 0;
@@ -30,25 +31,28 @@
                 return false;
             });
         </script>
-        <meta name="theme-color" content="#e74c3c"/> 
+        <meta name="theme-color" content="#3F51B5"/> 
     </head>
     <body>
+        <!-- Navigation bar -->
         <div id="navbar">
             <div class="inner">
                 <div id="name">
                     <h1>David Whitcome</h1>
                 </div>
                 <div id="links">
-                    <a href="#" class="menu__button">&#9776;</a>
+                    <a href="#" class="menu__button"><i class="fa fa-bars" aria-hidden="true"></i></a>
                     <ul>
                         <a href="#aboutme"><li>About Me</li></a>
                         <a href="#projects"><li>Projects</li></a>
                         <a href="#social"><li>Social Media</li></a>
                         <a href="#achievements"><li>Achievements</li></a>
+                        <a href="#header"><li><i class="fa fa-arrow-up" aria-hidden="true"></i></li></a>
                     </ul>
                 </div>
             </div>
         </div>
+        <!-- Header Text and image -->
         <div id="header">
             <div id="header__background"></div>
             <div id="header__centered">

@@ -83,6 +83,7 @@ body {
 
 .inner p {
     color: #606060;
+    font-size: 16px;
 }
 
 #name {
@@ -188,7 +189,7 @@ p {
     background-color: #e74c3c;
 }
 
-@media screen and (max-width: 700px), screen and (max-height: 600px) {
+@media screen and (max-width: 750px), screen and (max-height: 600px) {
     #navbar {
         position: absolute;
     }
@@ -218,7 +219,7 @@ p {
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 750px) {
     #navbar {
         z-index: 0;
     }
