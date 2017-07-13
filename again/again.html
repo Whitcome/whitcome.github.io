@@ -15,10 +15,12 @@
 
                     if (menu__open == 0) {
                         $("#header").stop().animate({marginTop: '351px'});
+                        $("#menu__icon").attr('class', 'fa fa-times');
                         menu__open=1;
                     }
                     else {
                         $("#header").stop().animate({marginTop: '71px'});
+                        $("#menu__icon").attr('class', 'fa fa-bars');
                         menu__open=0;
                     }
                 });
@@ -41,7 +43,7 @@
                     <h1>David Whitcome</h1>
                 </div>
                 <div id="links">
-                    <a href="#" class="menu__button"><i class="fa fa-bars"></i></a>
+                    <a href="#" class="menu__button"><i id="menu__icon" class="fa fa-bars"></i></a>
                     <ul>
                         <a href="#aboutme"><li>About Me</li></a>
                         <a href="#projects"><li>Projects</li></a>
@@ -85,11 +87,13 @@
             </div>
         </div>
         <div class="section">
-            <div class="inner">
+            <div class="inner social__list">
                 <h3 id="social">Social Media</h3>
-                <a href="#" class="social__card github"></a>
-                <a href="#" class="social__card linkedin"></a>
-                <a href="#" class="social__card email"></a>
+                <ul>
+                    <a href="https://github.com/Whit128" class="github"><li>GITHUB</li></a>
+                    <a href="https://www.linkedin.com/in/david-whitcome-aba2a353" class="linkedin"><li>LINKEDIN</li></a>
+                    <a href="mailto:" class="email"><li>EMAIL</li></a>
+                </ul>
             </div>
         </div>
         <div class="section" style="background-color: #eeeeee;">
