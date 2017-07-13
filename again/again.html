@@ -14,11 +14,11 @@
                 $(".menu__button").click(function(){
 
                     if (menu__open == 0) {
-                        $("#header").animate({marginTop: '351px'});
+                        $("#header").stop().animate({marginTop: '351px'});
                         menu__open=1;
                     }
                     else {
-                        $("#header").animate({marginTop: '71px'});
+                        $("#header").stop().animate({marginTop: '71px'});
                         menu__open=0;
                     }
                 });
@@ -41,13 +41,13 @@
                     <h1>David Whitcome</h1>
                 </div>
                 <div id="links">
-                    <a href="#" class="menu__button"><i class="fa fa-bars" aria-hidden="true"></i></a>
+                    <a href="#" class="menu__button"><i class="fa fa-bars"></i></a>
                     <ul>
                         <a href="#aboutme"><li>About Me</li></a>
                         <a href="#projects"><li>Projects</li></a>
                         <a href="#social"><li>Social Media</li></a>
                         <a href="#achievements"><li>Achievements</li></a>
-                        <a href="#header"><li><i class="fa fa-arrow-up" aria-hidden="true"></i></li></a>
+                        <a href="#header" class="top__button"><li><i class="fa fa-arrow-up" aria-hidden="true"></i></li></a>
                     </ul>
                 </div>
             </div>
@@ -57,7 +57,7 @@
             <div id="header__background"></div>
             <div id="header__centered">
                 <div class="inner">
-                    <h2>Text</h2>
+                    <h2>Senior at NIU</h2>
                 </div>
             </div>
         </div>
@@ -102,14 +102,7 @@
                 <p>Nullam lorem ante, efficitur vel dui at, lobortis fermentum ex. Proin sapien nulla, volutpat a ligula a, laoreet feugiat lorem. Duis nec consequat lorem, tempus feugiat neque. Donec finibus magna venenatis bibendum luctus. Morbi lectus odio, tincidunt vitae erat sed, cursus viverra nulla. Aliquam at sem purus. Sed fringilla lacinia malesuada. Nam lobortis nulla sed dui tempus, eget ornare dui auctor.</p>
             </div>
         </div>
-
-
         <div id="footer">
         </div>
-
-
-        
-
-
     </body>
 </html>

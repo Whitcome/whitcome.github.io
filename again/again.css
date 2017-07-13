@@ -38,12 +38,15 @@ body {
 }
 
 #header {
-    margin-top: 71px;
+    padding-top: 71px;
+    margin-top: 0px;
     width: 100%;
     background-color: #3F51B5;
     height: 500px;
     z-index: 0;
     position: relative;
+    overflow: hidden;
+    display: table;
 }
 
 #header__background {
@@ -54,7 +57,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     height: 500px;
-    opacity: 0.0;
+    opacity: 0.15;
     z-index: 0;
 }
 
@@ -64,7 +67,11 @@ body {
     text-align: center;
     color: #fff;
     margin: 0 auto;
-    line-height: 500px;
+    /*line-height: 500px; */
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 #header__centered h2 {
@@ -215,7 +222,13 @@ p {
     }
 
     #header__centered {
-        line-height: 300px;
+        /*line-height: 300px;*/
+        padding-top: 112px;
+        padding-bottom: 113px;
+    }
+
+    .top__button {
+        display: none;
     }
 }
 
@@ -226,6 +239,8 @@ p {
 
     #header {
         z-index: 1;
+        padding-top: 0px;
+        margin-top: 71px;
     }
 
     #navbar ul {
@@ -256,8 +271,11 @@ p {
         width: auto;
         float: none;
     }
+}
 
-    #links {
-        
+@media screen and (min-width: 751px) {
+    #header {
+        margin-top: 0px;
+        padding-top: 71px;
     }
 }
