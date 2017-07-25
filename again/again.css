@@ -31,7 +31,7 @@ body {
 }
 
 #navbar h1:hover, #navbar li:hover {
-    opacity: 1.0;
+    opacity: 0.8;
 }
 
 #navbar li:active {
@@ -39,7 +39,7 @@ body {
 }
 
 #header {
-    margin-top: 71px;
+    padding-top: 71px;
     width: 100%;
     background-color: #000;
     height: 500px;
@@ -52,18 +52,14 @@ body {
 #header__background {
     position: absolute;
     width: 100%;
+    top: 0;
     background-image: url("header.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 500px;
+    height: 100%;
     opacity: 0.6;
     z-index: 0;
-    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 2s; /* Firefox < 16 */
-        -ms-animation: fadein 2s; /* Internet Explorer */
-         -o-animation: fadein 2s; /* Opera < 12.1 */
-            animation: fadein 2s;
 }
 
 #header__centered {
@@ -72,7 +68,6 @@ body {
     text-align: center;
     color: #eee;
     margin: 0 auto;
-    /*line-height: 500px; */
     padding-top: 100px;
     padding-bottom: 100px;
     display: table-cell;
@@ -81,9 +76,9 @@ body {
 
 #header__centered h2 {
     margin: 0;
-    font-size: 60px;
-    font-weight: 600;
-    text-shadow: 1px 1px 5px #000;
+    font-size: 48px;
+    font-weight: 400;
+    text-shadow: 1px 1px 4px #000;
 }
 
 .inner {
@@ -103,7 +98,7 @@ body {
     margin: 0;
     line-height: 70px;
     float: left;
-    color: #1e1e1e;
+    color: #3e3e3e;
 }
 
 #name h1 {
@@ -116,11 +111,12 @@ body {
     margin: 0;
     line-height: 70px;
     float: right;
-    color: #1e1e1e;
+    color: #3e3e3e;
 }
 
 #links ul{
     margin: 0;
+    display: block;
     list-style: none;
     font-size: 16px;
     font-weight: 600;
@@ -130,7 +126,7 @@ body {
 #links ul li{
     display: inline;
     padding-left: 20px;
-    opacity: 0.5;
+    opacity: 0.6;
 }
 
 .section {
@@ -151,11 +147,14 @@ body {
 
 .section h4 {
     font-size: 22px;
-    font-weight: 400;
-    text-align: left;
+    font-weight: 600;
     color: #1e1e1e;
     margin: 0;
     padding-bottom: 20px;
+}
+
+.left__column h4 {
+    text-align: center;
 }
 
 .section h5 {
@@ -183,7 +182,10 @@ body {
 
 .menu__button {
     display: none;
+    right: 0;
+    position: absolute;
     font-size: 20px;
+    padding: 0 20px 0 20px;
     float: right;
 }
 
@@ -206,27 +208,14 @@ p {
     margin: 0;
 }
 
-.github:hover {
-    background-color: #24292e;
-}
-
-.linkedin:hover {
-    background-color: #0077B5;
-}
-
-.email:hover {
-    background-color: #e74c3c;
-}
-
-@media screen and (max-width: 750px), screen and (max-height: 600px) {
-    #navbar {
-        position: absolute;
-    }
-
-    .section h3 {
-        margin: 0;
-        padding: 20px;
-    }
+.me {
+    display: block;
+    width: 50%;
+    max-width: 150px;
+    height: auto;
+    margin: 0 auto 20px auto;
+    border-radius: 100%;
+    border: 1px solid #000;
 }
 
 .separator {
@@ -234,12 +223,19 @@ p {
     border-bottom: 1px solid #909090;
 }
 
+@media screen and (max-width: 750px), screen and (max-height: 600px) {
+    .section h3 {
+        margin: 0;
+        padding: 20px;
+    }
+    
+    .top__button {
+        display: none;
+    }
+}
+
 @media screen and (max-height: 600px) {
     #header {
-        height: 300px;
-    }
-
-    #header__background {
         height: 300px;
     }
 
@@ -248,37 +244,27 @@ p {
         padding-top: 112px;
         padding-bottom: 113px;
     }
-
-    .top__button {
-        display: none;
-    }
 }
 
 @media screen and (max-width: 750px) {
-    #navbar {
-        z-index: 0;
-    }
-
-    #header {
-        z-index: 1;
-        padding-top: 0px;
-        margin-top: 71px;
-    }
-
     #navbar ul {
         position: absolute;
-        left: 0;
+        right:0;
         top: 71px;
         padding-left: 0;
-        width: 100%;
+        width: 0;
+        overflow-x: hidden;
         box-sizing: border-box;
+        background-color: #eee;
     }
 
     #navbar ul li {
         display: block;
         padding-left: 20px;
         opacity: 0.8;
+        min-width: 500px;
         color: #1e1e1e;
+        text-align: left;
     }
 
     #navbar ul li:hover {
@@ -297,4 +283,14 @@ p {
     .social__list a {
         width: 100%;
     }
+}
+
+#page__fade {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    z-index: 1;
 }

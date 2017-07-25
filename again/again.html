@@ -8,31 +8,7 @@
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"/>
         <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css"/>
         <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
-        <script> 
-        var menu__open = 0;
-            $(document).ready(function(){
-                $(".menu__button").click(function(){
-
-                    if (menu__open == 0) {
-                        $("#header").stop().animate({marginTop: '351px'});
-                        $("#menu__icon").attr('class', 'fa fa-times');
-                        menu__open=1;
-                    }
-                    else {
-                        $("#header").stop().animate({marginTop: '71px'});
-                        $("#menu__icon").attr('class', 'fa fa-bars');
-                        menu__open=0;
-                    }
-                });
-            });
-
-            $(document).on('click', 'a', function(event){
-                $('html, body').animate({
-                    scrollTop: $( $.attr(this, 'href') ).offset().top
-                }, 500);
-                return false;
-            });
-        </script>
+        <script type="text/javascript" src="animate.js"></script>
         <meta name="theme-color" content="#3F51B5"/> 
     </head>
     <body>
@@ -43,7 +19,7 @@
                     <h1>David Whitcome</h1>
                 </div>
                 <div id="links">
-                    <a href="#" class="menu__button"><i id="menu__icon" class="fa fa-bars"></i></a>
+                    <a class="menu__button"><i id="menu__icon" class="fa fa-bars"></i></a>
                     <ul>
                         <a href="#aboutme"><li>About Me</li></a>
                         <a href="#projects"><li>Projects</li></a>
@@ -54,12 +30,14 @@
                 </div>
             </div>
         </div>
+        <div id="page__fade"></div>
         <!-- Header Text and image -->
         <div id="header">
             <div id="header__background"></div>
             <div id="header__centered">
                 <div class="inner">
-                    <h2>Senior at NIU</h2>
+                    <h2>Changing the world</h2>
+                    <h2>one bit at a time</h2>
                 </div>
             </div>
         </div>
@@ -67,6 +45,8 @@
             <div class="inner">
                 <h3 id="aboutme">About Me</h3>
                     <div class="left__column">
+                        <img class="me" src="me.jpg"/>
+                        <h4>David Whitcome</h4>
                         <p>In in nisl sit amet nisi tempor vehicula ac et massa. Donec in nisl semper, vestibulum ex vitae, vehicula elit. Nunc eget nulla magna. Donec magna odio, sagittis ac turpis nec, fringilla bibendum arcu. Integer nec iaculis quam. Integer in nulla id ipsum ultrices iaculis dapibus sed leo. Nam dictum nunc quis dui suscipit condimentum. </p>
                     </div>
                     <div class="right__column">
