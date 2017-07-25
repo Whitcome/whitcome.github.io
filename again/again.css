@@ -30,7 +30,7 @@ body {
     text-decoration: none;
 }
 
-#navbar h1:hover, #navbar li:hover {
+#navbar li:hover {
     opacity: 0.8;
 }
 
@@ -58,7 +58,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
-    opacity: 0.6;
+    opacity: 0.7;
     z-index: 0;
 }
 
@@ -76,9 +76,9 @@ body {
 
 #header__centered h2 {
     margin: 0;
-    font-size: 48px;
+    font-size: 44px;
     font-weight: 400;
-    text-shadow: 1px 1px 4px #000;
+    text-shadow: 1px 1px 2px #000;
 }
 
 .inner {
@@ -125,7 +125,7 @@ body {
 
 #links ul li{
     display: inline;
-    padding-left: 20px;
+    margin-left: 20px;
     opacity: 0.6;
 }
 
@@ -210,8 +210,7 @@ p {
 
 .me {
     display: block;
-    width: 50%;
-    max-width: 150px;
+    width: 100px;
     height: auto;
     margin: 0 auto 20px auto;
     border-radius: 100%;
@@ -224,11 +223,6 @@ p {
 }
 
 @media screen and (max-width: 750px), screen and (max-height: 600px) {
-    .section h3 {
-        margin: 0;
-        padding: 20px;
-    }
-    
     .top__button {
         display: none;
     }

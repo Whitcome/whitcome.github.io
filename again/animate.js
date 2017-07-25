@@ -4,7 +4,6 @@ $(document).ready(function(){
     if ($(window).scrollTop() <= $("#header").height()) {
         $("#navbar").css('background-color', 'rgba(255, 255, 255, 0.9)');
         $("#navbar").css('border-bottom', 'rgba(250, 250, 250, 0.9)');
-        $("#menu__button").css('background-color', 'rgba(250, 250, 250, 0.9)');
     }
 
     $(".menu__button").click(function(){
@@ -30,8 +29,8 @@ $(document).ready(function(){
 
     $(document).scroll(function() { 
         if($(window).scrollTop() <= $("#header").height()) {
-            $("#navbar").css('background-color', 'rgba(255, 255, 255, 0.95)');
-            $("#navbar").css('border-bottom', 'rgba(250, 250, 250, 0.95)');
+            $("#navbar").css('background-color', 'rgba(255, 255, 255, 0.9)');
+            $("#navbar").css('border-bottom', 'rgba(250, 250, 250, 0.9)');
         } else {
             $("#navbar").css('background-color', '#fff');
             $("#navbar").css('transition', 'background 0.2s linear');
