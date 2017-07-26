@@ -8,12 +8,11 @@ $(document).ready(function(){
 
     $(".menu__button").click(function(){
         if (menu__open == 0) {
-            $("ul").css('height', $(window).height());
+            $("ul").css('height', $(window).height()+71);
             $("ul").stop().animate({
                 width:'250px'
             }, 200);
             $("#menu__icon").attr('class', 'fa fa-times');
-            $(".menu__button").css('background-color', '#fff');
             $("#page__fade").stop().fadeIn();
             menu__open=1;
         } else {
@@ -21,7 +20,6 @@ $(document).ready(function(){
                 width:'0'
             }, 200);
             $("#menu__icon").attr('class', 'fa fa-bars');
-            $(".menu__button").css('background-color', 'transparent');
             $("#page__fade").stop().fadeOut();
             menu__open=0;
         }
