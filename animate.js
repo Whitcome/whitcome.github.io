@@ -1,22 +1,23 @@
 var menu__open = 0;
 $(document).ready(function(){
-    
-    if ($(window).scrollTop() <= $("#header").height()) {
-        $("#navbar").css('background-color', 'rgba(255, 255, 255, 0.7)');
-        $("#navbar").css('border-bottom', 'rgba(250, 250, 250, 0.7)');
+    $("#header").css('padding-top', '0px');
+    if ($(window).scrollTop() <= ($("#header").height())/4) {
+        $("#navbar").css('background-color', 'rgba(255, 255, 255, 0.0)');
+        $("#navbar").css('border-bottom', 'rgba(250, 250, 250, 0.0)');
+        $("#navbar").css('box-shadow', '0px 0px 6px 0 rgba(0, 0, 0, 0.0)');
     }
 
     $(".menu__button").click(function(){
         if (menu__open == 0) {
-            $("ul").css('height', $(window).height()+71);
-            $("ul").stop().animate({
+            $("#links > ul").css('height', $(window).height()+71);
+            $("#links > ul").stop().animate({
                 width:'250px'
             }, 200);
             $("#menu__icon").attr('class', 'fa fa-times');
             $("#page__fade").stop().fadeIn();
             menu__open=1;
         } else {
-            $("ul").stop().animate({
+            $("#links > ul").stop().animate({
                 width:'0'
             }, 200);
             $("#menu__icon").attr('class', 'fa fa-bars');
@@ -26,12 +27,14 @@ $(document).ready(function(){
     });
 
     $(document).scroll(function() { 
-        if($(window).scrollTop() <= $("#header").height()) {
-            $("#navbar").css('background-color', 'rgba(255, 255, 255, 0.7)');
-            $("#navbar").css('border-bottom', 'rgba(250, 250, 250, 0.7)');
+        if($(window).scrollTop() <= ($("#header").height())/4) {
+            $("#navbar").css('background-color', 'rgba(255, 255, 255, 0.0)');
+            $("#navbar").css('border-bottom', 'rgba(250, 250, 250, 0.0)');
+            $("#navbar").css('box-shadow', '0px 0px 6px 0 rgba(0, 0, 0, 0.0)');
         } else {
             $("#navbar").css('background-color', '#fff');
             $("#navbar").css('transition', 'background 0.2s linear');
+            $("#navbar").css('box-shadow', '0px 0px 6px 0 rgba(0, 0, 0, 0.2)');
         }
         if (menu__open == 1) {
             $("ul").stop().animate({
