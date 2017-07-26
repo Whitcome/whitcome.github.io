@@ -3,29 +3,131 @@
     <head>
         <meta charset="UTF-8">
         <title>David Whitcome | Computer Science</title>
-        <link rel="stylesheet" type="text/css" href="style.css" />
         <meta name="author" content="David Whitcome" />
         <meta name="description" content="Computer Science student at NIU." />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"/>
-        <meta name="theme-color" content="#1e1e1e" />
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css"/>
+        <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="animate.js"></script>
+        <meta name="theme-color" content="#fff"/> 
     </head>
     <body>
+        <!-- Navigation bar -->
+        <div id="navbar" >
+            <div class="inner">
+                <div id="name">
+                    <h1>David Whitcome</h1>
+                </div>
+                <div id="links">
+                    <a class="menu__button"><i id="menu__icon" class="fa fa-bars"></i></a>
+                    <ul>
+                        <a href="#aboutme"><li>About Me</li></a>
+                        <a href="#projects"><li>Projects</li></a>
+                        <a href="#social"><li>Social Media</li></a>
+                        <a href="#achievements"><li>Achievements</li></a>
+                        <a href="#top" class="top__button"><li><i class="fa fa-arrow-up" aria-hidden="true" title="Back to Top"></i></li></a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="page__fade"></div>
+        <!-- Header Text and image -->
         <div id="header">
-            <div class="background"></div>
-            <div class="centered__text">
-                <h1>David Whitcome</h1>
-                <h2>Senior at <a href="http://www.niu.edu/">NIU</a></h2>
-                <h3>Computer Science</h3>
+            <div id="header__background"></div>
+            <div id="header__centered">
+                <div class="inner">
+                    <h2><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Under Construction</h2>
+
+
+
+                    <div style="display: none;">
+                    <h2>Changing the world</h2>
+                    <h2>one bit at a time</h2>
+                    </div>
+
+
+
+                </div>
             </div>
-            <div class="social__links">
-                <a href="https://github.com/Whit128/"><i class="fa fa-github"></i></a>                
-                <script type="text/javascript">
-                    document.write("<a" + " href=\"mail" + "to:" + new Array("me","davidwhitcome.com").join("@") + "\">" + "<i class=\"fa fa-envelope\"></" + "i>" + "</" + "a>");
-                </script>
-                <a href="https://www.linkedin.com/in/david-whitcome-a07b36139"><i class="fa fa-linkedin-square"></i></a>
+        </div>
+        <div class="section">
+            <div class="inner">
+                <h3 id="aboutme">About Me</h3>
+                <div class="wrap__background">
+                    <div class="left__column">
+                        <img class="me" src="me.jpg"/>
+                        <h4>David Whitcome</h4>
+                        <p>In in nisl sit amet nisi tempor vehicula ac et massa. Donec in nisl semper, vestibulum ex vitae, vehicula elit. Nunc eget nulla magna. Donec magna odio, sagittis ac turpis nec, fringilla bibendum arcu. Integer nec iaculis quam. Integer in nulla id ipsum ultrices iaculis dapibus sed leo. Nam dictum nunc quis dui suscipit condimentum. </p>
+                    </div>
+                    <div class="right__column">
+                        <h4><i class="fa fa-briefcase" aria-hidden="true"></i> Work Experience</h4>
+                        <h5>IT Intern - Power Electronics International, Inc.</h5>
+                        <h6><i class="fa fa-calendar" aria-hidden="true"></i> May 2017 - TODAY</h6>
+                        <p>In in nisl sit amet nisi tempor vehicula ac et massa. Donec in nisl semper, vestibulum ex vitae, vehicula elit. Nunc eget nulla magna. Donec magna odio, sagittis ac turpis nec, fringilla bibendum arcu. Integer nec iaculis quam. Integer in nulla id ipsum ultrices iaculis dapibus sed leo. Nam dictum nunc quis dui suscipit condimentum. </p>
+                        <div class="separator"></div>
+                        <h4><i class="fa fa-graduation-cap" aria-hidden="true"></i> Education</h4>
+                        <h5>Northern Illinois University - DeKalb, Illinois</h5>
+                        <h6><i class="fa fa-calendar" aria-hidden="true"></i> August 2016 - TODAY</h6>
+                        <h6>Graduating in August of 2018</h6>
+                        <p>In in nisl sit amet nisi tempor vehicula ac et massa. Donec in nisl semper, vestibulum ex vitae, vehicula elit. Nunc eget nulla magna. Donec magna odio, sagittis ac turpis nec, fringilla bibendum arcu. Integer nec iaculis quam. Integer in nulla id ipsum ultrices iaculis dapibus sed leo. Nam dictum nunc quis dui suscipit condimentum. </p>
+                        <h5>McHenry County College - Crystal Lake, Illinois</h5>
+                        <h6><i class="fa fa-calendar" aria-hidden="true"></i> August 2014 - May 2016</h6>
+                        <p>My time enrolled in MCC was spent working towards an Associate's of Science Degree. In May of 2016, I finished taking all of the required classes for my degree. After spending the summer working, I transfered to Northern Illinois University to further my education in Computer Science.</p>                        
+                    </div>
+                </div>
             </div>
+        </div>
+        <div class="section" style="background-color: #eeeeee;">
+            <div class="inner">
+                <h3 id="projects">Projects</h3>
+                <h3><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Under Construction</h3>
+
+                <div style="display: none;">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc congue erat tortor, faucibus luctus libero maximus at. Etiam varius pretium lorem, eget feugiat lacus vestibulum eget. Aenean tortor dolor, volutpat quis sem nec, aliquet mollis mauris. Morbi arcu nulla, commodo pellentesque leo nec, efficitur porta nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla metus nisi, euismod eget sodales non, placerat ac justo. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec porttitor nisi at velit volutpat, quis fringilla lorem scelerisque. Sed nunc ligula, viverra sed suscipit euismod, ornare eget tortor. Aenean lacinia, nulla non porta tincidunt, quam dolor placerat erat, ut cursus felis metus ac lorem. </p>
+                <p>In in nisl sit amet nisi tempor vehicula ac et massa. Donec in nisl semper, vestibulum ex vitae, vehicula elit. Nunc eget nulla magna. Donec magna odio, sagittis ac turpis nec, fringilla bibendum arcu. Integer nec iaculis quam. Integer in nulla id ipsum ultrices iaculis dapibus sed leo. Nam dictum nunc quis dui suscipit condimentum. </p>
+                <p>Aenean ante odio, pellentesque quis iaculis sed, bibendum eget nibh. Morbi vel luctus lorem. Etiam congue neque enim, id mollis diam placerat a. Aenean nisi velit, viverra quis sem nec, posuere consectetur lectus. Donec scelerisque, ex at feugiat elementum, nulla ligula venenatis lacus, eu luctus odio turpis vitae libero. Vivamus ut enim et magna molestie mattis sed et nibh. Duis vitae sodales justo. Sed consequat lectus at venenatis condimentum. Mauris tempor, ligula in mattis imperdiet, lectus ligula tincidunt purus, id commodo purus lorem at urna. Mauris imperdiet sed orci in accumsan. Etiam eget arcu hendrerit, molestie magna quis, eleifend sapien. Nulla viverra sed eros id porttitor. Vivamus sagittis lacus eget diam fermentum porta. Pellentesque dictum dolor at nisl facilisis, eu congue lectus aliquet. Nullam posuere lorem facilisis, convallis arcu ut, suscipit lectus. </p>
+                <p>Nullam lorem ante, efficitur vel dui at, lobortis fermentum ex. Proin sapien nulla, volutpat a ligula a, laoreet feugiat lorem. Duis nec consequat lorem, tempus feugiat neque. Donec finibus magna venenatis bibendum luctus. Morbi lectus odio, tincidunt vitae erat sed, cursus viverra nulla. Aliquam at sem purus. Sed fringilla lacinia malesuada. Nam lobortis nulla sed dui tempus, eget ornare dui auctor.</p>
+                <p>Nullam lorem ante, efficitur vel dui at, lobortis fermentum ex. Proin sapien nulla, volutpat a ligula a, laoreet feugiat lorem. Duis nec consequat lorem, tempus feugiat neque. Donec finibus magna venenatis bibendum luctus. Morbi lectus odio, tincidunt vitae erat sed, cursus viverra nulla. Aliquam at sem purus. Sed fringilla lacinia malesuada. Nam lobortis nulla sed dui tempus, eget ornare dui auctor.</p>
+                </div>
+            
+            </div>
+        </div>
+        <div class="section">
+            <div class="inner social__list">
+                <h3 id="social">Social Media</h3>
+                <h3><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Under Construction</h3>
+
+
+                <div style="display: none;">
+                <ul>
+                    <a href="https://github.com/Whit128" class="github"><li><i class="fa fa-github" aria-hidden="true"></i> GitHub</li></a>
+                    <a href="https://www.linkedin.com/in/david-whitcome-aba2a353" class="linkedin"><li><i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn</li></a>
+                    <a href="mailto:" class="email"><li><i class="fa fa-envelope" aria-hidden="true"></i> Email</li></a>
+                </ul>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="section" style="background-color: #eeeeee;">
+            <div class="inner">
+                <h3 id="achievements">Achievements</h3>
+                <h3><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Under Construction</h3>
+
+                <div style="display: none;">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc congue erat tortor, faucibus luctus libero maximus at. Etiam varius pretium lorem, eget feugiat lacus vestibulum eget. Aenean tortor dolor, volutpat quis sem nec, aliquet mollis mauris. Morbi arcu nulla, commodo pellentesque leo nec, efficitur porta nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla metus nisi, euismod eget sodales non, placerat ac justo. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec porttitor nisi at velit volutpat, quis fringilla lorem scelerisque. Sed nunc ligula, viverra sed suscipit euismod, ornare eget tortor. Aenean lacinia, nulla non porta tincidunt, quam dolor placerat erat, ut cursus felis metus ac lorem. </p>
+                <p>In in nisl sit amet nisi tempor vehicula ac et massa. Donec in nisl semper, vestibulum ex vitae, vehicula elit. Nunc eget nulla magna. Donec magna odio, sagittis ac turpis nec, fringilla bibendum arcu. Integer nec iaculis quam. Integer in nulla id ipsum ultrices iaculis dapibus sed leo. Nam dictum nunc quis dui suscipit condimentum. </p>
+                <p>Aenean ante odio, pellentesque quis iaculis sed, bibendum eget nibh. Morbi vel luctus lorem. Etiam congue neque enim, id mollis diam placerat a. Aenean nisi velit, viverra quis sem nec, posuere consectetur lectus. Donec scelerisque, ex at feugiat elementum, nulla ligula venenatis lacus, eu luctus odio turpis vitae libero. Vivamus ut enim et magna molestie mattis sed et nibh. Duis vitae sodales justo. Sed consequat lectus at venenatis condimentum. Mauris tempor, ligula in mattis imperdiet, lectus ligula tincidunt purus, id commodo purus lorem at urna. Mauris imperdiet sed orci in accumsan. Etiam eget arcu hendrerit, molestie magna quis, eleifend sapien. Nulla viverra sed eros id porttitor. Vivamus sagittis lacus eget diam fermentum porta. Pellentesque dictum dolor at nisl facilisis, eu congue lectus aliquet. Nullam posuere lorem facilisis, convallis arcu ut, suscipit lectus. </p>
+                <p>Nullam lorem ante, efficitur vel dui at, lobortis fermentum ex. Proin sapien nulla, volutpat a ligula a, laoreet feugiat lorem. Duis nec consequat lorem, tempus feugiat neque. Donec finibus magna venenatis bibendum luctus. Morbi lectus odio, tincidunt vitae erat sed, cursus viverra nulla. Aliquam at sem purus. Sed fringilla lacinia malesuada. Nam lobortis nulla sed dui tempus, eget ornare dui auctor.</p>
+                <p>Nullam lorem ante, efficitur vel dui at, lobortis fermentum ex. Proin sapien nulla, volutpat a ligula a, laoreet feugiat lorem. Duis nec consequat lorem, tempus feugiat neque. Donec finibus magna venenatis bibendum luctus. Morbi lectus odio, tincidunt vitae erat sed, cursus viverra nulla. Aliquam at sem purus. Sed fringilla lacinia malesuada. Nam lobortis nulla sed dui tempus, eget ornare dui auctor.</p>
+                </div>
+            
+            
+            </div>
+        </div>
+        <div id="footer">
         </div>
     </body>
 </html>

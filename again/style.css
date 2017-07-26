@@ -19,10 +19,10 @@ body {
     width: 100%;
     height: 70px;
     margin: 0;
-    border-bottom: 1px solid #fafafa;
+    border-bottom: 1px solid #eee;
     position: fixed;
     z-index: 2;
-    box-shadow: 0px 0px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 6px 0 rgba(0, 0, 0, 0.2);
 }
 
 #navbar a {
@@ -41,12 +41,13 @@ body {
 #header {
     padding-top: 71px;
     width: 100%;
-    background-color: #000;
+    background-color: #f0f0f0;
     height: 500px;
     z-index: 0;
     position: relative;
     overflow: hidden;
     display: table;
+    transition: height 0.2s;
 }
 
 #header__background {
@@ -58,7 +59,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
-    opacity: 0.7;
+    opacity: 0.6;
     z-index: 0;
 }
 
@@ -66,7 +67,7 @@ body {
     position: relative;
     z-index: 1;
     text-align: center;
-    color: #eee;
+    color: #1e1e1e;
     margin: 0 auto;
     padding-top: 100px;
     padding-bottom: 100px;
@@ -77,8 +78,8 @@ body {
 #header__centered h2 {
     margin: 0;
     font-size: 44px;
-    font-weight: 400;
-    text-shadow: 1px 1px 2px #000;
+    font-weight: 600;
+    /*text-shadow: 1px 1px 2px #000;*/
 }
 
 .inner {
@@ -142,15 +143,15 @@ body {
     color: #1e1e1e;
     /* Margin and padding different for top so links in navbar go slightly above text */
     margin: -90px 0 0 0;
-    padding: 90px 20px 20px 20px;
+    padding: 100px 30px 30px 30px;
 }
 
 .section h4 {
-    font-size: 22px;
+    font-size: 26px;
     font-weight: 600;
     color: #1e1e1e;
     margin: 0;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 .left__column h4 {
@@ -158,7 +159,7 @@ body {
 }
 
 .section h5 {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 400;
     text-align: left;
     color: #1e1e1e;
@@ -192,11 +193,9 @@ body {
 .left__column {
     float: left;
     width: 300px;
-    background-color: #f0f0f0;
 }
 
 .right__column {
-    background-color: #f0f0f0;
     overflow: auto;
 }
 
@@ -222,21 +221,9 @@ p {
     border-bottom: 1px solid #909090;
 }
 
-@media screen and (max-width: 750px), screen and (max-height: 600px) {
-    .top__button {
-        display: none;
-    }
-}
-
 @media screen and (max-height: 600px) {
     #header {
         height: 300px;
-    }
-
-    #header__centered {
-        /*line-height: 300px;*/
-        padding-top: 112px;
-        padding-bottom: 113px;
     }
 }
 
@@ -244,29 +231,30 @@ p {
     #navbar ul {
         position: absolute;
         right:0;
-        top: 71px;
+        top: 0px;
         padding-left: 0;
         width: 0;
         overflow-x: hidden;
         box-sizing: border-box;
-        background-color: #eee;
+        box-shadow: 0px 0px 6px 0 rgba(0, 0, 0, 0.2);
+        background-color: #fff;
     }
 
     #navbar ul li {
         display: block;
-        padding-left: 20px;
         opacity: 0.8;
         min-width: 500px;
         color: #1e1e1e;
         text-align: left;
     }
 
-    #navbar ul li:hover {
+    #navbar ul li:active {
         background-color: #eeeeee;
     }
 
     .menu__button {
         display: block;
+        z-index: 3;
     }
 
     .left__column, .right__column{
@@ -284,7 +272,14 @@ p {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.5);
     display: none;
     z-index: 1;
+}
+
+.wrap__background {
+    background-color: #fafafa;
+    border-radius: 5px;
+    box-shadow: 0px 2px 6px 0 rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
 }
