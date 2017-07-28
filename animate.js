@@ -1,7 +1,7 @@
 var menu__open = 0;
 $(document).ready(function(){
     $("#header").css('padding-top', '0px');
-    if ($(window).scrollTop() <= ($("#header").height())/4) {
+    if ($(window).scrollTop() <= ($("#header").height())/5) {
         $("#navbar").css('background-color', 'rgba(255, 255, 255, 0.0)');
         $("#navbar").css('border-bottom', 'rgba(250, 250, 250, 0.0)');
         $("#navbar").css('box-shadow', '0px 0px 6px 0 rgba(0, 0, 0, 0.0)');
