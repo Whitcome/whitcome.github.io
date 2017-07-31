@@ -39,8 +39,7 @@
             <div id="header__background"></div>
             <div id="header__centered">
                 <div class="inner">
-                    <h2>Pushing pixels</h2>
-                    <h2>one byte at a time</h2>
+                    <h2><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Under Construction</h2>
                 </div>
             </div>
         </div>
@@ -51,7 +50,8 @@
                     <div class="left__column">
                         <img class="me" src="me.jpg"/>
                         <h4>David Whitcome</h4>
-                        <p>In in nisl sit amet nisi tempor vehicula ac et massa. Donec in nisl semper, vestibulum ex vitae, vehicula elit. Nunc eget nulla magna. Donec magna odio, sagittis ac turpis nec, fringilla bibendum arcu. Integer nec iaculis quam. Integer in nulla id ipsum ultrices iaculis dapibus sed leo. Nam dictum nunc quis dui suscipit condimentum. </p>
+                        <p>Ever since I was young, creating and building was my world. I became hooked on computer science as soon I developed a small video game in Game Maker 7 from yoyogames.com. As I dived into the world of programming languages, I started developing my first websites when I was 14, writing the site in html, css, and php to show off the small computer games I made.</p> 
+                        <p>Today, I'm a senior at Northern Illinois University finishing up my final year for my bachelor's degree in Computer Science with an emphasis on Enterprise Software. I've developed numerous applications being used in the real world, from small label-creating programs to this website.</p>
                     </div>
                     <div class="right__column">
                         <h4><i class="fa fa-briefcase" aria-hidden="true"></i> Work Experience</h4>
@@ -92,10 +92,27 @@
                 <div class="wrap__background">
                 <ul>
                     <li><a href="https://github.com/Whit128" class="github"><i class="fa fa-github" aria-hidden="true"></i>GitHub</a></li>
-                    <li><a href="https://www.linkedin.com/in/david-whitcome-aba2a353" class="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i>LinkedIn</a></li>
+                    <li><a href="https://www.linkedin.com/in/david-whitcome-a07b36139" class="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i>LinkedIn</a></li>
                     <li><a href="mailto:" class="email"><i class="fa fa-envelope" aria-hidden="true"></i>Email</a></li>
                 </ul>
                 </div>
+
+
+
+                <div id="instafeed"></div>
+                <script type="text/javascript" src="instafeed.min.js"></script>
+                <script type="text/javascript">
+                    var feed = new Instafeed({
+                        get: 'tagged',
+                        tagName: 'awesome',
+                        resolution: thumbnail,
+                        clientId: 'ee85e31468764bbeb81d48194ed27704'
+                    });
+                    feed.run();
+                </script>
+
+
+
 
             </div>
         </div>

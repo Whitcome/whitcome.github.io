@@ -14,14 +14,14 @@ $(document).ready(function(){
                 width:'250px'
             }, 200);
             $("#menu__icon").attr('class', 'fa fa-times');
-            $("#page__fade").stop().fadeIn();
+            $("#page__fade").stop().fadeIn(200);
             menu__open=1;
         } else {
             $("#links > ul").stop().animate({
                 width:'0'
             }, 200);
             $("#menu__icon").attr('class', 'fa fa-bars');
-            $("#page__fade").stop().fadeOut();
+            $("#page__fade").stop().fadeOut(200);
             menu__open=0;
         }
     });
