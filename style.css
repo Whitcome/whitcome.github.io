@@ -85,7 +85,6 @@ body {
     margin: 0 auto;
     padding-left: 20px;
     padding-right: 20px;
-    overflow: auto;
 }
 
 .inner p {
@@ -113,6 +112,12 @@ body {
     color: #3e3e3e;
 }
 
+#links img {
+    width: 250px;
+    margin: 0;
+    display: none;
+}
+
 #links ul{
     margin: 0;
     display: block;
@@ -120,6 +125,7 @@ body {
     font-size: 16px;
     font-weight: 600;
     float: right;
+    z-index: 2;
 }
 
 #links ul li{
@@ -130,7 +136,6 @@ body {
 .section {
     padding-top: 20px;
     padding-bottom: 40px;
-    overflow: auto;
 }
 
 .section h3 {
@@ -159,21 +164,21 @@ body {
     margin-bottom: 15px;
 }
 
-.section h5 {
-    font-size: 20px;
-    font-weight: 600;
+.section h5, .section h6 {
     text-align: left;
     color: #3e3e3e;
     margin: 0;
+}
+
+.section h5 {
+    font-size: 20px;
+    font-weight: 600;
     padding: 20px 0 0px 0;
 }
 
 .section h6 {
     font-size: 16px;
     font-weight: 300;
-    text-align: left;
-    color: #3e3e3e;
-    margin: 0;
     padding: 5px 0 10px 0;
 }
 
@@ -236,7 +241,7 @@ p {
     background-color: #fafafa;
     border-radius: 5px;
     box-shadow: 0px 2px 6px 0 rgba(0, 0, 0, 0.2);
-    margin-bottom: 10px;
+    margin: 0 auto 10px auto;
 }
 
 .social__list {
@@ -249,6 +254,14 @@ p {
     font-size: 36px;
     display: block;
     margin: 0 auto;
+}
+
+i {
+    padding-right: 10px;
+}
+
+#links i {
+    padding-right: 0px;
 }
 
 .social__list i {
@@ -297,6 +310,19 @@ p {
     color: #fff;
 }
 
+#instafeed {
+    margin: 0 auto;
+    width: 100%;
+    overflow: auto;
+}
+
+#instafeed img{
+    margin: 0;
+    width: 20%;
+    display: block;
+    float: left;
+}
+
 @media screen and (max-width: 760px) {
     #navbar ul {
         position: absolute;
@@ -333,6 +359,10 @@ p {
         z-index: 3;
     }
 
+    #links img {
+        display: block;
+    }
+
     .left__column {
         border-bottom: 1px solid #ddd;
     }
@@ -346,6 +376,10 @@ p {
         display: block;
     }
 
+    .social__list ul {
+        padding: 0;
+    }
+
     .social__list ul li {
         display: block;
         text-align: center;
@@ -355,28 +389,20 @@ p {
     .github, .email {
         border-radius: 0;
     }
+
+    #instafeed img{
+        width: 33.33%;
+        width: calc(100%/3);
+    }
 }
 
-
-
-
-#instafeed {
-  width: 100%;
-  
-  a {
-    display: block;
-    float: left;
-    position: relative;
-    width: 50%;
-    
-    @include media($lg) {
-      width: 25%
+/* The css below resets the top right menu when making window big again */
+@media screen and (min-width: 761px) {
+    #page__fade {
+        display: none !important;
     }
-    
-    img {
-      display: block;
-      width: 100%;
-      height: 100%;
+
+    #links ul {
+        width: auto !important;
     }
-  }
 }
