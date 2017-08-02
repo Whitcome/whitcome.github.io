@@ -7,7 +7,7 @@ $(document).ready(function(){
 
     $(".menu__button").click(function(){
         if (menu__open == 0) {
-            $("#links > ul").css('overflow-y', 'visible');
+            $("#links > ul").css('overflow-y', 'auto');
             $("#links > ul").stop().animate({
                 width:'250px'
             }, 200);
@@ -24,6 +24,16 @@ $(document).ready(function(){
             menu__open=0;
         }
         return false;
+    });
+
+    $("#page__fade").click(function() {
+        $("#links > ul").css('overflow-y', 'hidden');
+        $("#links > ul").stop().animate({
+            width:'0'
+        }, 200);
+        $("#menu__icon").attr('class', 'fa fa-bars');
+        $("#page__fade").stop().fadeOut();
+        menu__open=0;
     });
 
     $(window).scroll(function() { 

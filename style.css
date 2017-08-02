@@ -44,9 +44,7 @@ body {
     padding-top: 71px;
     width: 100%;
     background-color: #333;
-    height: 80%;
-    max-height: 800px;
-    min-height: 300px;
+    height: 650px;
     position: relative;
     display: table;
     overflow: hidden;
@@ -131,7 +129,11 @@ body {
 
 #links ul li{
     display: inline;
-    margin-left: 20px;
+    padding-left: 20px;
+}
+
+#links ul li span {
+    display: none;
 }
 
 #page__content {
@@ -326,13 +328,6 @@ i {
     opacity: 0.8;
 }
 
-/* Makes the navbar scroll if the screen height is too small */
-@media screen and (max-height: 540px) {
-    #navbar {
-        position: absolute;
-    }
-}
-
 @media screen and (max-width: 760px) {
     #navbar ul {
         position: absolute;
@@ -344,6 +339,10 @@ i {
         box-sizing: border-box;
         box-shadow: 0px 0px 6px 0 rgba(0, 0, 0, 0.2);
         background-color: #fff;
+    }
+
+    #header {
+        height: 420px;
     }
 
     #header__centered h2 {
@@ -370,7 +369,15 @@ i {
     }
 
     #links ul {
-        height: 120vh;
+        height: 100vh;
+    }
+
+    #links ul li i {
+        display: none;
+    }
+
+    #links ul li span {
+        display: inline;
     }
 
     #links img {
@@ -407,6 +414,21 @@ i {
     #instafeed img{
         width: 33.33%;
         width: calc(100%/3);
+    }
+}
+
+/* Optimizations for screens with small height */
+@media screen and (max-height: 540px) {
+    #navbar {
+        position: absolute; /* Makes the navbar stay at the top of the page */
+    }
+
+    #header {
+        height: 100px;
+    }
+
+    #links ul {
+        padding-bottom: 25vh; /* Makes the menu easier to navigate */
     }
 }
 
