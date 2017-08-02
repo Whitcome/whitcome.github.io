@@ -2,13 +2,12 @@ var menu__open = 0;
 $(document).ready(function(){
     if ($(window).scrollTop() <= ($("#header").height())) {
         $("#navbar").css('background-color', 'rgba(255, 255, 255, 0.9)');
-        $("#navbar").css('border-bottom', 'rgba(250, 250, 250, 0.0)');
         $("#navbar").css('box-shadow', '0px 0px 6px 0 rgba(0, 0, 0, 0.0)');
     }
 
     $(".menu__button").click(function(){
         if (menu__open == 0) {
-            $("#links > ul").css('height', $(window).height()+71);
+            $("#links > ul").css('overflow-y', 'visible');
             $("#links > ul").stop().animate({
                 width:'250px'
             }, 200);
@@ -16,40 +15,36 @@ $(document).ready(function(){
             $("#page__fade").stop().fadeIn(200);
             menu__open=1;
         } else {
+            $("#links > ul").css('overflow-y', 'hidden');
             $("#links > ul").stop().animate({
                 width:'0'
             }, 200);
             $("#menu__icon").attr('class', 'fa fa-bars');
-            $("#page__fade").css('height', $(window).height()+71);
             $("#page__fade").stop().fadeOut(200);
             menu__open=0;
         }
         return false;
     });
 
-    $(document).scroll(function() { 
+    $(window).scroll(function() { 
+        $("#header__background").css('top', ($(window).scrollTop())/2);
         if($(window).scrollTop() <= ($("#header").height())) {
-            $("#navbar").css('background-color', 'rgba(255, 255, 255, 0.85)');
-            $("#navbar").css('border-bottom', 'rgba(250, 250, 250, 0.0)');
+            $("#navbar").css('background-color', 'rgba(255, 255, 255, 0.9)');
             $("#navbar").css('box-shadow', '0px 0px 6px 0 rgba(0, 0, 0, 0.0)');
-            $("#navbar").css('color', '#eee');
         } else {
             $("#navbar").css('background-color', '#fff');
-            $("#navbar").css('transition', 'background 0.2s linear');
             $("#navbar").css('box-shadow', '0px 0px 6px 0 rgba(0, 0, 0, 0.2)');
         }
         if (menu__open == 1) {
+            $("#links > ul").css('overflow-y', 'hidden');
             $("#links > ul").stop().animate({
                 width:'0'
             }, 200);
             $("#menu__icon").attr('class', 'fa fa-bars');
-            $(".menu__button").css('background-color', 'transparent');
             $("#page__fade").stop().fadeOut();
             menu__open=0;
         }
-
     });
-
 });
 
 $(document).on('click', 'a', function(event){
