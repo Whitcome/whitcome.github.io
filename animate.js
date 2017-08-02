@@ -36,8 +36,9 @@ $(document).ready(function(){
         menu__open=0;
     });
 
+    var headerPicture = $("#header__background");
     $(window).scroll(function() { 
-        $("#header__background").css('top', ($(window).scrollTop())/2);
+        headerPicture.css('top', 0-($(window).scrollTop())/2);
         if($(window).scrollTop() <= ($("#header").height())) {
             $("#navbar").css('background-color', 'rgba(255, 255, 255, 0.9)');
             $("#navbar").css('box-shadow', '0px 0px 6px 0 rgba(0, 0, 0, 0.0)');
