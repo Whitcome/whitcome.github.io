@@ -7,6 +7,7 @@ $(document).ready(function(){
 
     $(".menu__button").click(function(){
         if (menu__open == 0) {
+            $("body").css('overflow-y', 'hidden');
             $("#links > ul").css('overflow-y', 'auto');
             $("#links > ul").stop().animate({
                 width:'250px'
@@ -15,6 +16,7 @@ $(document).ready(function(){
             $("#page__fade").stop().fadeIn(200);
             menu__open=1;
         } else {
+            $("body").css('overflow-y', 'auto');
             $("#links > ul").css('overflow-y', 'hidden');
             $("#links > ul").stop().animate({
                 width:'0'
@@ -27,6 +29,7 @@ $(document).ready(function(){
     });
 
     $("#page__fade").click(function() {
+        $("body").css('overflow-y', 'auto');
         $("#links > ul").css('overflow-y', 'hidden');
         $("#links > ul").stop().animate({
             width:'0'
@@ -38,22 +41,12 @@ $(document).ready(function(){
 
     var headerPicture = $("#header__background");
     $(window).scroll(function() { 
-        headerPicture.css('top', 0-($(window).scrollTop())/2);
         if($(window).scrollTop() <= ($("#header").height())) {
             $("#navbar").css('background-color', 'rgba(255, 255, 255, 0.9)');
             $("#navbar").css('box-shadow', '0px 0px 6px 0 rgba(0, 0, 0, 0.0)');
         } else {
             $("#navbar").css('background-color', '#fff');
             $("#navbar").css('box-shadow', '0px 0px 6px 0 rgba(0, 0, 0, 0.2)');
-        }
-        if (menu__open == 1) {
-            $("#links > ul").css('overflow-y', 'hidden');
-            $("#links > ul").stop().animate({
-                width:'0'
-            }, 200);
-            $("#menu__icon").attr('class', 'fa fa-bars');
-            $("#page__fade").stop().fadeOut();
-            menu__open=0;
         }
     });
 });
