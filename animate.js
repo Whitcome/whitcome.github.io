@@ -1,6 +1,6 @@
-var menu__open = 0;
 $(document).ready(function(){
-    $(".menu__button").click(function(){
+    var menu__open = 0;
+    function menu__toggle() {
         if (menu__open == 0) {
             $("body").css('overflow-y', 'hidden');
             $("#links > ul").css('overflow-y', 'auto');
@@ -21,6 +21,16 @@ $(document).ready(function(){
             menu__open=0;
         }
         return false;
+    }
+
+    $(".menu__button").click(function(){
+        menu__toggle();
+    });
+
+    $("#links ul li").click(function(){
+        if ($(window).width() <= 760) {
+            menu__toggle();
+        }
     });
 
     $("#page__fade").click(function() {
