@@ -3,8 +3,8 @@ $(document).ready(function(){
     function menu__toggle() {
         event.preventDefault();
         if (menu__open == 0) {
-            $("body").css('overflow-y', 'hidden');
             $("#links > ul").css('overflow-y', 'auto');
+            $("body").css('overflow-y', 'hidden');
             $("#links > ul").stop().animate({
                 width:'250px'
             }, 200);
@@ -12,8 +12,8 @@ $(document).ready(function(){
             $("#page__fade").stop().fadeIn(200);
             menu__open=1;
         } else {
-            $("body").css('overflow-y', 'auto');
             $("#links > ul").css('overflow-y', 'hidden');
+            $("body").css('overflow-y', 'auto');
             $("#links > ul").stop().animate({
                 width:'0'
             }, 200);
@@ -35,14 +35,7 @@ $(document).ready(function(){
     });
 
     $("#page__fade").click(function() {
-        $("body").css('overflow-y', 'auto');
-        $("#links > ul").css('overflow-y', 'hidden');
-        $("#links > ul").stop().animate({
-            width:'0'
-        }, 200);
-        $("#menu__icon").attr('class', 'fa fa-bars');
-        $("#page__fade").stop().fadeOut();
-        menu__open=0;
+        menu__toggle();
     });
 });
 

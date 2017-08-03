@@ -40,46 +40,35 @@ body {
 }
 
 #header {
-    margin-top: 71px;
     width: 100%;
-    background-color: #333;
-    height: 650px;
-    position: relative;
-    display: table;
+    height: 600px;
     overflow: hidden;
-    transition: height 0.2s;
+    background: #333; 
+    margin-top: 71px;  
+    transition: height 0.2s; 
+    position: relative;
 }
 
 #header__background {
-    position: absolute;
-    width: 100%;
-    top: 0;
     background-image: url("header.jpg");
-    background-position: 50% 70%;
-    background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
-    opacity: 0.7;
+    background-position: 50% 70%;
+    width: inherit;
+    height: inherit;
+    display: table;
 }
 
 #header__centered {
-    position: relative;
-    z-index: 1;
-    text-align: center;
-    color: #eee;
-    margin: 0 auto;
-    padding-top: 100px;
-    padding-bottom: 100px;
     display: table-cell;
     vertical-align: middle;
+    text-align: center;
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.4);
 }
 
-#header__centered h2 {
-    margin: 0;
-    font-size: 44px;
-    font-weight: 600;
+#header__centered h2{
+    font-size: 2em;
+    color: #fff;
 }
-
 .inner {
     max-width: 1100px;
     margin: 0 auto;
@@ -136,15 +125,8 @@ body {
     display: none;
 }
 
-#page__content {
-    position: relative;
-    background-color: #fafafa;
-    z-index: 1;
-}
-
 .section {
     padding-top: 20px;
-    padding-bottom: 40px;
 }
 
 .section a {
@@ -340,7 +322,7 @@ i {
         top: 0px;
         padding-left: 0;
         width: 0;
-        overflow-x: hidden;
+        overflow: hidden;
         box-sizing: border-box;
         box-shadow: 0px 0px 6px 0 rgba(0, 0, 0, 0.2);
         background-color: #fff;
@@ -430,7 +412,13 @@ i {
     }
 
     #header {
-        height: 100px;
+        height: 300px;
+    }
+
+    /* The css below resets the header background parallax effect when window is small */
+    #header__background {
+        margin-top: 0 !important;
+        opacity: 1 !important;
     }
 
     #links ul {
