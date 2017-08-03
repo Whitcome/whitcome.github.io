@@ -1,6 +1,7 @@
 $(document).ready(function(){
     var menu__open = 0;
     function menu__toggle() {
+        event.preventDefault();
         if (menu__open == 0) {
             $("body").css('overflow-y', 'hidden');
             $("#links > ul").css('overflow-y', 'auto');
