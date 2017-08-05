@@ -413,7 +413,7 @@ i {
 }
 
 /* Optimizations for screens with small height */
-@media screen and (max-height: 540px) {
+@media screen and (max-height: 420px) {
     #navbar {
         position: absolute; /* Makes the navbar stay at the top of the page */
     }
