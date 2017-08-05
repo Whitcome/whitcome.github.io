@@ -1,4 +1,15 @@
 $(document).ready(function(){
+
+    // Parallax scrolling header
+    var moving__background = $("#header__background");
+    $(window).scroll(function() { 
+        if ($(window).height() >= 540) {
+            moving__background.css('margin-top', ($(window).scrollTop())/3); // Parallax scrolling
+            moving__background.css('opacity', 1 - ($(window).scrollTop())/moving__background.height()); // Fading out
+        }
+    });
+
+    // Menu
     var menu__open = 0;
     function menu__toggle() {
         event.preventDefault();
@@ -39,6 +50,7 @@ $(document).ready(function(){
     });
 });
 
+// Scroll smoothly when pressing links on navbar
 $(document).on('click', 'a', function(event){
     if ($(this).hasClass("top__button")) {
         $('html,body').stop().animate({ scrollTop: 0 }, 500);
