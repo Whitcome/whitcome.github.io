@@ -17,7 +17,7 @@ body {
     top: 0;
     background-color: #fafafa;
     width: 100%;
-    height: 60px;
+    height: 53px;
     margin: 0;
     border-bottom: 1px solid #eee;
     position: fixed;
@@ -44,7 +44,7 @@ body {
     height: 600px;
     overflow: hidden;
     background: #333; 
-    padding-top: 61px;  
+    padding-top: 54px;  
     transition: height 0.2s; 
     position: relative;
     border-bottom: 1px solid #eee;
@@ -85,7 +85,7 @@ body {
 
 #name {
     margin: 0;
-    line-height: 60px;
+    line-height: 53px;
     float: left;
 
 }
@@ -98,7 +98,7 @@ body {
 
 #links {
     margin: 0;
-    line-height: 60px;
+    line-height: 53px;
     float: right;
 }
 
@@ -155,8 +155,8 @@ body {
     text-align: center;
     color: #1e1e1e;
     /* Margin and padding different for top so links in navbar go slightly above text */
-    margin: -80px 0 0 0;
-    padding: 80px 30px 20px 30px;
+    margin: -75px 0 0 0;
+    padding: 75px 30px 20px 30px;
 }
 
 .section h4 {
@@ -409,27 +409,6 @@ i {
     #instafeed img{
         width: 33.33%;
         width: calc(100%/3);
-    }
-}
-
-/* Optimizations for screens with small height */
-@media screen and (max-height: 300px) {
-    #navbar {
-        position: absolute; /* Makes the navbar stay at the top of the page */
-    }
-
-    #header {
-        height: 300px;
-    }
-
-    /* The css below resets the header background parallax effect when window is small */
-    #header__background {
-        margin-top: 0 !important;
-        opacity: 1 !important;
-    }
-
-    #links ul {
-        padding-bottom: 25vh; /* Makes the menu easier to navigate */
     }
 }
 
