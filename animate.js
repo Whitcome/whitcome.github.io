@@ -1,14 +1,20 @@
-$(document).ready(function(){
-
-    // Parallax scrolling header
-    var moving__background = $("#header__background");
-    $(window).scroll(function() { 
-        if ($(window).height() >= 540) {
-            moving__background.css('margin-top', ($(window).scrollTop())/3); // Parallax scrolling
-            moving__background.css('opacity', 1 - ($(window).scrollTop())/moving__background.height()); // Fading out
-        }
+document.addEventListener('DOMContentLoaded', function() {
+    const moving__background = document.querySelector('#header__background');
+    
+    window.addEventListener( 'scroll', function() {
+        ParallaxAnimation( moving__background );
     });
+});
 
+// Parallax scrolling header
+function ParallaxAnimation( el ) {
+    let scrollTop = document.body.scrollTop;
+
+    el.style.marginTop = (scrollTop / 3) + 'px';
+    el.style.opacity = (1 - scrollTop / el.offsetHeight );
+};
+
+$(document).ready(function(){
     // Menu
     var menu__open = 0;
     function menu__toggle() {
