@@ -270,7 +270,7 @@ p {
 }
 
 .wrap__background {
-    background-color: #f3f3f3;
+    background-color: #eee;
     margin: 0 auto 10px auto;
     overflow: auto;
 }
@@ -307,16 +307,13 @@ i {
     text-align: center;
     width: 150px;
     height: 150px;
-}
-
-.projects li i {
-    font-size: 3em;
-    display: block;
-    padding: 0;
+    color: #fff;
 }
 
 .projects li span {
     font-size: 1.2em;
+    vertical-align: bottom;
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.8);
 }
 
 .social__list i {
