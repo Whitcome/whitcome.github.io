@@ -362,7 +362,8 @@ i {
         box-sizing: border-box;
         box-shadow: 0px 0px 6px 0 rgba(0, 0, 0, 0.2);
         background-color: #fff;
-        will-change: transform;
+        transition: 0.2s width;
+        transition-timing-function: ease;
     }
 
     #header {
