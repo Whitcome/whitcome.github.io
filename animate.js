@@ -22,18 +22,14 @@ $(document).ready(function(){
         if (menu__open == 0) {
             $("#links > ul").css('overflow-y', 'auto');
             $("body").css('overflow-y', 'hidden');
-            $("#links > ul").stop().animate({
-                width:'250px'
-            }, 200);
+            $("#links > ul").css('width', '250px');
             $("#menu__icon").attr('class', 'fa fa-times');
             $("#page__fade").stop().fadeIn(200);
             menu__open=1;
         } else {
             $("#links > ul").css('overflow-y', 'hidden');
             $("body").css('overflow-y', 'auto');
-            $("#links > ul").stop().animate({
-                width:'0'
-            }, 200);
+            $("#links > ul").css('width', '0');
             $("#menu__icon").attr('class', 'fa fa-bars');
             $("#page__fade").stop().fadeOut(200);
             menu__open=0;
