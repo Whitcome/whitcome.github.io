@@ -24,6 +24,7 @@ $(document).ready(function(){
             $("body").css('overflow-y', 'hidden');
             $("#links > ul").css('width', '250px');
             $("#menu__icon").attr('class', 'fa fa-times');
+            $("#links").css('color', '#fff');
             $("#page__fade").stop().fadeIn(200);
             menu__open=1;
         } else {
@@ -31,6 +32,7 @@ $(document).ready(function(){
             $("body").css('overflow-y', 'auto');
             $("#links > ul").css('width', '0');
             $("#menu__icon").attr('class', 'fa fa-bars');
+            $("#links").css('color', '#333');
             $("#page__fade").stop().fadeOut(200);
             menu__open=0;
         }
