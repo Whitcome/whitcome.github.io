@@ -134,14 +134,14 @@ body {
     padding-right: 0px;
 }
 
-.skills {
+.block__list {
     display: block;
     text-align:center;
     margin: 0;
     padding: 0;
 }
 
-.skills li {
+.block__list li {
     display: inline-block;
     margin: 0;
     padding: 10px;
@@ -150,13 +150,13 @@ body {
     height: 75px;
 }
 
-.skills li i {
+.block__list li i {
     font-size: 3em;
     display: block;
     padding: 0 0 10px 0;
 }
 
-.skills li span {
+.block__list li span {
     font-size: 1em;
 }
 
@@ -274,18 +274,6 @@ p {
     overflow: auto;
 }
 
-.social__list {
-    display: table;
-}
-
-.social__list ul {
-    padding: 20px 0 20px 0;
-    list-style: none;
-    font-size: 36px;
-    display: block;
-    margin: 0 auto;
-}
-
 i {
     font-size: 20;
     padding-right: 10px;
@@ -313,24 +301,6 @@ i {
     font-size: 1.2em;
     vertical-align: bottom;
     text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.8);
-}
-
-.social__list i {
-    padding-right: 20px;
-}
-
-.social__list ul li{    
-    display: inline;
-}
-
-.social__list a {
-    text-decoration: none;
-    color: #1e1e1e;
-    padding: 20px;
-}
-
-.social__list a:hover {
-    background-color: #ddd;
 }
 
 #instafeed {
@@ -410,20 +380,6 @@ i {
     .left__column, .right__column{
         width: auto;
         float: none;
-    }
-
-    .social__list {
-        display: block;
-    }
-
-    .social__list ul {
-        padding: 0;
-    }
-
-    .social__list ul li {
-        display: block;
-        text-align: center;
-        padding: 20px 0 20px 0;
     }
 
     .github, .email {
