@@ -104,6 +104,7 @@ body {
     margin: 0;
     line-height: 53px;
     float: right;
+    transition: 0.2s color;
 }
 
 #links img {
@@ -134,31 +135,30 @@ body {
     padding-right: 0px;
 }
 
-.skills {
+.block__list {
     display: block;
     text-align:center;
     margin: 0;
     padding: 0;
 }
 
-.skills li {
+.block__list li {
     display: inline-block;
-    margin: 0 3px 9px 3px;
-    padding: 15px;
-    background: #ddd;
+    margin: 0;
+    padding: 10px;
     text-align: center;
-    width: 75px;
+    width: 70px;
     height: 75px;
 }
 
-.skills li i {
+.block__list li i {
     font-size: 3em;
     display: block;
-    padding: 0 0 5px 0;
+    padding: 0 0 10px 0;
 }
 
-.skills li span {
-    font-size: 1.2em;
+.block__list li span {
+    font-size: 1em;
 }
 
 .section {
@@ -275,18 +275,6 @@ p {
     overflow: auto;
 }
 
-.social__list {
-    display: table;
-}
-
-.social__list ul {
-    padding: 20px 0 20px 0;
-    list-style: none;
-    font-size: 36px;
-    display: block;
-    margin: 0 auto;
-}
-
 i {
     font-size: 20;
     padding-right: 10px;
@@ -314,24 +302,6 @@ i {
     font-size: 1.2em;
     vertical-align: bottom;
     text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.8);
-}
-
-.social__list i {
-    padding-right: 20px;
-}
-
-.social__list ul li{    
-    display: inline;
-}
-
-.social__list a {
-    text-decoration: none;
-    color: #1e1e1e;
-    padding: 20px;
-}
-
-.social__list a:hover {
-    background-color: #ddd;
 }
 
 #instafeed {
@@ -367,7 +337,7 @@ i {
     }
 
     #header {
-        height: 400px;
+        height: 440px;
     }
 
     #navbar ul li {
@@ -413,20 +383,6 @@ i {
         float: none;
     }
 
-    .social__list {
-        display: block;
-    }
-
-    .social__list ul {
-        padding: 0;
-    }
-
-    .social__list ul li {
-        display: block;
-        text-align: center;
-        padding: 20px 0 20px 0;
-    }
-
     .github, .email {
         border-radius: 0;
     }
@@ -441,6 +397,10 @@ i {
 @media screen and (min-width: 761px) {
     #page__fade {
         display: none !important;
+    }
+
+    #links {
+        color: inherit !important;
     }
 
     #links ul {
