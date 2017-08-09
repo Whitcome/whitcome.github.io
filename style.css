@@ -143,22 +143,21 @@ body {
 
 .skills li {
     display: inline-block;
-    margin: 0 3px 9px 3px;
-    padding: 15px;
-    background: #ddd;
+    margin: 0;
+    padding: 10px;
     text-align: center;
-    width: 75px;
+    width: 70px;
     height: 75px;
 }
 
 .skills li i {
     font-size: 3em;
     display: block;
-    padding: 0 0 5px 0;
+    padding: 0 0 10px 0;
 }
 
 .skills li span {
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 .section {
@@ -367,7 +366,7 @@ i {
     }
 
     #header {
-        height: 400px;
+        height: 440px;
     }
 
     #navbar ul li {
