@@ -40,7 +40,7 @@ body {
     
 }
 
-#header__centered h2{
+#header__centered h1{
     font-size: 2em;
     text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.8);
     color: #fafafa;
@@ -149,24 +149,23 @@ body {
     color: #1e1e1e;
 }
 
-.section h3 {
+.section h2 {
     font-size: 30px;
     font-weight: 400;
     text-align: center;
     color: #1e1e1e;
-    /* Margin and padding different for top so links in navbar go slightly above text */
-    margin: -75px 0 0 0;
-    padding: 75px 30px 20px 30px;
+    margin: 0;
+    padding-bottom: 20px;
 }
 
-.section h4 {
+.section h3 {
     font-size: 26px;
     font-weight: 600;
     color: #1e1e1e;
     margin: 0;
 }
 
-.left__column h4 {
+.left__column h3 {
     text-align: center;
     padding-bottom: 10px;
 }
@@ -175,19 +174,19 @@ body {
     margin-bottom: 15px;
 }
 
-.section h5, .section h6 {
+.section h4, .section h5 {
     text-align: left;
     color: #3e3e3e;
     margin: 0;
 }
 
-.section h5 {
+.section h4 {
     font-size: 20px;
     font-weight: 600;
     padding: 20px 0 0px 0;
 }
 
-.section h6 {
+.section h5 {
     font-size: 16px;
     font-weight: 300;
     padding: 5px 0 10px 0;
