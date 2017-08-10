@@ -161,6 +161,16 @@ body {
     font-size: 1em;
 }
 
+.block__list a li {
+    -webkit-transition: 0.2s background;
+    -moz-transition: 0.2s background;
+    transition: 0.2s background;
+}
+
+.block__list a li:hover {
+    background: #eee;
+}
+
 .section {
     padding: 20px 0 20px 0;
 }
@@ -304,23 +314,6 @@ i {
     text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.8);
 }
 
-#instafeed {
-    margin: 0 auto;
-    width: 100%;
-    overflow: auto;
-}
-
-#instafeed img {
-    margin: 0;
-    width: 20%;
-    display: block;
-    float: left;
-}
-
-#instafeed img:hover {
-    opacity: 0.8;
-}
-
 @media screen and (max-width: 760px) {
     #links ul {
         position: absolute;
@@ -385,11 +378,6 @@ i {
 
     .github, .email {
         border-radius: 0;
-    }
-
-    #instafeed img{
-        width: 33.33%;
-        width: calc(100%/3);
     }
 }
 
