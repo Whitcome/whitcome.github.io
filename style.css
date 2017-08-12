@@ -9,38 +9,28 @@ html, body {
 }
 
 body {
-    overflow-x: hidden;
     background: #fff;
 }
 
 #header {
     width: 100%;
     height: 600px;
-    overflow: hidden;
     background: #333;  
-    transition: height 0.2s; 
-    position: relative;
     border-bottom: 1px solid #eee;
-}
-
-#header__background {
     background-image: url("header.jpg");
     background-size: cover;
     background-position: 50% 70%;
-    width: inherit;
-    height: inherit;
     display: table;
-    will-change: transform;
 }
 
 #header__centered {
     display: table-cell;
     vertical-align: middle;
     text-align: center;
-    
+    padding: 20px;
 }
 
-#header__centered h1{
+h1{
     font-size: 2em;
     text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.8);
     color: #fff;
@@ -54,7 +44,8 @@ body {
 
 .inner p {
     color: #606060;
-    font-size: 16px;
+    font-size: 1em;
+    line-height: 24px;
 }
 
 .block__list {
@@ -109,8 +100,8 @@ a:active {
     opacity: 0.8;
 }
 
-.section h2 {
-    font-size: 30px;
+h2 {
+    font-size: 1.7em;
     font-weight: 400;
     text-align: center;
     color: #1e1e1e;
@@ -118,8 +109,8 @@ a:active {
     padding-bottom: 20px;
 }
 
-.section h3 {
-    font-size: 26px;
+h3 {
+    font-size: 1.5em;
     font-weight: 600;
     color: #1e1e1e;
     margin: 0;
@@ -127,29 +118,23 @@ a:active {
 
 .left__column h3 {
     text-align: center;
-    padding-bottom: 10px;
 }
 
-.left__column p {
-    margin-bottom: 15px;
-}
-
-.section h4, .section h5 {
-    text-align: left;
+h4, h5 {
     color: #3e3e3e;
     margin: 0;
 }
 
-.section h4 {
-    font-size: 20px;
+h4 {
+    font-size: 1.2em;
     font-weight: 600;
-    padding: 20px 0 0px 0;
+    padding: 10px 0 0px 0;
 }
 
-.section h5 {
-    font-size: 16px;
+h5 {
+    font-size: 1em;
     font-weight: 300;
-    padding: 5px 0 10px 0;
+    padding: 5px 0 0 0;
 }
 
 #footer {
@@ -166,15 +151,6 @@ a:active {
     color: #eee;
 }
 
-.menu__button {
-    display: none;
-    right: 0;
-    position: absolute;
-    font-size: 20px;
-    padding: 0 20px 0 20px;
-    float: right;
-}
-
 .left__column {
     float: left;
     width: 300px;
@@ -186,10 +162,6 @@ a:active {
 
 .left__column, .right__column {
     padding: 20px;
-}
-
-p {
-    margin: 0;
 }
 
 .me {
@@ -208,37 +180,12 @@ p {
 
 .wrap__background {
     background-color: #eee;
-    margin: 0 auto 10px auto;
+    margin: 0 auto;
     overflow: auto;
 }
 
 i {
-    font-size: 20;
     padding-right: 10px;
-}
-
-.projects {
-    display: block;
-    text-align:center;
-    margin: 0;
-    padding: 0;
-}
-
-.projects li {
-    display: inline-block;
-    margin: 0 3px 9px 3px;
-    padding: 15px;
-    background: #ddd;
-    text-align: center;
-    width: 150px;
-    height: 150px;
-    color: #fff;
-}
-
-.projects li span {
-    font-size: 1.2em;
-    vertical-align: bottom;
-    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.8);
 }
 
 @media screen and (max-width: 760px) {
