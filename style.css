@@ -4,7 +4,6 @@ html {
 
 html, body {
     width: 100%;
-    height: 100%;
     margin: 0;
 }
 
@@ -15,8 +14,7 @@ body {
 #header {
     width: 100%;
     height: 600px;
-    background: #333;  
-    border-bottom: 1px solid #eee;
+    background: #333;
     background-image: url("header.jpg");
     background-size: cover;
     background-position: 50% 70%;
@@ -40,7 +38,7 @@ h1{
 .inner {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 0 20px 0 20px;
+    padding: 0 20px;
 }
 
 .inner p {
@@ -210,21 +208,6 @@ i {
 
     .github, .email {
         border-radius: 0;
-    }
-}
-
-/* The css below resets the top right menu when making window big again */
-@media screen and (min-width: 761px) {
-    #page__fade {
-        display: none !important;
-    }
-
-    #links {
-        color: inherit !important;
-    }
-
-    #links ul {
-        width: auto !important;
     }
 }
 
