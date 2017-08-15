@@ -147,12 +147,13 @@ h5 {
     display: table-cell;
     text-align: center;
     vertical-align: middle;
-    color: #eee;
+    color: #F7F7F7;
 }
 
 .left__column {
     float: left;
     width: 300px;
+    background: #EEE;
 }
 
 .right__column {
@@ -178,7 +179,7 @@ h5 {
 }
 
 .wrap__background {
-    background-color: #eee;
+    background-color: #F7F7F7;
     margin: 0 auto;
     overflow: auto;
 }
