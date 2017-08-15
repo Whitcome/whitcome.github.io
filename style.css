@@ -168,7 +168,7 @@ h5 {
     display: block;
     width: 100px;
     height: auto;
-    margin: 0 auto 20px auto;
+    margin: 0 auto 10px auto;
     border-radius: 100%;
     border: 1px solid #000;
 }
@@ -206,9 +206,6 @@ i {
         width: auto;
         float: none;
     }
-
-    .github, .email {
-        border-radius: 0;
     }
 }
 
