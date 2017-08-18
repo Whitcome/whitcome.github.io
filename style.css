@@ -200,6 +200,7 @@ i {
 
     .left__column {
         border-bottom: 1px solid #ddd;
+        background: transparent;
     }
 
     .left__column, .right__column{
