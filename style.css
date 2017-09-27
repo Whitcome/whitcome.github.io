@@ -28,7 +28,7 @@ body {
     padding: 20px;
 }
 
-h1{
+h1 {
     font-size: 2em;
     text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.8);
     font-weight: 600;
@@ -166,11 +166,11 @@ h5 {
 
 .me {
     display: block;
-    width: 100px;
+    width: 120px;
     height: auto;
     margin: 0 auto 10px auto;
     border-radius: 100%;
-    border: 1px solid #000;
+    border: 1px solid #555;
 }
 
 .separator {
