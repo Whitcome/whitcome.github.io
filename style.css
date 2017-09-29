@@ -29,7 +29,7 @@ body {
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 3em;
     text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.8);
     font-weight: 600;
     color: #fff;
@@ -191,6 +191,10 @@ i {
 @media screen and (max-width: 760px) {
     #header {
         height: 440px;
+    }
+
+    h1 {
+        font-size: 2em;
     }
 
     .menu__button {
