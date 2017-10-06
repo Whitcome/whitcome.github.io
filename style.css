@@ -14,11 +14,18 @@ body {
 #header {
     width: 100%;
     height: 600px;
+    overflow: hidden;
     background: #333;
+}
+
+#header__background {
     background-image: url("header.jpg");
     background-size: cover;
     background-position: 50% 70%;
+    width: inherit;
+    height: inherit;
     display: table;
+    will-change: transform;
 }
 
 #header__centered {
