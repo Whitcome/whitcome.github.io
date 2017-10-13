@@ -9,6 +9,7 @@ html, body {
 
 body {
     background: #fff;
+    overflow-x: hidden;
 }
 
 #header {
@@ -24,15 +25,17 @@ body {
     background-position: 50% 70%;
     width: inherit;
     height: inherit;
-    display: table;
     will-change: transform;
 }
 
-#header__centered {
-    display: table-cell;
-    vertical-align: middle;
+#header__text {
+    z-index: 1;
+    height: 600px;
+    position: absolute;
+    width: 100%;
     text-align: center;
-    padding: 20px;
+    padding: 0;
+    top: 0;
 }
 
 h1 {
@@ -40,6 +43,8 @@ h1 {
     text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.8);
     font-weight: 600;
     color: #fff;
+    margin: 0;
+    line-height: 600px;
 }
 
 .inner {
@@ -173,7 +178,7 @@ h5 {
 
 .me {
     display: block;
-    width: 120px;
+    width: 100px;
     height: auto;
     margin: 0 auto 10px auto;
     border-radius: 100%;
@@ -196,12 +201,13 @@ i {
 }
 
 @media screen and (max-width: 760px) {
-    #header {
+    #header, #header__text {
         height: 440px;
     }
 
     h1 {
         font-size: 2em;
+        line-height: 440px;
     }
 
     .menu__button {
@@ -221,7 +227,11 @@ i {
 }
 
 @media screen and (max-height: 500px) {
-    #header {
+    #header, #header__text {
         height: 300px;
+    }
+
+    h1 {
+        line-height: 300px;
     }
 }
