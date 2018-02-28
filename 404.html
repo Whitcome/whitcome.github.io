@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+        <title>David Whitcome | 404</title>
+        <meta name="author" content="David Whitcome"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"/>
         <style>
             html {
@@ -9,39 +13,54 @@
 
             html, body {
                 margin: 0;
+                height: 100%;
             }
 
             body {
-                background: #eee;
+                background: #333;
+            }
+            
+            #background__image {
+                width: 100%;
+                height: 100%;
+                background: url("header404.jpg");
+                background-position: center;
+                background-size: cover;
+                opacity: 0.2;
+            }
+
+            #text__wrap {
+                position: absolute;
+                top: 0;
+                width: 100%;
+            }
+
+            h1, h2 {
+                text-align: center;
+                margin: 10px;
+                color: #eee;
             }
 
             a {
-                text-decoration: none;
-                color: #555;
-            }
-
-            h1, h2, h3 {
-                text-align: center;
-                margin: 10px;
+                color: #eee;
             }
 
             h1 {
                 font-size: 120px;
-                padding-top: 60px;
+                padding-top: 80px;                
             }
 
             h2 {
-                font-size: 30px;
-            }
-
-            h3 {
                 font-size: 20px;
+                text-align: center;
             }
         </style>
     </head>
     <body>
-        <h1>404</h1>
-        <h2>Not found</h2>
-        <a href="https://www.davidwhitcome.com/" ><h3>Return to the homepage</h3></a>
+        <div id="background__image"></div>
+        <div id="text__wrap">
+            <h1>404</h1>
+            <h2><a href="https://www.davidwhitcome.com/">Return to the homepage</a></h2>
+        </div>    
     </body>
 </html>
