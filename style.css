@@ -243,11 +243,7 @@ a:active {
 }
 
 @media screen and (max-height: 500px) {
-    #header, #header__text {
+    #header {
         height: 300px;
-    }
-
-    h1 {
-        line-height: 300px;
     }
 }
