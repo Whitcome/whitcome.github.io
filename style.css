@@ -193,6 +193,10 @@ a:active {
     padding: 20px;
 }
 
+.wrap__background i {
+    padding-right: 7px;
+}
+
 .me {
     display: block;
     width: 100px;
