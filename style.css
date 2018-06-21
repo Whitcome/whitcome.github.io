@@ -8,7 +8,7 @@ html, body {
 }
 
 body {
-    background: #fff;
+    background: #f5f5f5;
     overflow-x: hidden;
 }
 
@@ -66,7 +66,7 @@ h2 {
 }
 
 .inner p {
-    color: #606060;
+    color: #1b1b1b;
     font-size: 1em;
     line-height: 24px;
 }
@@ -115,6 +115,10 @@ h2 {
     padding: 20px 0 20px 0;
 }
 
+.alt {
+    background-color: #e0e0e0;
+}
+
 .section p a {
     text-decoration: underline;
     color: inherit;
@@ -147,7 +151,7 @@ h4 {
 }
 
 h5, h6 {
-    color: #3e3e3e;
+    color: #1b1b1b;
     margin: 0;
 }
 
@@ -180,7 +184,7 @@ h6 {
 .left__column {
     float: left;
     width: 300px;
-    background: #EEE;
+    background-color: #bdbdbd;
 }
 
 .right__column {
@@ -206,7 +210,6 @@ h6 {
 }
 
 .wrap__background {
-    background-color: #F7F7F7;
     margin: 0 auto;
     overflow: auto;
 }
