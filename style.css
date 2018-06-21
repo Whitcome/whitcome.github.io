@@ -41,13 +41,17 @@ body {
     transform: translate(-50%,-50%);
 }
 
+h1, h2, h3, h4 {
+    font-family: 'Open Sans', 'Arial', sans-serif;
+    margin: 0;
+}
+
 h1 {
     font-family: 'Open Sans', 'Arial', sans-serif;
     font-size: 2.8em;
     text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.8);
     font-weight: 600;
     color: #fff;
-    margin: 0;
 }
 
 h2 {
@@ -56,7 +60,6 @@ h2 {
     text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.8);
     font-weight: 500;
     color: #fff;
-    margin: 0;
 }
 
 .inner {
@@ -69,6 +72,7 @@ h2 {
     color: #1e1e1e;
     font-size: 1em;
     line-height: 24px;
+    margin: 10px 0;
 }
 
 .block__list {
@@ -133,7 +137,6 @@ h3 {
     font-size: 1.7em;
     font-weight: 400;
     text-align: center;
-    margin: 0;
     padding-bottom: 20px;
 }
 
@@ -141,11 +144,6 @@ h4 {
     font-family: 'Open Sans', 'Arial', sans-serif;
     font-size: 1.5em;
     font-weight: 600;
-    margin: 0;
-}
-
-.left__column h4 {
-    text-align: center;
 }
 
 h3, h4, h5, h6 {
@@ -156,7 +154,7 @@ h3, h4, h5, h6 {
 h5 {
     font-size: 1.2em;
     font-weight: 600;
-    padding: 10px 0 0px 0;
+    padding: 7px 0 0 0;
 }
 
 h6 {
@@ -183,6 +181,10 @@ h6 {
     float: left;
     width: 300px;
     background-color: #cccccc;
+}
+
+.left__column h4 {
+    text-align: center;
 }
 
 .right__column {
