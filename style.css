@@ -9,7 +9,7 @@ html, body {
 
 body {
     background: #eee;
-    overflow-x: hidden;
+    min-width: 250px;
 }
 
 #header {
@@ -178,6 +178,8 @@ a:active {
 .left__column {
     float: left;
     width: 300px;
+    height: 100%;
+    position: absolute;
     background-color: #cccccc;
 }
 
@@ -187,6 +189,7 @@ a:active {
 
 .right__column {
     overflow: auto;
+    margin-left: 340px;
 }
 
 .left__column, .right__column {
@@ -213,7 +216,8 @@ a:active {
 
 .wrap__background {
     margin: 0 auto;
-    overflow: auto;
+    overflow: hidden;
+    position: relative;
 }
 
 @media screen and (max-width: 760px) {
@@ -232,15 +236,20 @@ a:active {
     .left__column {
         border-bottom: 1px solid #aaaaaa;
         background: transparent;
+        position: relative;
     }
 
     .left__column, .right__column{
         width: auto;
         float: none;
     }
+
+    .right__column {
+        margin: 0;
+    }
 }
 
-@media screen and (max-width: 347px) {
+@media screen and (max-width: 363px) {
     .block__list li {
         padding: 15px 3px;
     }
