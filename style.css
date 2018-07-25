@@ -191,7 +191,6 @@ a:active {
     width: 300px;
     height: 100%;
     position: absolute;
-    background-color: #cccccc;
 }
 
 .left__column h4 {
@@ -245,7 +244,6 @@ a:active {
     }
 
     .left__column {
-        border-bottom: 1px solid #aaaaaa;
         background: transparent;
         position: relative;
     }
@@ -257,6 +255,12 @@ a:active {
 
     .right__column {
         margin: 0;
+    }
+
+    .separator {
+        margin: 20px 0 20px 0;
+        height: 1px;
+        border-bottom: none;
     }
 }
 
