@@ -153,8 +153,19 @@ h6 {
     color: inherit;
 }
 
-.alt {
+.alt1 {
     background-color: #e0e0e0;
+    background: linear-gradient(to bottom, #d0d0d0, #eeeeee);
+}
+
+.alt2 {
+    background-color: #e0e0e0;
+    background: linear-gradient(to bottom right, #d0d0d0, #e0e0e0);
+}
+
+.alt3 {
+    background-color: #e0e0e0;
+    background: linear-gradient(to top, #d0d0d0, #eeeeee);
 }
 
 a:active {
