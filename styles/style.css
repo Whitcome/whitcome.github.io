@@ -29,15 +29,22 @@ body {
     will-change: transform;
 }
 
-#header__text {
+#header__centered {
     z-index: 1;
+    height: inherit;
     position: absolute;
     width: 100%;
     text-align: center;
-    padding: 50px 0;
+    padding: 0;
     top: 0;
-    top: 50%; left: 50%;
-    transform: translate(-50%,-50%);
+    display: table;
+}
+
+#centered__contents {
+    width: 100%;
+    margin: 0 auto;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 h1, h2, h3, h4, h5, h6 {
