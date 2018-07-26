@@ -21,7 +21,7 @@ body {
 }
 
 #header__background {
-    background-image: url("header.jpg");
+    background-image: url("../images/header.jpg");
     background-size: cover;
     background-position: 50% 70%;
     width: 100%;
@@ -29,15 +29,22 @@ body {
     will-change: transform;
 }
 
-#header__text {
+#header__centered {
     z-index: 1;
+    height: inherit;
     position: absolute;
     width: 100%;
     text-align: center;
-    padding: 50px 0;
+    padding: 0;
     top: 0;
-    top: 50%; left: 50%;
-    transform: translate(-50%,-50%);
+    display: table;
+}
+
+#centered__contents {
+    width: 100%;
+    margin: 0 auto;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -53,6 +60,7 @@ h1 {
     text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.8);
     font-weight: 600;
     color: #fff;
+    letter-spacing: 0.02em;
 }
 
 h2 {
@@ -60,6 +68,7 @@ h2 {
     text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.8);
     font-weight: 500;
     color: #fff;
+    letter-spacing: 0.02em;
 }
 
 
@@ -153,8 +162,19 @@ h6 {
     color: inherit;
 }
 
-.alt {
+.alt1 {
     background-color: #e0e0e0;
+    background: linear-gradient(to bottom, #d0d0d0, #eeeeee);
+}
+
+.alt2 {
+    background-color: #e0e0e0;
+    background: linear-gradient(to bottom right, #d0d0d0, #e0e0e0);
+}
+
+.alt3 {
+    background-color: #e0e0e0;
+    background: linear-gradient(to top, #d0d0d0, #eeeeee);
 }
 
 a:active {
@@ -180,7 +200,6 @@ a:active {
     width: 300px;
     height: 100%;
     position: absolute;
-    background-color: #cccccc;
 }
 
 .left__column h4 {
@@ -234,7 +253,6 @@ a:active {
     }
 
     .left__column {
-        border-bottom: 1px solid #aaaaaa;
         background: transparent;
         position: relative;
     }
@@ -246,6 +264,12 @@ a:active {
 
     .right__column {
         margin: 0;
+    }
+
+    .separator {
+        margin: 20px 0 20px 0;
+        height: 1px;
+        border-bottom: none;
     }
 }
 
