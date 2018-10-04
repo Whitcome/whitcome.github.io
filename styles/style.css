@@ -95,7 +95,6 @@ h1 {
     text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.8);
     font-weight: 600;
     color: #fff;
-    letter-spacing: 0.02em;
     transition: font-size 0.2s ease-out;
 }
 
@@ -104,7 +103,6 @@ h2 {
     text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.8);
     font-weight: 500;
     color: #fff;
-    letter-spacing: 0.02em;
     transition: font-size 0.2s ease-out;
 }
 
@@ -119,6 +117,7 @@ h3 {
 h4 {
     font-size: 1.5em;
     font-weight: 600;
+    margin-bottom: 10px;
 }
 
 h3, h4, h5, h6 {
@@ -126,15 +125,16 @@ h3, h4, h5, h6 {
 }
 
 h5 {
-    font-size: 1.2em;
+    border-bottom: 1px solid #aaaaaa;
+    padding: 3px 0;
+    font-size: 1.3em;
     font-weight: 600;
-    padding: 7px 0 0 0;
 }
 
 h6 {
     font-size: 1em;
-    font-weight: 300;
-    padding: 5px 0 0 0;
+    font-weight: 600;
+    padding: 7px 10px 0 0;
 }
 
 .inner {
@@ -147,7 +147,7 @@ h6 {
     color: #1e1e1e;
     font-size: 1em;
     line-height: 24px;
-    margin: 10px 0;
+    margin: 7px 0px 12px 0px;
 }
 
 .block__list {
@@ -249,12 +249,26 @@ a:active {
     margin-left: 340px;
 }
 
+.right__column table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.right__column table td {
+    vertical-align: top;
+    padding: 0;
+}
+
 .left__column, .right__column {
     padding: 20px;
 }
 
 .wrap__background i {
     padding-right: 7px;
+}
+
+.separator {
+    margin-top: 18px;
 }
 
 .me {
@@ -266,15 +280,16 @@ a:active {
     border: 1px solid #1e1e1e;
 }
 
-.separator {
-    margin: 20px 0 20px 0;
-    border-bottom: 1px solid #aaaaaa;
-}
-
 .wrap__background {
     margin: 0 auto;
     overflow: hidden;
     position: relative;
+}
+
+.dates p {
+    line-height: 18px;
+    margin: 10px 0 8px 0;
+    padding: 0 10px 0 0;
 }
 
 @media screen and (max-width: 760px) {
@@ -293,6 +308,7 @@ a:active {
     .left__column {
         background: transparent;
         position: relative;
+        padding-bottom: 0px;
     }
 
     .left__column, .right__column{
@@ -302,12 +318,6 @@ a:active {
 
     .right__column {
         margin: 0;
-    }
-
-    .separator {
-        margin: 20px 0 20px 0;
-        height: 1px;
-        border-bottom: none;
     }
 }
 
