@@ -3,6 +3,8 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', function() {
         if (document.body.scrollTop >= 0)
             ParallaxAnimation(moving__background);
+        else
+            moving__background.css('margin-top', 0);
     });
 });
 
