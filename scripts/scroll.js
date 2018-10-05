@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
     const moving__background = $("#header__background");
-
     window.addEventListener('scroll', function() {
-        ParallaxAnimation(moving__background);
+        if (document.body.scrollTop >= 0)
+            ParallaxAnimation(moving__background);
     });
 });
 
