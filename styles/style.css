@@ -72,14 +72,9 @@ body {
     text-align: center;
     padding: 0;
     top: 0;
-    display: table;
-}
-
-#centered__contents {
-    width: 100%;
-    margin: 0 auto;
-    display: table-cell;
-    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -96,6 +91,7 @@ h1 {
     font-weight: 600;
     color: #fff;
     transition: font-size 0.2s ease-out;
+    display:block;
 }
 
 h2 {
