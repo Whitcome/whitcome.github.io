@@ -72,21 +72,16 @@ body {
     text-align: center;
     padding: 0;
     top: 0;
-    display: table;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#centered__contents {
-    width: 100%;
-    margin: 0 auto;
-    display: table-cell;
-    vertical-align: middle;
-}
-
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5 {
     margin: 0;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3 {
     font-family: 'Open Sans', 'Arial', sans-serif;
 }
 
@@ -95,8 +90,7 @@ h1 {
     text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.8);
     font-weight: 600;
     color: #fff;
-    transition: font-size 0.2s ease-out;
-}
+    transition: font-size 0.2s ease-out;}
 
 h2 {
     font-size: 1.2em;
@@ -106,32 +100,24 @@ h2 {
     transition: font-size 0.2s ease-out;
 }
 
-
 h3 {
-    font-size: 1.7em;
-    font-weight: 400;
-    text-align: center;
-    padding-bottom: 20px;
-}
-
-h4 {
     font-size: 1.5em;
     font-weight: 600;
     margin-bottom: 10px;
 }
 
-h3, h4, h5, h6 {
+h3, h4, h5 {
     color: #1e1e1e;
 }
 
-h5 {
+h4 {
     border-bottom: 1px solid #aaaaaa;
     padding: 3px 0;
     font-size: 1.3em;
     font-weight: 600;
 }
 
-h6 {
+h5 {
     font-size: 1em;
     font-weight: 600;
     padding: 7px 10px 0 0;
@@ -146,8 +132,8 @@ h6 {
 .inner p {
     color: #1e1e1e;
     font-size: 1em;
-    line-height: 24px;
-    margin: 7px 0px 12px 0px;
+    line-height: 25px;
+    margin: 2px 0px 9px 0px;
 }
 
 .block__list {
@@ -192,7 +178,7 @@ h6 {
 }
 
 .section {
-    padding: 20px 0 20px 0;
+    padding-top: 35px;
 }
 
 .section p a {
@@ -213,6 +199,7 @@ h6 {
 .alt3 {
     background-color: #e0e0e0;
     background: linear-gradient(to top, #d0d0d0, #eeeeee);
+    padding-bottom: 35px;
 }
 
 a:active {
@@ -221,16 +208,12 @@ a:active {
 
 #footer {
     background-color: #1e1e1e;
+    color: #F7F7F7;
     width: 100%;
     height: 100px;
-    display: table;
-}
-
-#footer #footer__info {
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
-    color: #F7F7F7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .left__column {
@@ -240,23 +223,13 @@ a:active {
     position: absolute;
 }
 
-.left__column h4 {
+.left__column h3 {
     text-align: center;
 }
 
 .right__column {
     overflow: auto;
     margin-left: 340px;
-}
-
-.right__column table {
-    border-collapse: collapse;
-    width: 100%;
-}
-
-.right__column table td {
-    vertical-align: top;
-    padding: 0;
 }
 
 .left__column, .right__column {
@@ -268,7 +241,11 @@ a:active {
 }
 
 .separator {
-    margin-top: 18px;
+    margin-top: 12px;
+}
+
+.info__block {
+    display: inline-block;
 }
 
 .me {
@@ -284,12 +261,6 @@ a:active {
     margin: 0 auto;
     overflow: hidden;
     position: relative;
-}
-
-.dates p {
-    line-height: 18px;
-    margin: 10px 0 8px 0;
-    padding: 0 10px 0 0;
 }
 
 @media screen and (max-width: 760px) {

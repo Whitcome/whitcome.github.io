@@ -1,13 +1,12 @@
+// Preloader
 var pageLoaded = false;
 
-// Preloader
 $(document).ready(function() {
     if (!pageLoaded) {
         document.getElementById("body__content").style.opacity = "0";
     }
 });
 
-// When page is loaded
 window.onload = function() {
     pageLoaded = true;
     document.getElementById("body__content").style.transition = "ease-out 0.2s opacity";
@@ -15,7 +14,21 @@ window.onload = function() {
     setTimeout(stopLoadingAnimation, 400);
 };
 
-// Stop preloader animation
 function stopLoadingAnimation() {
     document.getElementById("loading__content").style.cssText = "animation: none; display: none;";
+};
+
+// Scrolling
+document.addEventListener('DOMContentLoaded', function() {
+    const moving__background = $("#header__background");
+    window.addEventListener('scroll', function() {
+        if (document.body.scrollTop >= 0)
+            ParallaxAnimation(moving__background);
+        else
+            moving__background.css('margin-top', 0);
+    });
+});
+
+function ParallaxAnimation(el) {
+    el.css('margin-top', ($(window).scrollTop())/4); // Parallax scrolling
 };
