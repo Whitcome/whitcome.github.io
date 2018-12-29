@@ -15,7 +15,7 @@ window.onload = function() {
 };
 
 function stopLoadingAnimation() {
-    document.getElementById("loading__content").style.cssText = "animation: none; display: none;";
+    document.getElementById("preloader").style.cssText = "animation: none; display: none;";
 };
 
 // Scrolling
