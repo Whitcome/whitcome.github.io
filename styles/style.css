@@ -163,15 +163,18 @@ h5 {
     text-align: center;
 }
 
-.block__list a li {
+.block__list li {
     -webkit-transition: 0.2s background;
     -moz-transition: 0.2s background;
     transition: 0.2s background;
+}
+
+.block__list li a {
     text-decoration: none;
     color: #1e1e1e;
 }
 
-.block__list a li:hover {
+.block__list li:hover {
     background: #bbbbbb;
 }
 
