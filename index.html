@@ -1,115 +1,141 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>David Whitcome - Web Developer and Software Engineer</title>
-        <meta name="author" content="David Whitcome"/>
-        <meta name="description" content="Computer programmer and information technology focused individual with 3 years of professional experience in computer software, hardware, and troubleshooting. This website showcases my work, projects, and information."/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        
-        <link rel="canonical" href="https://www.davidwhitcome.com/"/>
-        <link rel="stylesheet" type="text/css" href="styles/style.css"/>
-        <link href="fonts/open_sans.css" rel="stylesheet"/>
-        <link href="fonts/source_sans_pro.css" rel="stylesheet"/>
-        <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css"/>
-        <link rel="stylesheet" href="fonts/devicon/devicon.min.css"/>       
 
-        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
-        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png"/>  
-        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png"/>
-        <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png"/>
+<head>
+    <meta charset="UTF-8">
+    <title>David Whitcome - Web Developer and Software Engineer</title>
+    <meta name="author" content="David Whitcome" />
+    <meta name="description" content="Computer programmer and information technology focused individual with 3 years of professional experience in computer software, hardware, and troubleshooting. This website showcases my work, projects, and information." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <script type="text/javascript" src="scripts/jquery-3.3.1.min.js"></script>
-        <script type="text/javascript" src="scripts/dave.js"></script>
+    <link rel="canonical" href="https://www.davidwhitcome.com/" />
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <link href="fonts/open_sans.css" rel="stylesheet" />
+    <link href="fonts/source_sans_pro.css" rel="stylesheet" />
+    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="fonts/devicon/devicon.min.css" />
 
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121188739-1"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'UA-121188739-1');
-        </script>
-    </head>
-    <body>
-        <div class="flex_loading">
-            <div id="preloader"></div>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png" />
+
+    <script type="text/javascript" src="scripts/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="scripts/dave.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121188739-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-121188739-1');
+    </script>
+</head>
+
+<body>
+    <div class="flex_loading">
+        <div id="preloader"></div>
+    </div>
+    <div id="body__content">
+        <div id="header">
+            <div id="header__background"></div>
+            <div class="ie10__fix">
+                <div id="header__centered">
+                    <h1>David Whitcome</h1>
+                    <h2>Web Developer & Software Engineer</h2>
+                </div>
+            </div>
         </div>
-        <div id="body__content">
-            <div id="header">
-                <div id="header__background"></div>
-                <div class="ie10__fix">
-                    <div id="header__centered">
-                        <h1>David Whitcome</h1>
-                        <h2>Web Developer & Software Engineer</h2>           
+        <div class="section alt1">
+            <div class="inner">
+                <ul class="block__list">
+                    <li><i class="devicon-csharp-plain" aria-hidden="true"></i><span>C#</span></li>
+                    <li><i class="devicon-cplusplus-plain" aria-hidden="true"></i><span>C++</span></li>
+                    <li><i class="devicon-visualstudio-plain" aria-hidden="true"></i><span>Visual Studio</span></li>
+                    <li><i class="devicon-git-plain" aria-hidden="true"></i><span>Git</span></li>
+                    <li><i class="devicon-html5-plain" aria-hidden="true"></i><span>HTML</span></li>
+                    <li><i class="devicon-css3-plain" aria-hidden="true"></i><span>CSS</span></li>
+                    <li><i class="devicon-linux-plain" aria-hidden="true"></i><span>Linux</span></li>
+                    <li><i class="devicon-windows8-original" aria-hidden="true"></i><span>Windows</span></li>
+                    <li><i class="fa fa-database" aria-hidden="true"></i><span>SQL</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="section">
+            <div class="inner">
+                <div class="wrap__background alt2 flex_content">
+                    <div class="left__column">
+                        <img class="me" src="images/me.jpg" />
+                        <h3>Dave</h3>
+                        <p>Even when I was little, developing computer programs interested me. I became involved in
+                            computer science when I started building small computer games in <a href="https://en.wikipedia.org/wiki/GameMaker_Studio">Game
+                                Maker</a>. As I dove into the world of programming at 14 years old, I developed
+                            websites and started writing simple code. I learned the basics of HTML, CSS, JavaScript,
+                            and PHP to show off the small video games that I made.</p>
+                        <p>I've developed numerous applications being used in the real world - from small programs to
+                            this website. You can find some of my active projects and the code for this website on <a
+                                href="https://github.com/Whit128">GitHub</a>.</p>
+                        <p>In my free time, I like to play guitar, sing, and master music in post production. You can
+                            find some of my music on <a href="https://soundcloud.com/david-whitcome">SoundCloud</a>. I
+                            won first place for the song "<a href="https://soundcloud.com/david-whitcome/tradition">Tradition</a>"
+                            in McHenry County College's Voices Magazine in 2015. I'm also a proud Eagle Scout in the
+                            Boy Scouts of America as of August 2014.</p>
+                    </div>
+                    <div class="right__column">
+                        <h3><i class="fa fa-briefcase" aria-hidden="true"></i>Work Experience</h3>
+                        <h4>Uline</h4>
+                        <div class="info__block">
+                            <h5>Associate Software Developer</h5>
+                            <p>August 2018 - Today</p>
+                        </div>
+                        <div class="info__block">
+                            <h5>Web Developer/IT Intern</h5>
+                            <p>May 2018 - August 2018</p>
+                        </div>
+                        <p>Uline is one of the biggest sellers of boxes, packing materials, and mailing supplies. As a
+                            member of the web development team, I'm working on developing applications, fixing bugs,
+                            and improving their main website at <a href="https://www.uline.com">Uline.com</a>.</p>
+                        <h4>Power Electronics International, Inc.</h4>
+                        <div class="info__block">
+                            <h5>IT Intern</h5>
+                            <p>May 2017 - August 2017</p>
+                            <p>Power Electronics International is known for manufacturing their high quality Variable
+                                Speed Drives, Soft-Start Controls, and Control Panels. As an information technology
+                                intern, I focused on keeping internal systems running as well as developing
+                                applications and tools for employees to use inside the company.</p>
+                        </div>
+                        <h3 class="separator"><i class="fa fa-graduation-cap" aria-hidden="true"></i>Education</h3>
+                        <h4>Northern Illinois University - DeKalb, Illinois</h4>
+                        <p>August 2016 - August 2018</p>
+                        <p>My junior year of college began at NIU during the Fall of 2016. I graduated with a
+                            Bachelor's degree in Computer Science with an emphasis on Enterprise Software. I also
+                            earned a minor in Economics.</p>
+                        <h4>McHenry County College - Crystal Lake, Illinois</h4>
+                        <p>August 2014 - May 2016</p>
+                        <p>My time enrolled in MCC was spent working towards an Associate's of Science Degree. In May
+                            of 2016, I finished taking all the required classes for the program, allowing me to
+                            transfer to a four-year university. After spending the summer working, I transferred to
+                            Northern Illinois University to continue my education in Computer Science.</p>
                     </div>
                 </div>
             </div>
-            <div class="section alt1">
-                <div class="inner">
-                    <ul class="block__list">
-                        <li><i class="devicon-csharp-plain" aria-hidden="true"></i><span>C#</span></li>
-                        <li><i class="devicon-cplusplus-plain" aria-hidden="true"></i><span>C++</span></li>
-                        <li><i class="devicon-visualstudio-plain" aria-hidden="true"></i><span>Visual Studio</span></li>
-                        <li><i class="devicon-git-plain" aria-hidden="true"></i><span>Git</span></li>
-                        <li><i class="devicon-html5-plain" aria-hidden="true"></i><span>HTML</span></li>
-                        <li><i class="devicon-css3-plain" aria-hidden="true"></i><span>CSS</span></li>
-                        <li><i class="devicon-linux-plain" aria-hidden="true"></i><span>Linux</span></li>
-                        <li><i class="devicon-windows8-original" aria-hidden="true"></i><span>Windows</span></li>
-                        <li><i class="fa fa-database" aria-hidden="true"></i><span>SQL</span></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="section">
-                <div class="inner">
-                    <div class="wrap__background alt2 flex_content">
-                        <div class="left__column">
-                            <img class="me" src="images/me.jpg"/>
-                            <h3>Dave</h3>
-                            <p>Even when I was little, developing computer programs interested me. I became involved in computer science when I started building small computer games in <a href="https://en.wikipedia.org/wiki/GameMaker_Studio">Game Maker</a>. As I dove into the world of programming at 14 years old, I developed websites and started writing simple code. I learned the basics of HTML, CSS, JavaScript, and PHP to show off the small video games that I made.</p> 
-                            <p>I've developed numerous applications being used in the real world - from small programs to this website. You can find some of my active projects and the code for this website on <a href="https://github.com/Whit128">GitHub</a>.</p>
-                            <p>In my free time, I like to play guitar, sing, and master music in post production. You can find some of my music on <a href="https://soundcloud.com/david-whitcome">SoundCloud</a>. I won first place for the song "<a href="https://soundcloud.com/david-whitcome/tradition">Tradition</a>" in McHenry County College's Voices Magazine in 2015. I'm also a proud Eagle Scout in the Boy Scouts of America as of August 2014.</p>
-                        </div>
-                        <div class="right__column">
-                            <h3><i class="fa fa-briefcase" aria-hidden="true"></i>Work Experience</h3>
-                            <h4>Uline</h4>
-                            <div class="info__block">
-                                <h5>Associate Software Developer</h5>
-                                <p>August 2018 - Today</p>
-                            </div>
-                            <div class="info__block">
-                                <h5>Web Developer/IT Intern</h5>
-                                <p>May 2018 - August 2018</p>
-                            </div>
-                            <p>Uline is one of the biggest sellers of boxes, packing materials, and mailing supplies. As a member of the web development team, I'm working on developing applications, fixing bugs, and improving their main website at <a href="https://www.uline.com">Uline.com</a>.</p>
-                            <h4>Power Electronics International, Inc.</h4>
-                            <div class="info__block">
-                                <h5>IT Intern</h5>
-                                <p>May 2017 - August 2017</p>            
-                                <p>Power Electronics International is known for manufacturing their high quality Variable Speed Drives, Soft-Start Controls, and Control Panels. As an information technology intern, I focused on keeping internal systems running as well as developing applications and tools for employees to use inside the company.</p>
-                            </div>
-                            <h3 class="separator"><i class="fa fa-graduation-cap" aria-hidden="true"></i>Education</h3>
-                            <h4>Northern Illinois University - DeKalb, Illinois</h4>
-                            <p>August 2016 - August 2018</p>
-                            <p>My junior year of college began at NIU during the Fall of 2016. I graduated with a Bachelor's degree in Computer Science with an emphasis on Enterprise Software. I also earned a minor in Economics.</p>
-                            <h4>McHenry County College - Crystal Lake, Illinois</h4>
-                            <p>August 2014 - May 2016</p>
-                            <p>My time enrolled in MCC was spent working towards an Associate's of Science Degree. In May of 2016, I finished taking all the required classes for the program, allowing me to transfer to a four-year university. After spending the summer working, I transferred to Northern Illinois University to continue my education in Computer Science.</p>                       
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="section alt3">
-                <div class="inner">
-                    <ul class="block__list hover__list">
-                        <li><a href="https://github.com/Whitcome" class="github"><i class="fa fa-github" aria-hidden="true"></i><span>GitHub</span></a></li>
-                        <li><a href="https://www.linkedin.com/in/david-whitcome"><i class="fa fa-linkedin" aria-hidden="true"></i><span>LinkedIn</span></a></li>
-                        <li><a href="https://www.instagram.com/davidwhitcome25/"><i class="fa fa-instagram" aria-hidden="true"></i><span>Instagram</span></a></li>
-                        <li><a href="https://soundcloud.com/david-whitcome"><i class="fa fa-soundcloud" aria-hidden="true"></i><span>SoundCloud</span></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div id="footer">© 2018 David Whitcome</div>
         </div>
-    </body>
+        <div class="section alt3">
+            <div class="inner">
+                <ul class="block__list hover__list">
+                    <li><a href="https://github.com/Whitcome" class="github"><i class="fa fa-github" aria-hidden="true"></i><span>GitHub</span></a></li>
+                    <li><a href="https://www.linkedin.com/in/david-whitcome"><i class="fa fa-linkedin" aria-hidden="true"></i><span>LinkedIn</span></a></li>
+                    <li><a href="https://www.instagram.com/davidwhitcome25/"><i class="fa fa-instagram" aria-hidden="true"></i><span>Instagram</span></a></li>
+                    <li><a href="https://soundcloud.com/david-whitcome"><i class="fa fa-soundcloud" aria-hidden="true"></i><span>SoundCloud</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="footer">© 2018 David Whitcome</div>
+    </div>
+</body>
+
 </html>

@@ -1,13 +1,13 @@
 // Preloader
 var pageLoaded = false;
 
-$(document).ready(function() {
+$(document).ready(function () {
     if (!pageLoaded) {
         document.getElementById("body__content").style.opacity = "0";
     }
 });
 
-window.onload = function() {
+window.onload = function () {
     pageLoaded = true;
     document.getElementById("body__content").style.transition = "ease-out 0.2s opacity";
     document.getElementById("body__content").style.opacity = "1";
@@ -19,9 +19,9 @@ function stopLoadingAnimation() {
 };
 
 // Scrolling
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const moving__background = $("#header__background");
-    window.addEventListener('scroll', function() {
+    window.addEventListener('scroll', function () {
         if (document.body.scrollTop >= 0)
             ParallaxAnimation(moving__background);
         else
@@ -30,5 +30,5 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function ParallaxAnimation(el) {
-    el.css('margin-top', ($(window).scrollTop())/4); // Parallax scrolling
+    el.css('margin-top', ($(window).scrollTop()) / 4); // Parallax scrolling
 };

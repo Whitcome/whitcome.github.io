@@ -2,7 +2,8 @@ html {
     font-family: 'Source Sans Pro', 'Arial', sans-serif;
 }
 
-html, body {
+html,
+body {
     margin: 0;
     height: 100%;
 }
@@ -26,7 +27,8 @@ body {
     width: 100%;
 }
 
-h1, h2 {
+h1,
+h2 {
     text-align: center;
     margin: 10px;
     color: #eee;
@@ -38,7 +40,7 @@ a {
 
 h1 {
     font-size: 120px;
-    padding-top: 80px;                
+    padding-top: 80px;
 }
 
 h2 {
