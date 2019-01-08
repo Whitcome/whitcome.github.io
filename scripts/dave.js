@@ -30,5 +30,5 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function ParallaxAnimation(el) {
-    el.css('margin-top', ($(window).scrollTop()) / 4); // Parallax scrolling
+    el.css('margin-top', ($(window).scrollTop() / 4)); // Parallax scrolling
 };
