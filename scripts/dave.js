@@ -9,6 +9,7 @@ $(document).ready(function () {
 
 window.onload = function () {
     pageLoaded = true;
+    ParallaxAnimation($("#header__background"));
     document.getElementById("body__content").style.transition = "ease-out 0.2s opacity";
     document.getElementById("body__content").style.opacity = "1";
     setTimeout(stopLoadingAnimation, 400);
