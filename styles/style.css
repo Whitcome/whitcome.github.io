@@ -266,6 +266,11 @@ a:active {
     position: relative;
 }
 
+.ie10__fix {
+    position: relative;
+    z-index: 1;
+}
+
 @media screen and (max-width: 760px) {
     #header {
         height: 440px;
