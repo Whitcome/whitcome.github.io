@@ -276,6 +276,12 @@ a:active {
     z-index: 2;
 }
 
+#old__browser {
+    background: #ffff6b;
+    text-align: center;
+    padding: 15px 20px;
+}
+
 @media screen and (max-width: 760px) {
     #header {
         height: 440px;
