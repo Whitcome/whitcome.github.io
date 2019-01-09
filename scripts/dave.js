@@ -1,5 +1,7 @@
-// Loading
 var pageLoaded = false;
+var header__background;
+
+// Loading
 document.addEventListener("DOMContentLoaded", function () {
     if (!pageLoaded)
         document.getElementById("body__content").style.opacity = "0";
@@ -7,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 window.addEventListener("load", function () {
     pageLoaded = true;
+    header__background = document.getElementById("header__background");
     ParallaxAnimation(); // Set header background to correct position
     document.getElementById("body__content").style.transition = "ease-out 0.2s opacity";
     document.getElementById("body__content").style.opacity = "1";
@@ -21,8 +24,10 @@ function stopLoadingAnimation() {
 window.addEventListener('scroll', ParallaxAnimation);
 
 function ParallaxAnimation() {
-    if (document.body.scrollTop >= 0)
-        document.getElementById("header__background").style.marginTop = (window.pageYOffset / 4) + "px";
-    else
-        header__background.style.marginTop = "0px";
+    if (header__background != null) {
+        if (document.body.scrollTop >= 0)
+            header__background.style.marginTop = (window.pageYOffset / 4) + "px";
+        else
+            header__background.style.marginTop = "0px";
+    }
 };
