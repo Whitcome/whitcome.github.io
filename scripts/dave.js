@@ -11,6 +11,12 @@ window.addEventListener("load", function () {
     pageLoaded = true;
     header__background = document.getElementById("header__background");
     ParallaxAnimation(); // Set header background to correct position
+
+    // Date
+    var footerDate = document.getElementById("footerDate");
+    if (footerDate != null)
+        footerDate.innerText = new Date().getFullYear();
+
     document.getElementById("body__content").style.transition = "ease-out 0.2s opacity";
     document.getElementById("body__content").style.opacity = "1";
     setTimeout(stopLoadingAnimation, 400);
