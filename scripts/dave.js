@@ -3,8 +3,10 @@ var header__background;
 
 // Loading
 document.addEventListener("DOMContentLoaded", function () {
-    if (!pageLoaded)
-        document.getElementById("body__content").style.opacity = "0";
+    if (!pageLoaded) {
+        document.getElementById("flex__loading").style.display = "flex";
+    }
+        
 });
 
 window.addEventListener("load", function () {
@@ -17,13 +19,13 @@ window.addEventListener("load", function () {
     if (footerDate != null)
         footerDate.innerText = new Date().getFullYear();
 
-    document.getElementById("body__content").style.transition = "ease-out 0.2s opacity";
-    document.getElementById("body__content").style.opacity = "1";
+    document.getElementById("flex__loading").style.opacity = "0";
     setTimeout(stopLoadingAnimation, 400);
 });
 
 function stopLoadingAnimation() {
-    document.getElementById("preloader").style.cssText = "animation: none; display: none;";
+    document.getElementById("preloader").style.cssText = "animation: none;";
+    document.getElementById("flex__loading").style.cssText = "display: none;";
 };
 
 // Scrolling

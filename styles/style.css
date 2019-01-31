@@ -1,21 +1,25 @@
 html {
     font-family: 'Source Sans Pro', 'Arial', sans-serif;
+    background: #1e1e1e;
 }
 
 body {
     margin: 0;
-    background: #eee;
+    background: #1e1e1e;
     min-width: 225px;
 }
 
-.flex__loading {
-    display: flex;
+#flex__loading {
+    background: #eee;
+    display: none;
     position: fixed;
-    z-index: -1;
+    z-index: 4;
     opacity: 1;
     flex: 1;
     justify-content: center;
     align-items: center;
+    -webkit-transition: ease-out 0.2s opacity;
+    transition: ease-out 0.2s opacity;
     width: 100%; /* IE support */
     height: 100%; /* IE support */
 }
@@ -43,6 +47,7 @@ body {
 #body__content {
     background: #eee;
     opacity: 1;
+    z-index: 2;
 }
 
 #header {
@@ -70,7 +75,7 @@ body {
 }
 
 #header__centered {
-    z-index: 1;
+    z-index: 2;
     text-align: center;
 }
 
