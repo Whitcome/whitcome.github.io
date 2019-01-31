@@ -1,3 +1,7 @@
+html, body {
+    height: 100%;
+}
+
 html {
     font-family: 'Source Sans Pro', 'Arial', sans-serif;
 }
@@ -41,6 +45,7 @@ body {
 }
 
 #body__content {
+    height: 100%;;
     background: #eee;
     opacity: 1;
 }
@@ -48,10 +53,11 @@ body {
 #header {
     position: relative;
     flex: 1;
-    height: 600px;
+    height: 75%;
+    min-height: 300px;
+    max-height: 1000px;
     overflow: hidden;
     background: #333;
-    transition: height 0.2s ease-out;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,7 +69,6 @@ body {
     background-position: 50% 70%;
     width: 100%;
     height: 100%;
-    will-change: transform;
     position: absolute;
     top: 0;
     left: 0;
@@ -281,10 +286,6 @@ a:active {
 }
 
 @media screen and (max-width: 760px) {
-    #header {
-        height: 440px;
-    }
-
     h1 {
         font-size: 2em;
     }
@@ -311,11 +312,5 @@ a:active {
 @media screen and (max-width: 363px) {
     .block__list li {
         padding: 15px 3px;
-    }
-}
-
-@media screen and (max-height: 500px) {
-    #header {
-        height: 300px;
     }
 }
