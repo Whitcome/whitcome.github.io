@@ -1,7 +1,3 @@
-html, body {
-    height: 100%;
-}
-
 html {
     font-family: 'Source Sans Pro', 'Arial', sans-serif;
 }
@@ -45,7 +41,6 @@ body {
 }
 
 #body__content {
-    height: 100%;;
     background: #eee;
     opacity: 1;
 }
@@ -53,7 +48,7 @@ body {
 #header {
     position: relative;
     flex: 1;
-    height: 75%;
+    height: 75vh;
     min-height: 300px;
     max-height: 1000px;
     overflow: hidden;
