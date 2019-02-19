@@ -139,6 +139,8 @@ h5 {
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 20px;
+    padding-left: constant(safe-area-inset-left);
+    padding-right: constant(safe-area-inset-right);
 }
 
 .inner p {
