@@ -286,6 +286,10 @@ a:active {
     padding: 15px 20px;
 }
 
+.ios__bar {
+    display: none;
+}
+
 @media screen and (max-width: 830px) {
     h1 {
         font-size: 2em;
@@ -321,11 +325,41 @@ a:active {
         padding-left: max(20px, constant(safe-area-inset-left));
         padding-right: max(20px, constant(safe-area-inset-right));
     }
+    
+    #header {
+        padding-top: constant(safe-area-inset-top);
+    }
+
+    .ios__bar {
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 0px;
+        height: constant(safe-area-inset-top);
+        background: #1e1e1e;
+        z-index: 3;
+        opacity: 0.5;
+    }
 }
 
 @supports (padding-top: env(safe-area-inset-top)) {
     .inner {
         padding-left: max(20px, env(safe-area-inset-left));
         padding-right: max(20px, env(safe-area-inset-right));
+    }
+    
+    #header {
+        padding-top: env(safe-area-inset-top);
+    }
+    
+    .ios__bar {
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 0px;
+        height: env(safe-area-inset-top);
+        background: #1e1e1e;
+        z-index: 3;
+        opacity: 0.5;
     }
 }
