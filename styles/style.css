@@ -324,6 +324,10 @@ a:active {
         padding-top: constant(safe-area-inset-top);
     }
 
+    #footer {
+        padding-bottom: constant(safe-area-inset-top);
+    }
+
     .ios__bar {
         display: block;
         position: fixed;
@@ -344,6 +348,10 @@ a:active {
     
     #header {
         padding-top: env(safe-area-inset-top);
+    }
+
+    #footer {
+        padding-bottom: env(safe-area-inset-top);
     }
     
     .ios__bar {
