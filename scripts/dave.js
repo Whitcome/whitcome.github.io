@@ -5,8 +5,7 @@ var header__background;
 document.addEventListener("DOMContentLoaded", function () {
     if (!pageLoaded) {
         document.getElementById("flex__loading").style.display = "flex";
-    }
-        
+    }       
 });
 
 window.addEventListener("load", function () {
