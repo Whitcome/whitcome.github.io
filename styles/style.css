@@ -334,8 +334,6 @@ a:active {
         width: 100%;
         height: constant(safe-area-inset-top);
         background: #1e1e1e;
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
         z-index: 3;
         opacity: 0.25;
     }
@@ -361,8 +359,6 @@ a:active {
         width: 100%;
         height: env(safe-area-inset-top);
         background: #1e1e1e;
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
         z-index: 3;
         opacity: 0.25;
     }
