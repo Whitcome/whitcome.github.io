@@ -94,7 +94,6 @@ h1 {
     text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.8);
     font-weight: 700;
     color: #F7F7F7;
-    transition: font-size 0.2s ease-out;
 }
 
 h2 {
@@ -102,7 +101,6 @@ h2 {
     text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.8);
     font-weight: 500;
     color: #F7F7F7;
-    transition: font-size 0.2s ease-out;
 }
 
 h3 {
@@ -156,7 +154,6 @@ h5 {
     text-align: center;
     width: 80px;
     height: 75px;
-    transition: padding 0.2s ease-out;
 }
 
 .block__list li i {
