@@ -311,7 +311,7 @@ a:active {
     }
 }
 
-@supports (padding-top: constant(safe-area-inset-top)) {
+@supports (padding-top: constant(safe-area-inset-top)) and (max(0, 1)) {
     .inner {
         padding-left: max(20px, constant(safe-area-inset-left));
         padding-right: max(20px, constant(safe-area-inset-right));
@@ -336,7 +336,7 @@ a:active {
     }
 }
 
-@supports (padding-top: env(safe-area-inset-top)) {
+@supports (padding-top: env(safe-area-inset-top)) and (max(0, 1)) {
     .inner {
         padding-left: max(20px, env(safe-area-inset-left));
         padding-right: max(20px, env(safe-area-inset-right));
