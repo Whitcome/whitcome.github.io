@@ -1,16 +1,16 @@
 var pageLoaded = false;
-var header__background;
+var headerBackground;
 
 // Loading
 document.addEventListener("DOMContentLoaded", function () {
     if (!pageLoaded) {
-        document.getElementById("flex__loading").style.display = "flex";
+        document.getElementById("flex-loading").style.display = "flex";
     }       
 });
 
 window.addEventListener("load", function () {
     pageLoaded = true;
-    header__background = document.getElementById("header__background");
+    headerBackground = document.getElementById("header-background");
     ParallaxAnimation(); // Set header background to correct position
 
     // Date
@@ -18,24 +18,24 @@ window.addEventListener("load", function () {
     if (footerDate != null)
         footerDate.innerText = new Date().getFullYear();
 
-    document.getElementById("flex__loading").style.opacity = "0";
+    document.getElementById("flex-loading").style.opacity = "0";
     setTimeout(stopLoadingAnimation, 400);
 });
 
 function stopLoadingAnimation() {
     document.getElementById("preloader").style.cssText = "animation: none;";
-    document.getElementById("flex__loading").style.cssText = "display: none;";
+    document.getElementById("flex-loading").style.cssText = "display: none;";
 };
 
 // Scrolling
 window.addEventListener('scroll', ParallaxAnimation);
 
 function ParallaxAnimation() {
-    if (header__background != null) {
+    if (headerBackground != null) {
         var backgroundPosition = window.pageYOffset / 4;
         if (backgroundPosition >= 0)
-            header__background.style.marginTop = backgroundPosition + "px";
+            headerBackground.style.marginTop = backgroundPosition + "px";
         else
-            header__background.style.marginTop = "0px";
+            headerBackground.style.marginTop = "0px";
     }
 };
