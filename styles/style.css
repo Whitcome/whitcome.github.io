@@ -77,6 +77,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: constant(safe-area-inset-top);
+    padding-top: env(safe-area-inset-top);
 }
 
 #header-background {
@@ -236,6 +238,8 @@ a:active {
     height: 100px;
     line-height: 100px;
     text-align: center;
+    padding-bottom: constant(safe-area-inset-bottom);
+    padding-bottom: env(safe-area-inset-bottom);
 }
 
 .flex_content {
@@ -294,7 +298,14 @@ a:active {
 }
 
 .ios-bar {
-    display: none;
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: constant(safe-area-inset-top);
+    height: env(safe-area-inset-top);
+    background: #1e1e1e;
+    z-index: 3;
+    opacity: 0.25;
 }
 
 @media screen and (max-width: 830px) {
@@ -324,56 +335,6 @@ a:active {
 @media screen and (max-width: 363px) {
     .block-list li {
         padding: 15px 3px;
-    }
-}
-
-@supports (padding-top: constant(safe-area-inset-top)) and (max(0, 1)) {
-    .inner {
-        padding-left: max(20px, constant(safe-area-inset-left));
-        padding-right: max(20px, constant(safe-area-inset-right));
-    }
-
-    #header {
-        padding-top: constant(safe-area-inset-top);
-    }
-
-    #footer {
-        padding-bottom: constant(safe-area-inset-bottom);
-    }
-
-    .ios-bar {
-        display: block;
-        position: fixed;
-        width: 100%;
-        height: constant(safe-area-inset-top);
-        background: #1e1e1e;
-        z-index: 3;
-        opacity: 0.25;
-    }
-}
-
-@supports (padding-top: env(safe-area-inset-top)) and (max(0, 1)) {
-    .inner {
-        padding-left: max(20px, env(safe-area-inset-left));
-        padding-right: max(20px, env(safe-area-inset-right));
-    }
-
-    #header {
-        padding-top: env(safe-area-inset-top);
-    }
-
-    #footer {
-        padding-bottom: env(safe-area-inset-bottom);
-    }
-
-    .ios-bar {
-        display: block;
-        position: fixed;
-        width: 100%;
-        height: env(safe-area-inset-top);
-        background: #1e1e1e;
-        z-index: 3;
-        opacity: 0.25;
     }
 }
 
