@@ -390,6 +390,15 @@ a:active {
         background: #555;
     }
 
+    #flex-loading {
+        background: #1d1f20;
+    }
+
+    #preloader {
+        border: 3px solid #393939;
+        border-top: 3px solid #5c5c5c;
+    }
+
     #body-content {
         background: #1d1f20;
     }
