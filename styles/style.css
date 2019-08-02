@@ -21,8 +21,10 @@ body {
     align-items: center;
     -webkit-transition: ease-out 0.2s opacity;
     transition: ease-out 0.2s opacity;
-    width: 100%; /* IE support */
-    height: 100%; /* IE support */
+    width: 100%;
+    /* IE support */
+    height: 100%;
+    /* IE support */
 }
 
 #preloader {
@@ -194,7 +196,8 @@ h5 {
 .alt1,
 .alt2,
 .alt3 {
-     background-color: #e0e0e0; /* Backup for gradient */
+    background-color: #e0e0e0;
+    /* Backup for gradient */
 }
 
 .alt1 {
@@ -316,7 +319,7 @@ a:active {
         padding-left: max(20px, constant(safe-area-inset-left));
         padding-right: max(20px, constant(safe-area-inset-right));
     }
-    
+
     #header {
         padding-top: constant(safe-area-inset-top);
     }
@@ -341,7 +344,7 @@ a:active {
         padding-left: max(20px, env(safe-area-inset-left));
         padding-right: max(20px, env(safe-area-inset-right));
     }
-    
+
     #header {
         padding-top: env(safe-area-inset-top);
     }
@@ -349,7 +352,7 @@ a:active {
     #footer {
         padding-bottom: env(safe-area-inset-bottom);
     }
-    
+
     .ios-bar {
         display: block;
         position: fixed;
@@ -358,5 +361,53 @@ a:active {
         background: #1e1e1e;
         z-index: 3;
         opacity: 0.25;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    #body-content {
+        background: #1d1f20;
+    }
+
+    .alt1,
+    .alt2,
+    .alt3 {
+        background: #212325;
+        /* Backup for gradient */
+    }
+
+    .alt1 {
+        background: linear-gradient(to bottom, #26282a, #1d1f20);
+    }
+
+    .alt2 {
+        background: linear-gradient(to right bottom, #26282a, #212325);
+    }
+
+    .alt3 {
+        background: linear-gradient(to top, #26282a, #1d1f20);
+    }
+
+    h3,
+    h4,
+    h5,
+    .inner p,
+    .block-list,
+    .block-list li a {
+        color: #dddbd6;
+    }
+
+    .block-list li a {
+        text-decoration-color: initial;
+        color: #dddbd6;
+    }
+
+    .hover-list li:hover {
+        background-color: #2c2e30;
+    }
+
+    #footer {
+        background-color: #1c1e1f;
+        color: #f8f7f6;
     }
 }
