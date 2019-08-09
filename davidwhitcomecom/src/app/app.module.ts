@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HeroHeaderComponent } from './hero-header/hero-header.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeroHeaderComponent
   ],
   imports: [
     BrowserModule,
