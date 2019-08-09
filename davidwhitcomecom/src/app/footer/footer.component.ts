@@ -10,6 +10,8 @@ export class FooterComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    var footerDate: HTMLElement = document.getElementById("footerDate");
+    if (footerDate != null)
+        footerDate.innerText = new Date().getFullYear().toString();
   }
-
 }
