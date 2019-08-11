@@ -7,6 +7,7 @@ import { HeroHeaderComponent } from './hero-header/hero-header.component';
 import { FooterComponent } from './footer/footer.component';
 import { SkillsComponent } from './skills/skills.component';
 import { SocialComponent } from './social/social.component';
+import { MainCardComponent } from './main-card/main-card.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { SocialComponent } from './social/social.component';
     HeroHeaderComponent,
     FooterComponent,
     SkillsComponent,
-    SocialComponent
+    SocialComponent,
+    MainCardComponent
   ],
   imports: [
     BrowserModule,

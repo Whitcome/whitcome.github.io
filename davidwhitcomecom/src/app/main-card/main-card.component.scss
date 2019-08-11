@@ -1,0 +1,49 @@
+.flex_content {
+    display: flex;
+    flex-flow: row nowrap;
+    background: #e0e0e0; // Backup for gradient
+    background: linear-gradient(to bottom right, #d0d0d0, #e0e0e0);
+}
+
+.left-column {
+    flex: 0 300px;
+    padding: 20px;
+
+    .me {
+        display: block;
+        width: 100px;
+        height: 100px;
+        margin: 0 auto 6px auto;
+        border-radius: 50%;
+        border: 1px solid #1e1e1e;
+    }
+
+    h3 {
+        text-align: center;
+    }
+}
+
+.right-column {
+    flex: 1;
+    padding: 20px;
+
+    i {
+        padding-right: 7px;
+    }
+    
+    .separator {
+        margin-top: 12px;
+    }
+
+    .info-block {
+        display: inline-block;
+        padding: 7px 14px 0 0;
+    }
+}
+
+p {
+    color: #1e1e1e;
+    font-size: 1em;
+    line-height: 25px;
+    margin: 2px 0px 9px 0px;
+}
