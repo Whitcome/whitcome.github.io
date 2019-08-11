@@ -1,3 +1,5 @@
+@import "../../variables.scss";
+
 #footer {
     background: #1e1e1e;
     color: #F7F7F7;
@@ -6,4 +8,9 @@
     text-align: center;
     padding-bottom: constant(safe-area-inset-bottom);
     padding-bottom: env(safe-area-inset-bottom);
+
+    @media #{$dark-mode} {
+        background: #1c1e1f;
+        color: #f8f7f6;
+    }
 }

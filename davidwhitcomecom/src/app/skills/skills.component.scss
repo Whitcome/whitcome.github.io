@@ -43,6 +43,10 @@
                 text-decoration: none;
                 color: #1e1e1e;
             }
+
+            @media #{$dark-mode} {
+                color: #dddbd6;
+            }
         }
     }
     

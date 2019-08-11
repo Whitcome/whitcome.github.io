@@ -26,5 +26,23 @@
         font-size: 1em;
         line-height: 25px;
         margin: 2px 0px 9px 0px;
+
+        @media #{$dark-mode} {
+            color: #dddbd6;
+        }
+    }
+
+    h3,
+    h4,
+    h5 {
+        @media #{$dark-mode} {
+            color: #dddbd6;
+        }
+    }
+    
+    h3 {
+        font-size: 1.5em;
+        font-weight: 700;
+        margin-bottom: 10px;
     }
 }

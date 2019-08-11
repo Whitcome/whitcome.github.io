@@ -37,6 +37,10 @@
                 height: 75px;
                 text-decoration: none;
                 color: #1e1e1e;
+
+                @media #{$dark-mode} {
+                    color: #dddbd6;
+                }
             }
         }
     }
@@ -57,6 +61,10 @@
                 -moz-transition: 0.2s background;
                 transition: 0.2s background;
                 background: #bbbbbb;
+
+                @media #{$dark-mode} {
+                    background: #2c2e30;
+                }
             }
         }
     }

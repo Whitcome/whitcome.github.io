@@ -28,6 +28,10 @@
 
     h3 {
         text-align: center;
+
+        @media #{$dark-mode} {
+            color: #dddbd6;
+        }
     }
 
     p {
@@ -35,5 +39,9 @@
         font-size: 1em;
         line-height: 25px;
         margin: 2px 0px 9px 0px;
+
+        @media #{$dark-mode} {
+            color: #dddbd6;
+        }
     }
 }
