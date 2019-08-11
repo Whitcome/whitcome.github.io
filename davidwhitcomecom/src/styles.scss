@@ -1,3 +1,6 @@
+
+@import "variables.scss";
+
 html {
     font-family: 'Source Sans Pro', 'Arial', sans-serif;
     background: #1e1e1e;
@@ -14,6 +17,10 @@ body {
     background: #eee;
     opacity: 1;
     z-index: 2;
+
+    @media #{$dark-mode} {
+        background: #1d1f20;
+    }
 }
 
 h1,
@@ -76,12 +83,24 @@ h5 {
 ::-webkit-scrollbar {
     background: #e0e0e0;
     width: 10px;
+
+    @media #{$dark-mode} {
+        background: #1c1e1f;
+    }
 }
 
 ::-webkit-scrollbar-corner {
     background: #aaaaaa;
+
+    @media #{$dark-mode} {
+        background: #181a1b;
+    }
 }
 
 ::-webkit-scrollbar-thumb {
     background: #666666;
+
+    @media #{$dark-mode} {
+        background: #555;
+    }
 }

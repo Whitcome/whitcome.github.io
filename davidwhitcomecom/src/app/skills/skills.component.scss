@@ -1,6 +1,12 @@
+@import "../../variables.scss";
+
 .section {
     background: #e0e0e0; // Backup for gradient
     background: linear-gradient(to bottom, #d0d0d0, #eeeeee);
+
+    @media #{$dark-mode} {
+        background: linear-gradient(to bottom, #26282a, #1d1f20);
+    }
 }
 
 .block-list {

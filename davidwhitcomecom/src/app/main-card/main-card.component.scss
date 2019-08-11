@@ -9,6 +9,10 @@
     @media #{$mobile} {
         flex-flow: column wrap;
     }
+
+    @media #{$dark-mode} {
+        background: linear-gradient(to right bottom, #26282a, #212325);
+    }
 }
 
 p {
