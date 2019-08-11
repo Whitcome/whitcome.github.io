@@ -6,15 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./social.component.scss']
 })
 export class SocialComponent {
-  SocialLinks: Array<SocialLink> = new Array();
-  SocialLinksHtml: String = "";
+  private SocialLinks: Array<SocialLink> = new Array();
+  public SocialLinksHtml: String = "";
 
   constructor() {
     this.createSocialLinks();
     this.convertSocialLinksToHtml(this.SocialLinks);
   }
 
-  createSocialLinks() {
+  private createSocialLinks() {
     this.SocialLinks.push(
       new SocialLink("fa fa-github", "GitHub", "https://github.com/Whitcome"),
       new SocialLink("fa fa-linkedin", "LinkedIn", "https://www.linkedin.com/in/david-whitcome"),
@@ -23,15 +23,15 @@ export class SocialComponent {
     );
   }
 
-  convertSocialLinksToHtml(skills: Array<SocialLink>) {
+  private convertSocialLinksToHtml(skills: Array<SocialLink>) {
     skills.forEach(socialLink => { this.SocialLinksHtml += socialLink.convertToHtml() });
   }
 }
 
 class SocialLink {
-  IconClass: String;
-  Text: String;
-  Link: String;
+  private IconClass: String;
+  private Text: String;
+  private Link: String;
   
   constructor(iconClass: String, text: String, link: String) {
     this.IconClass = iconClass;
@@ -39,7 +39,7 @@ class SocialLink {
     this.Link = link;
   }
 
-  convertToHtml() {
+  public convertToHtml() {
     return `<li><a href="${this.Link}" class="github"><i class="${this.IconClass}" aria-hidden="true"></i><span>${this.Text}</span></a></li>`;
   }
 }
