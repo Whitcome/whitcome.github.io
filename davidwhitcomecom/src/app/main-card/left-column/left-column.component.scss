@@ -1,5 +1,9 @@
+:host {
+    flex: 0 1000px;
+}
+
 .left-column {
-    max-width: 300px;
+    flex: 0 1000px;
     padding: 20px;
 
     .me {

@@ -9,6 +9,7 @@ import { SkillsComponent } from './skills/skills.component';
 import { SocialComponent } from './social/social.component';
 import { MainCardComponent } from './main-card/main-card.component';
 import { LeftColumnComponent } from './main-card/left-column/left-column.component';
+import { RightColumnComponent } from './main-card/right-column/right-column.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { LeftColumnComponent } from './main-card/left-column/left-column.compone
     SkillsComponent,
     SocialComponent,
     MainCardComponent,
-    LeftColumnComponent
+    LeftColumnComponent,
+    RightColumnComponent
   ],
   imports: [
     BrowserModule,
