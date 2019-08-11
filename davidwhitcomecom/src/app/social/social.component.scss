@@ -1,0 +1,56 @@
+.section {
+    background: #e0e0e0; // Backup for gradient
+    background: linear-gradient(to top, #d0d0d0, #eeeeee);
+    padding-bottom: 35px;
+}
+
+.block-list {
+    display: block;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: #1e1e1e;
+
+    li {
+        display: inline-block;
+        text-align: center;
+
+        i {
+            font-size: 3em;
+            display: block;
+            padding: 0 0 10px 0;
+        }
+
+        span {
+            font-size: 0.85em;
+            text-align: center;
+        }
+
+        a {
+            width: 80px;
+            height: 75px;
+            text-decoration: none;
+            color: #1e1e1e;
+        }
+    }
+}
+
+.hover-list {
+    li {
+        a {
+            display: block;
+            padding: 15px 10px;
+
+            @media screen and (max-width: 363px) {
+                padding: 15px 3px;
+            }
+        }
+
+        a:hover {
+            -webkit-transition: 0.2s background;
+            -moz-transition: 0.2s background;
+            transition: 0.2s background;
+            background: #bbbbbb;
+        }
+    }
+}

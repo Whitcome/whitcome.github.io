@@ -64,4 +64,11 @@ h5 {
 
 .section {
     padding-top: 35px;
+
+    p {
+        a {
+            text-decoration: underline;
+            color: inherit;
+        }
+    } 
 }
