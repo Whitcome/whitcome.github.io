@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./hero-header.component.scss']
 })
 export class HeroHeaderComponent implements OnInit {
+  name: string = "David Whitcome";
+  tag: string = "Web Developer & Software Engineer";
+
   constructor() {
     window.addEventListener('scroll', this.ParallaxAnimation);
   }
