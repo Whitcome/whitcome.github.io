@@ -1,0 +1,40 @@
+.alt1 {
+    background: #e0e0e0; // Backup for gradient
+    background: linear-gradient(to bottom, #d0d0d0, #eeeeee);
+}
+
+.block-list {
+    display: block;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: #1e1e1e;
+
+    li {
+        display: inline-block;
+        padding: 15px 10px;
+        text-align: center;
+        width: 80px;
+        height: 75px;
+
+        @media screen and (max-width: 363px) {
+            padding: 15px 3px;
+        }
+
+        i {
+            font-size: 3em;
+            display: block;
+            padding: 0 0 10px 0;
+        }
+
+        span {
+            font-size: 0.85em;
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+            color: #1e1e1e;
+        }
+    }
+}
