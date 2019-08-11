@@ -72,3 +72,16 @@ h5 {
         }
     } 
 }
+
+::-webkit-scrollbar {
+    background: #e0e0e0;
+    width: 10px;
+}
+
+::-webkit-scrollbar-corner {
+    background: #aaaaaa;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #666666;
+}
