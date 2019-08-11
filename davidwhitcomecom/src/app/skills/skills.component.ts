@@ -34,10 +34,10 @@ export class SkillsComponent {
 }
 
 class Skill {
-  IconClass: string;
-  Text: string;
+  IconClass: String;
+  Text: String;
   
-  constructor(iconClass: string, text: string) {
+  constructor(iconClass: String, text: String) {
     this.IconClass = iconClass;
     this.Text = text;
   }

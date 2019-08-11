@@ -9,54 +9,55 @@
         background: linear-gradient(to top, #26282a, #1d1f20);
     }
 }
-
-.block-list {
-    display: block;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    color: #1e1e1e;
-
-    li {
-        display: inline-block;
+::ng-deep {
+    .block-list {
+        display: block;
         text-align: center;
-
-        i {
-            font-size: 3em;
-            display: block;
-            padding: 0 0 10px 0;
-        }
-
-        span {
-            font-size: 0.85em;
+        margin: 0;
+        padding: 0;
+        color: #1e1e1e;
+    
+        li {
+            display: inline-block;
             text-align: center;
-        }
-
-        a {
-            width: 80px;
-            height: 75px;
-            text-decoration: none;
-            color: #1e1e1e;
-        }
-    }
-}
-
-.hover-list {
-    li {
-        a {
-            display: block;
-            padding: 15px 10px;
-
-            @media screen and (max-width: 363px) {
-                padding: 15px 3px;
+    
+            i {
+                font-size: 3em;
+                display: block;
+                padding: 0 0 10px 0;
+            }
+    
+            span {
+                font-size: 0.85em;
+                text-align: center;
+            }
+    
+            a {
+                width: 80px;
+                height: 75px;
+                text-decoration: none;
+                color: #1e1e1e;
             }
         }
-
-        a:hover {
-            -webkit-transition: 0.2s background;
-            -moz-transition: 0.2s background;
-            transition: 0.2s background;
-            background: #bbbbbb;
+    }
+    
+    .hover-list {
+        li {
+            a {
+                display: block;
+                padding: 15px 10px;
+    
+                @media screen and (max-width: 363px) {
+                    padding: 15px 3px;
+                }
+            }
+    
+            a:hover {
+                -webkit-transition: 0.2s background;
+                -moz-transition: 0.2s background;
+                transition: 0.2s background;
+                background: #bbbbbb;
+            }
         }
     }
 }
