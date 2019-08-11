@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./left-column.component.scss']
 })
 export class LeftColumnComponent implements OnInit {
-
+  public Name: String = "Dave";
   constructor() { }
 
   ngOnInit() {

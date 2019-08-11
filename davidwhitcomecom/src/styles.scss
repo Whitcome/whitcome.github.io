@@ -23,8 +23,6 @@ body {
     }
 }
 
-h1,
-h2,
 h3,
 h4,
 h5 {
@@ -60,13 +58,13 @@ h5 {
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 20px;
-}
 
-.inner p {
-    color: #1e1e1e;
-    font-size: 1em;
-    line-height: 25px;
-    margin: 2px 0px 9px 0px;
+    p {
+        color: #1e1e1e;
+        font-size: 1em;
+        line-height: 25px;
+        margin: 2px 0px 9px 0px;
+    }
 }
 
 .section {
