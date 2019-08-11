@@ -1,10 +1,21 @@
+@import "../../../variables.scss";
+
 :host {
     flex: 0 1000px;
+    
+    @media #{$mobile} {
+        flex: none;
+    }
 }
 
 .left-column {
     flex: 0 1000px;
     padding: 20px;
+
+    @media #{$mobile} {
+        padding-bottom: 0px;
+        width: auto;
+    }
 
     .me {
         display: block;

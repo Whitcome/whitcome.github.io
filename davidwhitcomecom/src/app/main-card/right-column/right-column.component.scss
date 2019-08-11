@@ -1,5 +1,12 @@
+@import "../../../variables.scss";
+
 .right-column {
     padding: 20px;
+
+    @media #{$mobile} {
+        flex: none;
+        width: auto;
+    }
 
     i {
         padding-right: 7px;

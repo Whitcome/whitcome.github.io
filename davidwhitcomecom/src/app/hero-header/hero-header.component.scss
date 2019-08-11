@@ -1,3 +1,5 @@
+@import "../../variables.scss";
+
 #header {
     position: relative;
     flex: 1;
@@ -39,6 +41,10 @@ h1 {
     text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.8);
     font-weight: 700;
     color: #F7F7F7;
+
+    @media #{$mobile} {
+        font-size: 2em;
+    }
 }
 
 h2 {
@@ -46,4 +52,8 @@ h2 {
     text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.8);
     font-weight: 500;
     color: #F7F7F7;
+
+    @media #{$mobile} {
+        font-size: 0.9em;
+    }
 }
