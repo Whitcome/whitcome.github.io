@@ -16,31 +16,34 @@
     padding: 0;
     color: #1e1e1e;
 
-    li {
-        display: inline-block;
-        padding: 15px 10px;
-        text-align: center;
-        width: 80px;
-        height: 75px;
-
-        @media screen and (max-width: 363px) {
-            padding: 15px 3px;
-        }
-
-        i {
-            font-size: 3em;
-            display: block;
-            padding: 0 0 10px 0;
-        }
-
-        span {
-            font-size: 0.85em;
+    ::ng-deep {
+        li {
+            display: inline-block;
+            padding: 15px 10px;
             text-align: center;
-        }
-
-        a {
-            text-decoration: none;
-            color: #1e1e1e;
+            width: 80px;
+            height: 75px;
+    
+            @media screen and (max-width: 363px) {
+                padding: 15px 3px;
+            }
+    
+            i {
+                font-size: 3em;
+                display: block;
+                padding: 0 0 10px 0;
+            }
+    
+            span {
+                font-size: 0.85em;
+                text-align: center;
+            }
+    
+            a {
+                text-decoration: none;
+                color: #1e1e1e;
+            }
         }
     }
+    
 }
