@@ -1,26 +1,8 @@
-.flex_content {
+.flex-content {
     display: flex;
     flex-flow: row nowrap;
     background: #e0e0e0; // Backup for gradient
     background: linear-gradient(to bottom right, #d0d0d0, #e0e0e0);
-}
-
-.left-column {
-    flex: 0 300px;
-    padding: 20px;
-
-    .me {
-        display: block;
-        width: 100px;
-        height: 100px;
-        margin: 0 auto 6px auto;
-        border-radius: 50%;
-        border: 1px solid #1e1e1e;
-    }
-
-    h3 {
-        text-align: center;
-    }
 }
 
 .right-column {

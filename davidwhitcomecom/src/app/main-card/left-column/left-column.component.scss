@@ -1,0 +1,24 @@
+.left-column {
+    max-width: 300px;
+    padding: 20px;
+
+    .me {
+        display: block;
+        width: 100px;
+        height: 100px;
+        margin: 0 auto 6px auto;
+        border-radius: 50%;
+        border: 1px solid #1e1e1e;
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+    p {
+        color: #1e1e1e;
+        font-size: 1em;
+        line-height: 25px;
+        margin: 2px 0px 9px 0px;
+    }
+}
