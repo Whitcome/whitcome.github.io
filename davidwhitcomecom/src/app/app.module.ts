@@ -10,7 +10,6 @@ import { SocialComponent } from './social/social.component';
 import { MainCardComponent } from './main-card/main-card.component';
 import { LeftColumnComponent } from './main-card/left-column/left-column.component';
 import { RightColumnComponent } from './main-card/right-column/right-column.component';
-import { PreloaderComponent } from './preloader/preloader.component';
 
 @NgModule({
   declarations: [
@@ -21,8 +20,7 @@ import { PreloaderComponent } from './preloader/preloader.component';
     SocialComponent,
     MainCardComponent,
     LeftColumnComponent,
-    RightColumnComponent,
-    PreloaderComponent
+    RightColumnComponent
   ],
   imports: [
     BrowserModule,
