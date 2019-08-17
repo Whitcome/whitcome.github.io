@@ -1,20 +1,12 @@
 @import "../../../variables.scss";
 
-:host {
-    flex: 0 1000px;
-    
-    @media #{$mobile} {
-        flex: none;
-    }
-}
-
 .left-column {
-    flex: 0 1000px;
+    width: 300px;
     padding: 20px;
 
     @media #{$mobile} {
-        padding-bottom: 0px;
         width: auto;
+        padding-bottom: 0px;
     }
 
     .me {
@@ -28,6 +20,9 @@
 
     h3 {
         text-align: center;
+        font-size: 1.5em;
+        font-weight: 700;
+        margin-bottom: 10px;
 
         @media #{$dark-mode} {
             color: #dddbd6;

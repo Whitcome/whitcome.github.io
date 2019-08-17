@@ -1,69 +1,22 @@
 
 @import "variables.scss";
 
+html,
+body {
+    background:#eee;
+    @media #{$dark-mode} {
+        background: #1e1e1e;
+    }
+}
+
 html {
     font-family: 'Source Sans Pro', 'Arial', sans-serif;
-    background: #1e1e1e;
 }
 
 body {
     margin: 0;
-    background: #1e1e1e;
     min-width: 225px;
     -webkit-text-size-adjust: 100%;
-}
-
-#body-content {
-    background: #eee;
-    opacity: 1;
-    z-index: 2;
-
-    @media #{$dark-mode} {
-        background: #1d1f20;
-    }
-}
-
-h3,
-h4,
-h5 {
-    margin: 0;
-    font-family: -apple-system, 'Open Sans', 'Arial', sans-serif;
-    color: #1e1e1e;
-}
-
-h3 {
-    font-size: 1.5em;
-    font-weight: 700;
-    margin-bottom: 10px;
-}
-
-h4 {
-    border-bottom: 1px solid #aaaaaa;
-    padding: 3px 0;
-    font-size: 1.1em;
-    font-weight: 700;
-}
-
-h5 {
-    font-size: 0.9em;
-    font-weight: 700;
-}
-
-.inner {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.section {
-    padding-top: 35px;
-
-    p {
-        a {
-            text-decoration: underline;
-            color: inherit;
-        }
-    } 
 }
 
 ::-webkit-scrollbar {
@@ -91,45 +44,27 @@ h5 {
     }
 }
 
-
-#flex-loading {
-    background: #eee;
-    display: flex;
-    position: fixed;
-    z-index: 4;
-    opacity: 1;
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-    width: 100%; // IE support
-    height: 100%; // IE support
-
-    @media #{$dark-mode} {
-        background: #1d1f20;
-    }
+h3,
+h4,
+h5 {
+    margin: 0;
+    font-family: -apple-system, 'Open Sans', 'Arial', sans-serif;
+    color: #1e1e1e;
 }
 
-#preloader {
-    border: 3px solid #e0e0e0;
-    border-top: 3px solid #333;
-    border-radius: 100%;
-    width: 80px;
-    height: 80px;
-    margin: 30px;
-    animation: loading 0.8s cubic-bezier(0.6, 0.4, 0.8, 1) infinite;
-
-    @media #{$dark-mode} {
-        border: 3px solid #393939;
-        border-top: 3px solid #5c5c5c;
-    }
+.inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-@keyframes loading {
-    0% {
-        transform: rotate(0deg);
-    }
+.section {
+    padding-top: 35px;
 
-    100% {
-        transform: rotate(360deg);
-    }
+    p {
+        a {
+            text-decoration: underline;
+            color: inherit;
+        }
+    } 
 }

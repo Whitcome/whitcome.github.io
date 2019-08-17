@@ -1,0 +1,9 @@
+@import "../variables.scss";
+
+#body-content {
+    background: #eee;
+
+    @media #{$dark-mode} {
+        background: #1d1f20;
+    }
+}
