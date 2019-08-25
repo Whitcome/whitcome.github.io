@@ -2,7 +2,7 @@
 
 #footer {
     background: #dddddd;
-    color: #222222;
+    color: $text-dark;
     height: 100px;
     line-height: 100px;
     text-align: center;
@@ -11,6 +11,6 @@
 
     @media #{$dark-mode} {
         background: #1c1e1f;
-        color: #f8f7f6;
+        color: $text-light;
     }
 }

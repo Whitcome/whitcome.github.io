@@ -14,7 +14,7 @@
     text-align: center;
     margin: 0;
     padding: 0;
-    color: #1e1e1e;
+    color: $text-dark;
 
     ::ng-deep {
         li {
@@ -41,11 +41,11 @@
     
             a {
                 text-decoration: none;
-                color: #1e1e1e;
+                color: $text-dark;
             }
 
             @media #{$dark-mode} {
-                color: #dddbd6;
+                color: $text-light;
             }
         }
     }

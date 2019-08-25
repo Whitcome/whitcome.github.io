@@ -50,7 +50,7 @@ body {
     background: #666666;
 
     @media #{$dark-mode} {
-        background: #555;
+        background: #555555;
     }
 }
 
@@ -59,7 +59,7 @@ h4,
 h5 {
     margin: 0;
     font-family: -apple-system, 'Open Sans', 'Arial', sans-serif;
-    color: #1e1e1e;
+    color: $text-dark;
 }
 
 .inner {

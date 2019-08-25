@@ -22,13 +22,13 @@
     }
 
     p {
-        color: #1e1e1e;
+        color: $text-dark;
         font-size: 1em;
         line-height: 25px;
         margin: 2px 0px 9px 0px;
 
         @media #{$dark-mode} {
-            color: #dddbd6;
+            color: $text-light;
         }
     }
 
@@ -36,7 +36,7 @@
     h4,
     h5 {
         @media #{$dark-mode} {
-            color: #dddbd6;
+            color: $text-light;
         }
     }
     
@@ -47,7 +47,7 @@
     }
 
     h4 {
-        border-bottom: 1px solid #aaaaaa;
+        border-bottom: 1px solid $border-color;
         padding: 3px 0;
         font-size: 1.1em;
         font-weight: 700;
