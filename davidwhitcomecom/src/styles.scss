@@ -17,7 +17,7 @@ html {
 
     // Firefox scrollbar
     scrollbar-width: thin;
-    scrollbar-color: #666666 #e0e0e0;
+    
     @media #{$dark-mode} {
         scrollbar-color: #555 #1c1e1f;
     }
