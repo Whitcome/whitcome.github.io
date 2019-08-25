@@ -54,16 +54,25 @@
                 @media screen and (max-width: 363px) {
                     padding: 15px 3px;
                 }
-            }
-    
-            a:hover {
+
                 -webkit-transition: 0.2s background;
                 -moz-transition: 0.2s background;
                 transition: 0.2s background;
+            }
+    
+            a:hover {
                 background: #bbbbbb;
 
                 @media #{$dark-mode} {
                     background: #2c2e30;
+                }
+            }
+
+            a:active {
+                background: #cccccc;
+
+                @media #{$dark-mode} {
+                    background: #27292b;
                 }
             }
         }
