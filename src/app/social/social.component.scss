@@ -9,6 +9,7 @@
         background: linear-gradient(to top, $background-dark-gradient, $background-dark);
     }
 }
+
 ::ng-deep {
     .block-list {
         display: block;
@@ -38,6 +39,7 @@
                 height: 75px;
                 text-decoration: none;
                 color: $text-dark;
+                border-radius: 2%;
 
                 @media #{$dark-mode} {
                     color: $text-light;
