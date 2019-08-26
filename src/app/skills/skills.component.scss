@@ -1,11 +1,11 @@
 @import "../../variables.scss";
 
 .section {
-    background: #e0e0e0; // Backup for gradient
-    background: linear-gradient(to bottom, #d0d0d0, #eeeeee);
+    //background: #e0e0e0; // Backup for gradient
+    background: linear-gradient(to bottom, $background-light-gradient, $background-light);
 
     @media #{$dark-mode} {
-        background: linear-gradient(to bottom, #26282a, #1d1f20);
+        background: linear-gradient(to bottom, $background-dark-gradient, $background-dark);
     }
 }
 
@@ -37,6 +37,7 @@
             span {
                 font-size: 0.85em;
                 text-align: center;
+                font-weight: 600;
             }
     
             a {

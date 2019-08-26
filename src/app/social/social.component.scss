@@ -1,12 +1,12 @@
 @import "../../variables.scss";
 
 .section {
-    background: #e0e0e0; // Backup for gradient
-    background: linear-gradient(to top, #d0d0d0, #eeeeee);
+    //background: #e0e0e0; // Backup for gradient
+    background: linear-gradient(to top, $background-light-gradient, $background-light);
     padding-bottom: 35px;
 
     @media #{$dark-mode} {
-        background: linear-gradient(to top, #26282a, #1d1f20);
+        background: linear-gradient(to top, $background-dark-gradient, $background-dark);
     }
 }
 ::ng-deep {
@@ -30,6 +30,7 @@
             span {
                 font-size: 0.85em;
                 text-align: center;
+                font-weight: 600;
             }
     
             a {

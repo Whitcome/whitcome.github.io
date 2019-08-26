@@ -1,8 +1,9 @@
 @import "../../variables.scss";
 
 #footer {
-    background: #dddddd;
+    background: $background-light;
     color: $text-dark;
+    font-weight: 600;
     height: 100px;
     line-height: 100px;
     text-align: center;
@@ -10,7 +11,7 @@
     padding-bottom: env(safe-area-inset-bottom);
 
     @media #{$dark-mode} {
-        background: #1c1e1f;
+        background: $background-dark;
         color: $text-light;
     }
 }

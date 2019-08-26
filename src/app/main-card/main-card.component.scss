@@ -14,6 +14,14 @@
         background: linear-gradient(to right bottom, #26282a, #212325);
     }
 }
+.section {
+    background: $background-light;
+
+    @media #{$dark-mode} {
+        background: $background-dark;
+    }
+}
+
 
 p {
     color: $text-dark;

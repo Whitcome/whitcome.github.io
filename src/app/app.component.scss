@@ -1,13 +1,5 @@
 @import "../variables.scss";
 
-#body-content {
-    background: #eee;
-
-    @media #{$dark-mode} {
-        background: #1d1f20;
-    }
-}
-
 .ios-bar {
     display: block;
     position: fixed;
@@ -17,4 +9,9 @@
     background: #1e1e1e;
     z-index: 3;
     opacity: 0.25;
+}
+
+#body-content {
+    background-image: url('../assets/images/background.jpg');
+    background-size: cover;
 }
