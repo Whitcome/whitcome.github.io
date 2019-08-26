@@ -28,4 +28,8 @@ export class AppComponent implements AfterViewInit  {
     this.IsLoading = false;
     this.cdr.detectChanges();
   }
+
+  stopPreloaderAnimation() {
+    (<HTMLElement>document.getElementsByTagName("preloader")[0]).style.cssText = "animation: none;";
+  }
 }
