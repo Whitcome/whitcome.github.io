@@ -39,7 +39,7 @@
                 height: 75px;
                 text-decoration: none;
                 color: $text-dark;
-                border-radius: 2%;
+                border-radius: 4px;
 
                 @media #{$dark-mode} {
                     color: $text-light;

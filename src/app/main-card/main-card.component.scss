@@ -3,12 +3,13 @@
 .flex-content {
     display: flex;
     flex-flow: row nowrap;
-    border-radius: 0.5%;
+    border-radius: 4px;
     background: #e0e0e0; // Backup for gradient
     background: linear-gradient(to bottom right, #d0d0d0, #e0e0e0);
 
     @media #{$mobile} {
         flex-flow: column wrap;
+        border-radius: 10px;
     }
 
     @media #{$dark-mode} {
