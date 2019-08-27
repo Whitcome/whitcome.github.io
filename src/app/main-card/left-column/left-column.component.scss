@@ -1,0 +1,42 @@
+@import "../../../variables.scss";
+
+.left-column {
+    width: 300px;
+    padding: 20px;
+
+    @media #{$mobile} {
+        width: auto;
+        padding-bottom: 0px;
+    }
+
+    .me {
+        display: block;
+        width: 100px;
+        height: 100px;
+        margin: 0 auto 6px auto;
+        border-radius: 50%;
+        border: 1px solid #1e1e1e;
+    }
+
+    h3 {
+        text-align: center;
+        font-size: 1.5em;
+        font-weight: 700;
+        margin-bottom: 10px;
+
+        @media #{$dark-mode} {
+            color: $text-light;
+        }
+    }
+
+    p {
+        color: #1e1e1e;
+        font-size: 1em;
+        line-height: 25px;
+        margin: 2px 0px 9px 0px;
+
+        @media #{$dark-mode} {
+            color: $text-light;
+        }
+    }
+}

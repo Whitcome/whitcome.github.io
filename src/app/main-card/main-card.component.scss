@@ -1,0 +1,34 @@
+@import "../../variables.scss";
+
+.flex-content {
+    display: flex;
+    flex-flow: row nowrap;
+    border-radius: 4px;
+    background: #e0e0e0; // Backup for gradient
+    background: linear-gradient(to bottom right, #d0d0d0, #e0e0e0);
+
+    @media #{$mobile} {
+        flex-flow: column wrap;
+        border-radius: 10px;
+    }
+
+    @media #{$dark-mode} {
+        background: linear-gradient(to right bottom, #26282a, #212325);
+    }
+}
+
+.section {
+    background: $background-light;
+
+    @media #{$dark-mode} {
+        background: $background-dark;
+    }
+}
+
+
+p {
+    color: $text-dark;
+    font-size: 1em;
+    line-height: 25px;
+    margin: 2px 0px 9px 0px;
+}

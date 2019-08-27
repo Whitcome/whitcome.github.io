@@ -1,0 +1,80 @@
+@import "variables.scss";
+@import "assets/fonts/open_sans.css";
+@import "assets/fonts/source_sans_pro.css";
+@import "assets/fonts/font-awesome/css/font-awesome.min.css";
+@import "assets/fonts/devicon/devicon.min.css";
+
+html,
+body {
+    background:#eee;
+    @media #{$dark-mode} {
+        background: #1e1e1e;
+    }
+}
+
+html {
+    font-family: 'Source Sans Pro', 'Arial', sans-serif;
+
+    // Firefox scrollbar
+    scrollbar-width: thin;
+    
+    @media #{$dark-mode} {
+        scrollbar-color: #555 #1c1e1f;
+    }
+}
+
+body {
+    margin: 0;
+    min-width: 225px;
+    -webkit-text-size-adjust: 100%;
+}
+
+::-webkit-scrollbar {
+    background: #e0e0e0;
+    width: 10px;
+
+    @media #{$dark-mode} {
+        background: #1c1e1f;
+    }
+}
+
+::-webkit-scrollbar-corner {
+    background: #aaaaaa;
+
+    @media #{$dark-mode} {
+        background: #181a1b;
+    }
+}
+
+::-webkit-scrollbar-thumb {
+    background: #666666;
+
+    @media #{$dark-mode} {
+        background: #555555;
+    }
+}
+
+h3,
+h4,
+h5 {
+    margin: 0;
+    font-family: -apple-system, 'Open Sans', 'Arial', sans-serif;
+    color: $text-dark;
+}
+
+.inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section {
+    padding-top: 35px;
+
+    p {
+        a {
+            text-decoration: underline;
+            color: inherit;
+        }
+    } 
+}
