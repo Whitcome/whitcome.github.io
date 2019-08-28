@@ -52,10 +52,10 @@
         li {
             a {
                 display: block;
-                padding: 15px 12px;
+                padding: 16px 10px;
     
                 @media screen and (max-width: 363px) {
-                    padding: 15px 3px;
+                    padding: 16px 2px;
                 }
 
                 -webkit-transition: 0.2s background;
