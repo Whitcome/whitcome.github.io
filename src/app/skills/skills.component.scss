@@ -19,13 +19,13 @@
     ::ng-deep {
         li {
             display: inline-block;
-            padding: 16px 10px;
+            padding: 16px 8px;
             text-align: center;
-            width: 88px;
-            height: 78px;
+            width: 90px;
+            height: 80px;
     
             @media screen and (max-width: 363px) {
-                padding: 16px 2px;
+                padding: 16px 0;
             }
     
             i {
