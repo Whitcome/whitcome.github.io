@@ -27,7 +27,8 @@
               "src/assets",
               "src/favicon.ico",
               "src/robots.txt",
-              "src/CNAME"
+              "src/CNAME",
+              "src/apple-touch-icon.png"
             ],
             "styles": [
               "src/styles.scss",
