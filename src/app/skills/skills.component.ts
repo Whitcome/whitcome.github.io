@@ -6,16 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./skills.component.scss']
 })
 export class SkillsComponent {
-  private Skills: Array<Skill> = new Array();
-  public SkillsHtml: String = "";
+  skills: Array<Skill> = new Array<Skill>();
 
   constructor() {
     this.createSkills();
-    this.convertSkillsToHtml(this.Skills);
   }
 
   private createSkills() {
-    this.Skills.push(
+    this.skills.push(
       new Skill("devicon-csharp-plain", "C#"),
       new Skill("devicon-dot-net-plain", ".NET"),
       new Skill("devicon-javascript-plain", "JavaScript"),
@@ -27,22 +25,14 @@ export class SkillsComponent {
       new Skill("fa fa-database", "SQL"),
     );
   }
-
-  private convertSkillsToHtml(skills: Array<Skill>) {
-    skills.forEach(skill => { this.SkillsHtml += skill.convertToHtml() });
-  }
 }
 
 class Skill {
-  private IconClass: String;
-  private Text: String;
+  private iconClass: String;
+  private text: String;
   
   constructor(iconClass: String, text: String) {
-    this.IconClass = iconClass;
-    this.Text = text;
-  }
-
-  public convertToHtml() {
-    return `<li><i class="${this.IconClass}" aria-hidden="true"></i><span>${this.Text}</span></li>`;
+    this.iconClass = iconClass;
+    this.text = text;
   }
 }
