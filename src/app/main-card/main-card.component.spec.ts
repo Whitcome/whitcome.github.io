@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { LeftColumnComponent } from './left-column/left-column.component';
 import { MainCardComponent } from './main-card.component';
+import { RightColumnComponent } from './right-column/right-column.component';
 
 describe('MainCardComponent', () => {
   let component: MainCardComponent;
@@ -8,7 +9,11 @@ describe('MainCardComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ MainCardComponent ]
+      declarations: [
+        MainCardComponent,
+        LeftColumnComponent,
+        RightColumnComponent
+      ]
     })
     .compileComponents();
   }));
