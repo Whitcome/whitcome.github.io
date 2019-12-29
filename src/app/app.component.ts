@@ -1,5 +1,5 @@
-import { AfterViewInit, ChangeDetectorRef, Component } from '@angular/core';
-import { trigger, state, style, animate, transition } from '@angular/animations';
+import { animate, state, style, transition, trigger } from '@angular/animations';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -19,17 +19,6 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
     ])
   ]
 })
-export class AppComponent implements AfterViewInit  {
-  IsLoading: Boolean = true;
+export class AppComponent {
 
-  constructor(private cdr: ChangeDetectorRef) {}
-
-  ngAfterViewInit() {
-    this.IsLoading = false;
-    this.cdr.detectChanges();
-  }
-
-  stopPreloaderAnimation() {
-    (<HTMLElement>document.getElementsByTagName("preloader")[0]).style.cssText = "animation: none;";
-  }
 }

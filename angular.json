@@ -31,8 +31,7 @@
               "src/apple-touch-icon.png"
             ],
             "styles": [
-              "src/styles.scss",
-              "src/preloader.scss"
+              "src/styles.scss"
             ],
             "scripts": []
           },
