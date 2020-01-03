@@ -20,11 +20,11 @@ export class HeroHeaderComponent implements OnInit {
   ParallaxAnimation() {
     var headerBackground: HTMLElement = document.getElementById("header-background");
     if (headerBackground != null) {
-        var backgroundPosition: number = window.pageYOffset / 4;
-        if (backgroundPosition >= 0)
-            headerBackground.style.marginTop = backgroundPosition + "px";
-        else
-            headerBackground.style.marginTop = "0px";
+      var backgroundPosition: number = window.pageYOffset / 4;
+      if (backgroundPosition >= 0)
+        headerBackground.style.marginTop = backgroundPosition + "px";
+      else
+        headerBackground.style.marginTop = "0px";
     }
   }
 }
