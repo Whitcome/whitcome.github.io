@@ -1,0 +1,7 @@
+.section
+  .inner
+    ul.block-list.hover-list
+      li(*ngFor='let socialLink of SocialLinks')
+        a(href='{{socialLink.link}}')
+          i(class='{{socialLink.iconClass}}', aria-hidden='true')
+          span {{socialLink.text}}
