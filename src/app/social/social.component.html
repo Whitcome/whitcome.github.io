@@ -1,5 +1,12 @@
 <div class="section">
     <div class="inner">
-        <ul class="block-list hover-list" [innerHtml]="SocialLinksHtml"></ul>
+        <ul class="block-list hover-list">
+            <li *ngFor="let socialLink of SocialLinks">
+                <a href="{{socialLink.link}}">
+                    <i class="{{socialLink.iconClass}}" aria-hidden="true"></i>
+                    <span>{{socialLink.text}}</span>
+                </a>
+            </li>
+        </ul>
     </div>
 </div>

@@ -6,12 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./social.component.scss']
 })
 export class SocialComponent {
-  private SocialLinks: Array<SocialLink> = new Array();
-  public SocialLinksHtml: String = "";
+  private SocialLinks: Array<SocialLink> = new Array<SocialLink>();
 
   constructor() {
     this.createSocialLinks();
-    this.convertSocialLinksToHtml(this.SocialLinks);
   }
 
   private createSocialLinks() {
@@ -21,24 +19,16 @@ export class SocialComponent {
       new SocialLink("fa fa-instagram", "Instagram", "https://www.instagram.com/davidwhitcome25")
     );
   }
-
-  private convertSocialLinksToHtml(skills: Array<SocialLink>) {
-    skills.forEach(socialLink => { this.SocialLinksHtml += socialLink.convertToHtml() });
-  }
 }
 
 class SocialLink {
-  private IconClass: String;
-  private Text: String;
-  private Link: String;
+  private iconClass: String;
+  private text: String;
+  private link: String;
   
   constructor(iconClass: String, text: String, link: String) {
-    this.IconClass = iconClass;
-    this.Text = text;
-    this.Link = link;
-  }
-
-  public convertToHtml() {
-    return `<li><a href="${this.Link}" class="github"><i class="${this.IconClass}" aria-hidden="true"></i><span>${this.Text}</span></a></li>`;
+    this.iconClass = iconClass;
+    this.text = text;
+    this.link = link;
   }
 }
