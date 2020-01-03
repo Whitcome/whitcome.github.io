@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./social.component.scss']
 })
 export class SocialComponent {
-  private SocialLinks: Array<SocialLink> = new Array<SocialLink>();
+  SocialLinks: Array<SocialLink> = new Array<SocialLink>();
 
   constructor() {
     this.createSocialLinks();
