@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeroHeaderComponent implements OnInit {
   Name: string = "David Whitcome";
-  Tag: string = "Web Developer & Software Engineer";
+  Tag: string = "Software Developer";
 
   constructor() {
     window.addEventListener('scroll', this.ParallaxAnimation);
