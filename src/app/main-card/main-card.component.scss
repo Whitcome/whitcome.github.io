@@ -9,7 +9,6 @@
 
     @media #{$mobile} {
         flex-flow: column wrap;
-        border-radius: 10px;
     }
 
     @media #{$dark-mode} {
@@ -24,7 +23,6 @@
         background: $background-dark;
     }
 }
-
 
 p {
     color: $text-dark;

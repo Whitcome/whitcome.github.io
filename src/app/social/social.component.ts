@@ -1,18 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-social',
   templateUrl: './social.component.pug',
   styleUrls: ['./social.component.scss']
 })
-export class SocialComponent {
-  SocialLinks: Array<SocialLink> = new Array<SocialLink>();
+export class SocialComponent implements OnInit {
+  SocialLinks = new Array<SocialLink>();
 
-  constructor() {
-    this.createSocialLinks();
-  }
-
-  private createSocialLinks() {
+  ngOnInit() {
     this.SocialLinks.push(
       new SocialLink("fa fa-github", "GitHub", "https://github.com/Whitcome"),
       new SocialLink("fa fa-linkedin", "LinkedIn", "https://www.linkedin.com/in/david-whitcome"),

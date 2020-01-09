@@ -1,18 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-skills',
   templateUrl: './skills.component.pug',
   styleUrls: ['./skills.component.scss']
 })
-export class SkillsComponent {
-  skills: Array<Skill> = new Array<Skill>();
+export class SkillsComponent implements OnInit {
+  skills = new Array<Skill>();
 
-  constructor() {
-    this.createSkills();
-  }
-
-  private createSkills() {
+  ngOnInit() {
     this.skills.push(
       new Skill("devicon-csharp-plain", "C#"),
       new Skill("devicon-dot-net-plain", ".NET"),
