@@ -9,16 +9,13 @@ export class HeroHeaderComponent implements OnInit {
   Name: string = "David Whitcome";
   Tag: string = "Software Developer";
 
-  constructor() {
+  ngOnInit() {
+    this.ParallaxAnimation(); // Set header background to correct position for some browsers.
     window.addEventListener('scroll', this.ParallaxAnimation);
   }
 
-  ngOnInit() {
-    this.ParallaxAnimation(); // Set header background to correct position for some browsers.
-  }
-
   ParallaxAnimation() {
-    var headerBackground: HTMLElement = document.getElementById("header-background");
+    var headerBackground: HTMLElement = document.getElementById("header-background-wrapper");
     if (headerBackground != null) {
       var backgroundPosition: number = window.pageYOffset / 4;
       if (backgroundPosition >= 0)

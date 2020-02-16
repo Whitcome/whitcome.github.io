@@ -8,17 +8,14 @@
     max-height: 1000px;
     overflow: hidden;
     background: #333;
-    background-image: url("/assets/images/header-loading.jpg");
-    background-size: cover;
-    background-position: 50% 70%;
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: constant(safe-area-inset-top);
     padding-top: env(safe-area-inset-top);
 
-    #header-background {
-        background-image: url("/assets/images/header.jpg");
+    #header-background,
+    #header-background-wrapper {
         background-size: cover;
         background-position: 50% 70%;
         width: 100%;
@@ -26,6 +23,14 @@
         position: absolute;
         top: 0;
         left: 0;
+    }
+
+    #header-background-wrapper {
+        background-image: url("/assets/images/header-loading.jpg");
+    }
+    
+    #header-background {
+        background-image: url("/assets/images/header.jpg");
     }
     
     .ie10-fix {
