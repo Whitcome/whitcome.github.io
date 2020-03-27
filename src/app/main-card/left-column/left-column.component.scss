@@ -16,6 +16,10 @@
         margin: 0 auto 6px auto;
         border-radius: 50%;
         border: 1px solid #1e1e1e;
+
+        @media #{$dark-mode} {
+            border-color: $text-light;
+        }
     }
 
     h3 {
