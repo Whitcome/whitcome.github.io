@@ -11,7 +11,7 @@ export class SocialComponent implements OnInit {
   ngOnInit() {
     this.SocialLinks.push(
       new SocialLink("fa fa-github", "GitHub", "https://github.com/Whitcome"),
-      new SocialLink("fa fa-linkedin", "LinkedIn", "https://www.linkedin.com/in/david-whitcome"),
+      new SocialLink("fa fa-linkedin", "LinkedIn", "https://www.linkedin.com/in/dave-whitcome"),
       new SocialLink("fa fa-instagram", "Instagram", "https://www.instagram.com/davidwhitcome25")
     );
   }
