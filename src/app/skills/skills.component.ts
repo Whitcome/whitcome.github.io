@@ -10,6 +10,7 @@ export class SkillsComponent implements OnInit {
 
   ngOnInit() {
     this.skills.push(
+      new Skill("devicon-java-plain", "Java"),
       new Skill("devicon-csharp-plain", "C#"),
       new Skill("devicon-dot-net-plain", ".NET"),
       new Skill("devicon-angularjs-plain", "Angular"),
@@ -18,7 +19,7 @@ export class SkillsComponent implements OnInit {
       new Skill("devicon-git-plain", "Git"),
       new Skill("devicon-html5-plain", "HTML"),
       new Skill("devicon-css3-plain", "CSS"),
-      new Skill("fa fa-database", "SQL")
+      new Skill("fa fa-database", "SQL & CQL")
     );
   }
 }
