@@ -12,6 +12,7 @@
   },
   "private": true,
   "dependencies": {
+    "@angular-devkit/core": "^11.2.3",
     "@angular/animations": "^11.0.0",
     "@angular/common": "^11.2.4",
     "@angular/compiler": "^11.2.4",
@@ -32,6 +33,7 @@
     "@types/jasmine": "^3.6.1",
     "@types/jasminewd2": "^2.0.8",
     "@types/node": "^14.14.7",
+    "angular-cli-ghpages": "^1.0.0-rc.1",
     "apply-loader": "^2.0.0",
     "codelyzer": "^6.0.1",
     "jasmine-core": "~3.5.0",
