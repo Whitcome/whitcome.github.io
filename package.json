@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deployprod": "ng build --prod && ngh --dir=dist/davidwhitcomecom"
+    "deployprod": "ng build --configuration production && ngh --dir=dist/davidwhitcomecom"
   },
   "private": true,
   "dependencies": {
