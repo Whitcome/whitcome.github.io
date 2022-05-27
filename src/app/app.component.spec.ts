@@ -1,4 +1,4 @@
-import { async, TestBed } from '@angular/core/testing';
+import { waitForAsync, TestBed } from '@angular/core/testing';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
@@ -11,7 +11,7 @@ import { SkillsComponent } from './skills/skills.component';
 import { SocialComponent } from './social/social.component';
 
 describe('AppComponent', () => {
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       imports: [
         RouterTestingModule,
