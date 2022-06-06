@@ -14,8 +14,7 @@ describe('MainCardComponent', () => {
         LeftColumnComponent,
         RightColumnComponent
       ]
-    })
-    .compileComponents();
+    }).compileComponents();
   }));
 
   beforeEach(() => {

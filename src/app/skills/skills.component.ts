@@ -6,10 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./skills.component.scss']
 })
 export class SkillsComponent implements OnInit {
-  skills = new Array<Skill>();
+  Skills: Array<Skill> = new Array<Skill>();
 
   ngOnInit() {
-    this.skills.push(
+    this.Skills.push(
       new Skill("devicon-csharp-plain", "C#"),
       new Skill("devicon-dotnetcore-plain", ".NET"),
       new Skill("devicon-java-plain", "Java"),

@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./social.component.scss']
 })
 export class SocialComponent implements OnInit {
-  SocialLinks = new Array<SocialLink>();
+  public SocialLinks: Array<SocialLink> = new Array<SocialLink>();
 
   ngOnInit() {
     this.SocialLinks.push(
