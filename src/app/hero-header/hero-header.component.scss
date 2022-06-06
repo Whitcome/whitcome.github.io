@@ -33,14 +33,10 @@
         background-image: url("/assets/images/header.jpg");
     }
     
-    .ie10-fix {
+    #header-centered {
         position: relative;
         z-index: 2;
-    
-        #header-centered {
-            z-index: 2;
-            text-align: center;
-        }
+        text-align: center;
     
         h1,
         h2 {
