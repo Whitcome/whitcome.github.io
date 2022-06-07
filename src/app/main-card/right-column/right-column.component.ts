@@ -5,11 +5,5 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './right-column.component.html',
   styleUrls: ['./right-column.component.scss']
 })
-export class RightColumnComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+export class RightColumnComponent {
 }
