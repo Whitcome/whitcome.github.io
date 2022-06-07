@@ -1,54 +1,60 @@
-@import "../../variables.scss";
+@import '../../variables.scss';
 
 .section {
-    //background: #e0e0e0; // Backup for gradient
-    background: linear-gradient(to bottom, $background-light-gradient, $background-light);
+	//background: #e0e0e0; // Backup for gradient
+	background: linear-gradient(
+		to bottom,
+		$background-light-gradient,
+		$background-light
+	);
 
-    @media #{$dark-mode} {
-        background: linear-gradient(to bottom, $background-dark-gradient, $background-dark);
-    }
+	@media #{$dark-mode} {
+		background: linear-gradient(
+			to bottom,
+			$background-dark-gradient,
+			$background-dark
+		);
+	}
 }
 
 .block-list {
-    display: block;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    color: $text-dark;
+	display: block;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	color: $text-dark;
 
-    ::ng-deep {
-        li {
-            display: inline-block;
-            padding: 16px 8px;
-            text-align: center;
-            width: 90px;
-            height: 80px;
-    
-            @media screen and (max-width: 363px) {
-                padding: 16px 0;
-            }
-    
-            i {
-                font-size: 3em;
-                display: block;
-                padding: 0 0 10px 0;
-            }W
-    
-            span {
-                font-size: 0.85em;
-                text-align: center;
-                font-weight: 600;
-            }
-    
-            a {
-                text-decoration: none;
-                color: $text-dark;
-            }
+	::ng-deep {
+		li {
+			display: inline-block;
+			padding: 16px 8px;
+			text-align: center;
+			width: 90px;
+			height: 80px;
 
-            @media #{$dark-mode} {
-                color: $text-light;
-            }
-        }
-    }
-    
+			@media screen and (max-width: 363px) {
+				padding: 16px 0;
+			}
+
+			i {
+				font-size: 3em;
+				display: block;
+				padding: 0 0 10px 0;
+			}
+			W span {
+				font-size: 0.85em;
+				text-align: center;
+				font-weight: 600;
+			}
+
+			a {
+				text-decoration: none;
+				color: $text-dark;
+			}
+
+			@media #{$dark-mode} {
+				color: $text-light;
+			}
+		}
+	}
 }

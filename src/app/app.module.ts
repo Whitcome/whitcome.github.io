@@ -12,23 +12,18 @@ import { LeftColumnComponent } from './main-card/left-column/left-column.compone
 import { RightColumnComponent } from './main-card/right-column/right-column.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeroHeaderComponent,
-    FooterComponent,
-    SkillsComponent,
-    SocialComponent,
-    MainCardComponent,
-    LeftColumnComponent,
-    RightColumnComponent
-  ],
-  imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
-    AppRoutingModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+	declarations: [
+		AppComponent,
+		HeroHeaderComponent,
+		FooterComponent,
+		SkillsComponent,
+		SocialComponent,
+		MainCardComponent,
+		LeftColumnComponent,
+		RightColumnComponent
+	],
+	imports: [BrowserModule, BrowserAnimationsModule, AppRoutingModule],
+	providers: [],
+	bootstrap: [AppComponent]
 })
-export class AppModule {
-}
+export class AppModule {}

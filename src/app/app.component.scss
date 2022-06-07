@@ -1,17 +1,17 @@
-@import "../variables.scss";
+@import '../variables.scss';
 
 .ios-bar {
-    display: block;
-    position: fixed;
-    width: 100%;
-    height: constant(safe-area-inset-top);
-    height: env(safe-area-inset-top);
-    background: #1e1e1e;
-    z-index: 3;
-    opacity: 0.25;
+	display: block;
+	position: fixed;
+	width: 100%;
+	height: constant(safe-area-inset-top);
+	height: env(safe-area-inset-top);
+	background: #1e1e1e;
+	z-index: 3;
+	opacity: 0.25;
 }
 
 #body-content {
-    background-image: url('../assets/images/background.jpg');
-    background-size: cover;
+	background-image: url('../assets/images/background.jpg');
+	background-size: cover;
 }

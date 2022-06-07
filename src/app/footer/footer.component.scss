@@ -1,17 +1,17 @@
-@import "../../variables.scss";
+@import '../../variables.scss';
 
 #footer {
-    background: $background-light;
-    color: $text-dark;
-    font-weight: 600;
-    height: 100px;
-    line-height: 100px;
-    text-align: center;
-    padding-bottom: constant(safe-area-inset-bottom);
-    padding-bottom: env(safe-area-inset-bottom);
+	background: $background-light;
+	color: $text-dark;
+	font-weight: 600;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	padding-bottom: constant(safe-area-inset-bottom);
+	padding-bottom: env(safe-area-inset-bottom);
 
-    @media #{$dark-mode} {
-        background: $background-dark;
-        color: $text-light;
-    }
+	@media #{$dark-mode} {
+		background: $background-dark;
+		color: $text-light;
+	}
 }

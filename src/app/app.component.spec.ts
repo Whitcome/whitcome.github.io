@@ -11,35 +11,34 @@ import { SkillsComponent } from './skills/skills.component';
 import { SocialComponent } from './social/social.component';
 
 describe('AppComponent', () => {
-  beforeEach(waitForAsync(() => {
-    TestBed.configureTestingModule({
-      imports: [
-        RouterTestingModule,
-        BrowserAnimationsModule
-      ],
-      declarations: [
-        AppComponent,
-        HeroHeaderComponent,
-        SkillsComponent,
-        MainCardComponent,
-        SocialComponent,
-        FooterComponent,
-        LeftColumnComponent,
-        RightColumnComponent
-      ],
-    }).compileComponents();
-  }));
+	beforeEach(waitForAsync(() => {
+		TestBed.configureTestingModule({
+			imports: [RouterTestingModule, BrowserAnimationsModule],
+			declarations: [
+				AppComponent,
+				HeroHeaderComponent,
+				SkillsComponent,
+				MainCardComponent,
+				SocialComponent,
+				FooterComponent,
+				LeftColumnComponent,
+				RightColumnComponent
+			]
+		}).compileComponents();
+	}));
 
-  it('should create the app', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.debugElement.componentInstance;
-    expect(app).toBeTruthy();
-  });
+	it('should create the app', () => {
+		const fixture = TestBed.createComponent(AppComponent);
+		const app = fixture.debugElement.componentInstance;
+		expect(app).toBeTruthy();
+	});
 
-  it('should render title in a h1 tag', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('David Whitcome');
-  });
+	it('should render title in a h1 tag', () => {
+		const fixture = TestBed.createComponent(AppComponent);
+		fixture.detectChanges();
+		const compiled = fixture.debugElement.nativeElement;
+		expect(compiled.querySelector('h1').textContent).toContain(
+			'David Whitcome'
+		);
+	});
 });

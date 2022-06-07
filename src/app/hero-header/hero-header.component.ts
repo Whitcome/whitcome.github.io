@@ -1,29 +1,36 @@
-import { AfterViewInit, Component, ElementRef, HostListener, ViewChild } from '@angular/core';
+import {
+	AfterViewInit,
+	Component,
+	ElementRef,
+	HostListener,
+	ViewChild
+} from '@angular/core';
 
 @Component({
-  selector: 'app-hero-header',
-  templateUrl: './hero-header.component.html',
-  styleUrls: ['./hero-header.component.scss']
+	selector: 'app-hero-header',
+	templateUrl: './hero-header.component.html',
+	styleUrls: ['./hero-header.component.scss']
 })
 export class HeroHeaderComponent implements AfterViewInit {
-  public Name: string = "David Whitcome";
-  public Tag: string = "Software Developer";
-  
-  @ViewChild('headerBackground')
-  private headerBackground: ElementRef;
+	public Name: string = 'David Whitcome';
+	public Tag: string = 'Software Developer';
 
-  ngAfterViewInit() {
-    this.parallaxAnimation(); // Set header background to correct position for some browsers.
-  }
+	@ViewChild('headerBackground')
+	private headerBackground: ElementRef;
 
-  @HostListener('window:scroll', ['$event'])
-  onWindowScroll() {
-    requestAnimationFrame(this.parallaxAnimation);
-  }
+	ngAfterViewInit() {
+		this.parallaxAnimation(); // Set header background to correct position for some browsers.
+	}
 
-  parallaxAnimation = () => {
-    if (this.headerBackground) {
-      this.headerBackground.nativeElement.style.marginTop = Math.max(0, window.pageYOffset/4) + "px";
-    }
-  }
+	@HostListener('window:scroll', ['$event'])
+	onWindowScroll() {
+		requestAnimationFrame(this.parallaxAnimation);
+	}
+
+	parallaxAnimation = () => {
+		if (this.headerBackground) {
+			this.headerBackground.nativeElement.style.marginTop =
+				Math.max(0, window.pageYOffset / 4) + 'px';
+		}
+	};
 }

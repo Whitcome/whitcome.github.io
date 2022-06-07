@@ -1,83 +1,91 @@
-@import "../../variables.scss";
+@import '../../variables.scss';
 
 .section {
-    //background: #e0e0e0; // Backup for gradient
-    background: linear-gradient(to top, $background-light-gradient, $background-light);
-    padding-bottom: 35px;
+	//background: #e0e0e0; // Backup for gradient
+	background: linear-gradient(
+		to top,
+		$background-light-gradient,
+		$background-light
+	);
+	padding-bottom: 35px;
 
-    @media #{$dark-mode} {
-        background: linear-gradient(to top, $background-dark-gradient, $background-dark);
-    }
+	@media #{$dark-mode} {
+		background: linear-gradient(
+			to top,
+			$background-dark-gradient,
+			$background-dark
+		);
+	}
 }
 
 ::ng-deep {
-    .block-list {
-        display: block;
-        text-align: center;
-        margin: 0;
-        padding: 0;
-        color: $text-dark;
-    
-        li {
-            display: inline-block;
-            text-align: center;
-    
-            i {
-                font-size: 3em;
-                display: block;
-                padding: 0 0 10px 0;
-            }
-    
-            span {
-                font-size: 0.85em;
-                text-align: center;
-                font-weight: 600;
-            }
-    
-            a {
-                width: 90px;
-                height: 80px;
-                text-decoration: none;
-                color: $text-dark;
-                border-radius: 4px;
+	.block-list {
+		display: block;
+		text-align: center;
+		margin: 0;
+		padding: 0;
+		color: $text-dark;
 
-                @media #{$dark-mode} {
-                    color: $text-light;
-                }
-            }
-        }
-    }
-    
-    .hover-list {
-        li {
-            a {
-                display: block;
-                padding: 16px 10px;
-    
-                @media screen and (max-width: 363px) {
-                    padding: 16px 2px;
-                }
+		li {
+			display: inline-block;
+			text-align: center;
 
-                -webkit-transition: 0.2s background;
-                -moz-transition: 0.2s background;
-                transition: 0.2s background;
-            }
-    
-            a:hover {
-                background: #bbbbbb;
+			i {
+				font-size: 3em;
+				display: block;
+				padding: 0 0 10px 0;
+			}
 
-                @media #{$dark-mode} {
-                    background: #2c2e30;
-                }
-            }
+			span {
+				font-size: 0.85em;
+				text-align: center;
+				font-weight: 600;
+			}
 
-            a:active {
-                background: #cccccc;
+			a {
+				width: 90px;
+				height: 80px;
+				text-decoration: none;
+				color: $text-dark;
+				border-radius: 4px;
 
-                @media #{$dark-mode} {
-                    background: #27292b;
-                }
-            }
-        }
-    }
+				@media #{$dark-mode} {
+					color: $text-light;
+				}
+			}
+		}
+	}
+
+	.hover-list {
+		li {
+			a {
+				display: block;
+				padding: 16px 10px;
+
+				@media screen and (max-width: 363px) {
+					padding: 16px 2px;
+				}
+
+				-webkit-transition: 0.2s background;
+				-moz-transition: 0.2s background;
+				transition: 0.2s background;
+			}
+
+			a:hover {
+				background: #bbbbbb;
+
+				@media #{$dark-mode} {
+					background: #2c2e30;
+				}
+			}
+
+			a:active {
+				background: #cccccc;
+
+				@media #{$dark-mode} {
+					background: #27292b;
+				}
+			}
+		}
+	}
 }
